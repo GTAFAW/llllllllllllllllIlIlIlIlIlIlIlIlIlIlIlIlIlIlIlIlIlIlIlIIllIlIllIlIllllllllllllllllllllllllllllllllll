@@ -14,8 +14,9 @@ game:GetService("StarterGui"):SetCore("SendNotification", {
 	Text = "🇨🇳🇨🇳🇨🇳🇨🇳🇨🇳";
 	Icon = "rbxthumb://type=Asset&id=18923878915&w=150&h=150"})
 	local myButton = script.Parent local sound = game.ServerStorage:FindFirstChild("1841647093")  myButton.MouseButton1Click:Connect(function() if sound then sound:Play() end end)
-Duration = 5;      --[[哈哈哈哈哈 不喜欢培根.xgo留言:🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾
---°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥]
+Duration = 5;     
+--[[哈哈哈哈哈 不喜欢培根.xgo留言:🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾
+--°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥
 getgenv().autoCollectEnabled = true
 --°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥
 getgenv().autoSellEnabled = true
@@ -29,7 +30,7 @@ getgenv().clickTpEnabled = true
 getgenv().autoObbyEnabled = true
 --°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥  ----xgo--goto_O-----------------没有谁的心事不是旧心事   香樟树每一片叶子长出就会掉一片旧叶子  我的新日子没有长出  旧日子也不肯掉落
 
---[[local Players = game:GetService("Players")
+--local Players = game:GetService("Players")
 while not game:GetService("Players").LocalPlayer do
 	wait(0.1)
 end
@@ -56,7 +57,7 @@ end
 if DebugMode then
 	warn("DomainX - 游戏加载")
 end
-local KeySys = game:GetObjects("rbxassetid://8065404628")[1]
+local KeySys = game:GetObjects("rbxassetid://8065404628")1
 
 if DebugMode then
 	warn("DomainX - 加载密钥UI")
@@ -109,7 +110,7 @@ end
 -- DMNX
 
 
-local Domain = game:GetObjects("rbxassetid://7924540022")[1]
+local Domain = game:GetObjects("rbxassetid://7924540022")1
 
 if DebugMode then
 	warn("DomainX - 加载主UI")
@@ -296,7 +297,7 @@ function figureNotifs(Stack,Container)
 
 	local i = #Stack
 	while i > 0 do
-		local gui = Stack[i]
+		local gui = Stacki
 		if gui then
 			if stacksize == 1 then
 				stacksize = 0
@@ -318,7 +319,7 @@ function figureToasts(Stack,Container)
 
 	local i = #Stack
 	while i > 0 do
-		local gui = Stack[i]
+		local gui = Stacki
 		if gui then
 			if stacksize == 0 then
 				stacksize = 1
@@ -666,7 +667,7 @@ end
 
 function ESP(Player)
 	local plr = game:GetService("Workspace")
-	local target = plr[Player.Name]
+	local target = plrPlayer.Name
 	local targett = target.Name
 	if target then
 		local a = Instance.new("BillboardGui",target)
@@ -690,7 +691,7 @@ function ESP(Player)
 end
 function UnESP(Player)
 	local plr = game:GetService("Workspace")
-	local target = plr[Player.Name]
+	local target = plrPlayer.Name
 	local targett = target.Name
 	if target then
 		if target:FindFirstChildWhichIsA("BillboardGui") then
@@ -1569,7 +1570,7 @@ function PromptPremium()
 				Url = 'http://127.0.0.1:6463/rpc?v=1',
 				Method = 'POST',
 				Headers = {
-					['Content-Type'] = 'application/json',
+					'Content-Type' = 'application/json',
 					Origin = 'https://discord.com'
 				},
 				Body = HttpService:JSONEncode({
@@ -2739,7 +2740,7 @@ function CheckServers()
 	local servers = {}
 	for _, v in ipairs(game:GetService("HttpService"):JSONDecode(game:HttpGetAsync("https://games.roblox.com/v1/games/" .. game.PlaceId .. "/servers/Public?sortOrder=Asc&limit=100")).data) do
 		if type(v) == "table" and v.maxPlayers > v.playing and v.id ~= game.JobId then
-			servers[#servers + 1] = v.id
+			servers#servers + 1 = v.id
 		end
 	end
 	if #servers > 0 then
@@ -2892,7 +2893,7 @@ function Serverhop()
 				if type(v) == "table" and v.maxPlayers > v.playing and v.id ~= game.JobId then
 					if v.playing > highestnumber then
 						highestnumber = v.playing
-						servers[1] = v.id
+						servers1 = v.id
 					end
 				end
 			end
@@ -2911,7 +2912,7 @@ function Serverhop()
 					local transitionInfo = TweenInfo.new(0.5, Enum.EasingStyle.Quint)
 					local tween = TweenService:Create(Domain.Player.Serverhop, transitionInfo, {BackgroundColor3 = Color3.fromRGB(0, 132, 70)})
 					tween:Play()	
-					game:GetService("TeleportService"):TeleportToPlaceInstance(game.PlaceId, servers[1])
+					game:GetService("TeleportService"):TeleportToPlaceInstance(game.PlaceId, servers1)
 					serverhopdb = false
 				end
 			else
@@ -2981,17 +2982,17 @@ function GetDate()
 	date.hoursPm = (date.isAm and date.hours or (date.hours == 12 and 12 or (date.hours - 12)))
 	if (date.hoursPm == 0) then date.hoursPm = 12 end
 	if (date.isLeapYear) then
-		months[2][2] = 29
+		months22 = 29
 	end
 	do
 		date.dayOfYear = math.floor((t / 60 / 60 / 24) % 365.25)
 		local dayCount = 0
 		for i,month in pairs(months) do
-			dayCount = (dayCount + month[2])
+			dayCount = (dayCount + month2)
 			if (dayCount > date.dayOfYear) then
-				date.monthWord = month[1]
+				date.monthWord = month1
 				date.month = i
-				date.day = (date.dayOfYear - (dayCount - month[2]) + 1)
+				date.day = (date.dayOfYear - (dayCount - month2) + 1)
 				break
 			end
 		end
@@ -3080,7 +3081,7 @@ end
 
 local b='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/'
 function dec(data)
-	data = string.gsub(data, '[^'..b..'=]', '')
+	data = string.gsub(data, '^'..b..'=', '')
 	return (data:gsub('.', function(x)
 		if (x == '=') then return '' end
 		local r,f='',(b:find(x)-1)
@@ -3102,10 +3103,10 @@ function StartAntiIdle()
 	GetConnections = getconnections or get_signal_cons
 	if GetConnections then
 		for i, ob in pairs(GetConnections(LocalPlayer.Idled)) do
-			if ob["Disable"] then
-				ob["Disable"](ob)
-			elseif ob["Disconnect"] then
-				ob["Disconnect"](ob)
+			if ob"Disable" then
+				ob"Disable"(ob)
+			elseif ob"Disconnect" then
+				ob"Disconnect"(ob)
 			end
 		end
 	end
@@ -3193,7 +3194,7 @@ function VersionCheck()
 					Url = 'http://127.0.0.1:6463/rpc?v=1',
 					Method = 'POST',
 					Headers = {
-						['Content-Type'] = 'application/json',
+						'Content-Type' = 'application/json',
 						Origin = 'https://discord.com'
 					},
 					Body = HttpService:JSONEncode({
@@ -3231,7 +3232,7 @@ function VersionCheck()
 				Url = 'http://127.0.0.1:6463/rpc?v=1',
 				Method = 'POST',
 				Headers = {
-					['Content-Type'] = 'application/json',
+					'Content-Type' = 'application/json',
 					Origin = 'https://discord.com'
 				},
 				Body = HttpService:JSONEncode({
@@ -3703,9 +3704,9 @@ function Invisible()
 			local Pos = Player.Character.HumanoidRootPart.Position
 			local Pos_String = tostring(Pos)
 			local Pos_Seperate = Pos_String:split(', ')
-			local X = tonumber(Pos_Seperate[1])
-			local Y = tonumber(Pos_Seperate[2])
-			local Z = tonumber(Pos_Seperate[3])
+			local X = tonumber(Pos_Seperate1)
+			local Y = tonumber(Pos_Seperate2)
+			local Z = tonumber(Pos_Seperate3)
 			if IsInteger == true then
 				if Y <= Void then
 					Respawn()
@@ -3933,7 +3934,7 @@ end)
 
 function ChangeKeybind(Key)
 	local SplitMessage = string.split(tostring(Key), ".")
-	local NewKeyNoEnum = SplitMessage[3]
+	local NewKeyNoEnum = SplitMessage3
 	Keybind = tostring(NewKeyNoEnum)
 	Domain.Home.Keybind.KeyBG.KeyBox.Text = Keybind
 	Domain.Home.Keybind.KeyBG.KeyBox:ReleaseFocus()
@@ -3950,7 +3951,7 @@ game:GetService("UserInputService").InputBegan:Connect(function(input, processed
 		return
 	end
 	if not CheckingForKey then
-		if (input.KeyCode == Enum.KeyCode[Keybind] and processed == false) and not db then
+		if (input.KeyCode == Enum.KeyCodeKeybind and processed == false) and not db then
 			if baropen then
 				if plrlistopen then
 					ClosePlayerlist()
@@ -4022,8 +4023,8 @@ local Walklimit = {16, 225}
 
 function WalkupdatePadding()
 	Walkpadding = {
-		['Start'] = Walkslider.AbsolutePosition.X,
-		['End'] = Walkslider.AbsolutePosition.X + Walkslider.AbsoluteSize.X
+		'Start' = Walkslider.AbsolutePosition.X,
+		'End' = Walkslider.AbsolutePosition.X + Walkslider.AbsoluteSize.X
 	}
 end
 WalkupdatePadding()
@@ -4032,7 +4033,7 @@ function WalkupdateSlider()
 	local posX = math.clamp(mouse.X, Walkpadding.Start, Walkpadding.End)
 	local inverse_interpolation = (posX - Walkpadding.Start) / (Walkpadding.End - Walkpadding.Start)
 	TweenService:Create(Walkbar, TweenInfo.new(.7,Enum.EasingStyle.Quint),  {Size = UDim2.new(inverse_interpolation, 0, 1, 0)}):Play()
-	local value = math.floor(Walklimit[1] + (Walklimit[2] - Walklimit[1]) * inverse_interpolation + .5)
+	local value = math.floor(Walklimit1 + (Walklimit2 - Walklimit1) * inverse_interpolation + .5)
 	Walklabel.Text = value.." 步行速度"
 	LocalPlayer.Character:WaitForChild("Humanoid").WalkSpeed = value
 end
@@ -4054,8 +4055,8 @@ local Jumplimit = {50, 350}
 
 function JumpupdatePadding()
 	Jumppadding = {
-		['Start'] = Jumpslider.AbsolutePosition.X,
-		['End'] = Jumpslider.AbsolutePosition.X + Jumpslider.AbsoluteSize.X
+		'Start' = Jumpslider.AbsolutePosition.X,
+		'End' = Jumpslider.AbsolutePosition.X + Jumpslider.AbsoluteSize.X
 	}
 end
 JumpupdatePadding()
@@ -4064,7 +4065,7 @@ function JumpupdateSlider()
 	local posX = math.clamp(mouse.X, Jumppadding.Start, Jumppadding.End)
 	local inverse_interpolation = (posX - Jumppadding.Start) / (Jumppadding.End - Jumppadding.Start)
 	TweenService:Create(Jumpbar, TweenInfo.new(.7,Enum.EasingStyle.Quint),  {Size = UDim2.new(inverse_interpolation, 0, 1, 0)}):Play()
-	local value = math.floor(Jumplimit[1] + (Jumplimit[2] - Jumplimit[1]) * inverse_interpolation + .5)
+	local value = math.floor(Jumplimit1 + (Jumplimit2 - Jumplimit1) * inverse_interpolation + .5)
 	Jumplabel.Text = value.." 跳跃力量"
 	LocalPlayer.Character:WaitForChild("Humanoid").JumpPower = value
 
@@ -4087,8 +4088,8 @@ local flylimit = {1, 20}
 
 function flyupdatePadding()
 	flypadding = {
-		['Start'] = flyslider.AbsolutePosition.X,
-		['End'] = flyslider.AbsolutePosition.X + flyslider.AbsoluteSize.X
+		'Start' = flyslider.AbsolutePosition.X,
+		'End' = flyslider.AbsolutePosition.X + flyslider.AbsoluteSize.X
 	}
 end
 flyupdatePadding()
@@ -4097,7 +4098,7 @@ function flyupdateSlider()
 	local posX = math.clamp(mouse.X, flypadding.Start, flypadding.End)
 	local inverse_interpolation = (posX - flypadding.Start) / (flypadding.End - flypadding.Start)
 	TweenService:Create(flybar, TweenInfo.new(.7,Enum.EasingStyle.Quint),  {Size = UDim2.new(inverse_interpolation, 0, 1, 0)}):Play()
-	local value = math.floor(flylimit[1] + (flylimit[2] - flylimit[1]) * inverse_interpolation + .5)
+	local value = math.floor(flylimit1 + (flylimit2 - flylimit1) * inverse_interpolation + .5)
 	flylabel.Text = value.." 飞行速度"
 	PlayerFlySpeed = value
 end
@@ -4146,8 +4147,8 @@ Domain.JoinCodes.CodeBox.JCText.FocusLost:Connect(function()
 	if result ~= "invalid" and result ~= "fail" then
 		local decoded = game:GetService('HttpService'):JSONDecode(result)
 
-		local placeId = decoded["Game"]
-		local serverId = decoded["ServerId"]
+		local placeId = decoded"Game"
+		local serverId = decoded"ServerId"
 		for _, v in ipairs(game:GetService("HttpService"):JSONDecode(game:HttpGetAsync("https://games.roblox.com/v1/games/" .. placeId .. "/servers/Public?sortOrder=Asc&limit=100")).data) do
 			if v.id == serverId then
 				Domain.JoinCodes.PlrOnlineText.Text = v.playing.. " 服务器中的玩家"
@@ -4166,8 +4167,8 @@ Domain.JoinCodes.CodeBox.SendJC.MouseButton1Click:Connect(function()
 	if result ~= "invalid" and result ~= "fail" then
 		local decoded = game:GetService('HttpService'):JSONDecode(result)
 
-		local placeId = decoded["Game"]
-		local serverId = decoded["ServerId"]
+		local placeId = decoded"Game"
+		local serverId = decoded"ServerId"
 		Toast("瞬移..")
 		game:GetService("TeleportService"):TeleportToPlaceInstance(placeId, serverId)
 	end	
@@ -4508,9 +4509,9 @@ while true do
 end
 
 if syn and syn.cache_replace and syn.cache_invalidate and syn.is_cached and syn.write_clipboard and syn.set_thread_identity then
---[[游戏它支持大兜帽，阿森纳，地狱之塔，凯特!,击剑，在披萨广场工作，vr手，采用我，越狱，监狱生活，并为宝藏制造一条船，而且戈里拉标签专业
-]]--
---[[local OptTheme = "------*****"
+--游戏它支持大兜帽，阿森纳，地狱之塔，凯特!,击剑，在披萨广场工作，vr手，采用我，越狱，监狱生活，并为宝藏制造一条船，而且戈里拉标签专业
+--
+--local OptTheme = "------*****"
 local string = "----*******-----"
 local string2 = "https://---*******----/invite/---*******----"
 -- Da Hood
@@ -4574,7 +4575,7 @@ ScreenGui:Destroy()
 end)
 
 MainSection:NewButton("RayCodeX", "Launches ---*******---- script", function()
-   loadstring(game:GetObjects("rbxassetid://5812737894")[1].Source)()
+   loadstring(game:GetObjects("rbxassetid://5812737894")1.Source)()
 end)
 
 
@@ -4688,14 +4689,14 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/
  end)
 
             MainSection:NewButton("Ezhub", "130+ games", function()
-                --[[ this is there cmds list
+                -- this is there cmds list
 https://pastebin.com/CvjkJxAt
-]]--
---[[loadstring(game:HttpGet(('https://raw.githubusercontent.com/debug420/Ez-Industries-Launcher-Data/master/Launcher.lua'),true))()
---[[this is there thing idk
+--
+--loadstring(game:HttpGet(('https://raw.githubusercontent.com/debug420/Ez-Industries-Launcher-Data/master/Launcher.lua'),true))()
+--this is there thing idk
 https://pastebin.com/vavZfexv
-]]--
---[[end)
+--
+--end)
 
 MainSection:NewButton("Arsenal RAC Ban Menu", "Shows in chat also I have no idea what this does", function()
    loadstring(game:HttpGet("https://pastebin.com/raw/qtDZm7LX"))()
@@ -4714,17 +4715,17 @@ MainSection:NewButton("Arsenal FE audio + more!", "NOTE: you can get banned from
 
 
     local args = {
-        [1] = {
-            [1] = "UpdateID",
-            [2] =  value,
+        1 = {
+            1 = "UpdateID",
+            2 =  value,
         },
     }
     
     game:GetService("ReplicatedStorage").Events.UpdateLoadout:FireServer(unpack(args))
 
 local args = {
-    [1] = true,
-    [2] = game:GetService("ReplicatedStorage").Taunts.Megaphone,
+    1 = true,
+    2 = game:GetService("ReplicatedStorage").Taunts.Megaphone,
 }
 
 game:GetService("ReplicatedStorage").Events.ReplicateGear:FireServer(unpack(args))
@@ -4734,10 +4735,10 @@ game:GetService("ReplicatedStorage").Events.ReplicateGear:FireServer(unpack(args
 
 Players = game:GetService("Players")
 for i, player in pairs(Players:GetPlayers()) do
-    print("["..i.."] = "..player.Name)
+    print(""..i.." = "..player.Name)
     local args = {
-    [1] = "GET NOOB",
-    "["..i.."] = "..player.Name,
+    1 = "GET NOOB",
+    ""..i.." = "..player.Name,
 }
 end
   end)
@@ -4815,11 +4816,11 @@ loadstring(game:HttpGet('https://cattori.xyz/main.lua'))()
 end)
 
             MainSection:NewButton("Ezhub", "130+ games", function()
-                --[[ this is there cmds list
+                -- this is there cmds list
 https://pastebin.com/CvjkJxAt
 
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/debug420/Ez-Industries-Launcher-Data/master/Launcher.lua'),true))()
---[[this is there thing idk
+--this is there thing idk
 https://pastebin.com/vavZfexv
 
  end)
@@ -4924,11 +4925,11 @@ loadstring(game:HttpGet('https://cattori.xyz/main.lua'))()
 end)
 
             MainSection:NewButton("Ezhub", "130+ games", function()
-                --[[ this is there cmds list
+                -- this is there cmds list
 https://pastebin.com/CvjkJxAt
 
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/debug420/Ez-Industries-Launcher-Data/master/Launcher.lua'),true))()
---[[this is there thing idk
+--this is there thing idk
 https://pastebin.com/vavZfexv
 
  end)
@@ -4976,7 +4977,7 @@ function init()
                         return function() return ray end
                     end
                 end
-                return cam[k]
+                return camk
             end
         }))
     
@@ -5106,7 +5107,7 @@ v.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
 v.Transparency = 1
 v.CanCollide = false
 wait()
-v.CFrame = game.Players.LocalPlayer.Character["Left Leg"].CFrame
+v.CFrame = game.Players.LocalPlayer.Character"Left Leg".CFrame
 end
 end
 end
@@ -5144,20 +5145,20 @@ game:GetService("RunService").Heartbeat:connect(function(step)
 button.CFrame = CFrame.new(game.Players.LocalPlayer.Character.Head.Position)
 button.Size   = Vector3.new(math.random(0,0), math.random(0,0), math.random(1,5))
 wait()
-button.CFrame=CFrame.new(game.Players.LocalPlayer.Character["Right Arm"].Position)
+button.CFrame=CFrame.new(game.Players.LocalPlayer.Character"Right Arm".Position)
 button.Size=Vector3.new(math.random(0,0), math.random(0,0), math.random(0,0))
 wait()
 button.CFrame=CFrame.new(game.Players.LocalPlayer.Character.Torso.Position)
 button.Size=Vector3.new(math.random(0,0), math.random(0,0), math.random(0,0))
 wait()
-button.CFrame=CFrame.new(game.Players.LocalPlayer.Character["Left Arm"].Position)
+button.CFrame=CFrame.new(game.Players.LocalPlayer.Character"Left Arm".Position)
 button.Size=Vector3.new(math.random(0,0), math.random(0,0), math.random(0,0))
 wait()
 button.Size=Vector3.new(math.random(0,0), math.random(0,0), math.random(0,0))
-button.CFrame=CFrame.new(game.Players.LocalPlayer.Character["Left Leg"].Position)
+button.CFrame=CFrame.new(game.Players.LocalPlayer.Character"Left Leg".Position)
 wait()
 button.Size   = Vector3.new(math.random(0,0), math.random(0,0), math.random(0,0))
-button.CFrame = CFrame.new(game.Players.LocalPlayer.Character["Right Leg"].Position)
+button.CFrame = CFrame.new(game.Players.LocalPlayer.Character"Right Leg".Position)
 end)
 end)
 
@@ -5603,9 +5604,9 @@ wait(0.05)
 end)
 
 MainSection:NewButton("FE Weird Broken Fencing Swords", "Swords", function()
-  game.Lighting["LinkedSword3"]:Clone().Parent = game.Players.LocalPlayer.Backpack
-game.Lighting["LinkedSword2"]:Clone().Parent = game.Players.LocalPlayer.Backpack
-game.Lighting["LinkedSword"]:Clone().Parent = game.Players.LocalPlayer.Backpack
+  game.Lighting"LinkedSword3":Clone().Parent = game.Players.LocalPlayer.Backpack
+game.Lighting"LinkedSword2":Clone().Parent = game.Players.LocalPlayer.Backpack
+game.Lighting"LinkedSword":Clone().Parent = game.Players.LocalPlayer.Backpack
 end)
 
 MainSection:NewButton("Infinite Yield FE", "Admin", function()
@@ -6261,7 +6262,7 @@ for i1, tab in ipairs(tabs) do
 	end
 	
 	tabbtn.MouseButton1Click:connect(function()
-		main[current].Visible = false
+		maincurrent.Visible = false
 		current = tab.name
 		tabfr.Visible = true 
 	end)
@@ -6282,7 +6283,7 @@ for i1, tab in ipairs(tabs) do
 		for i2, scr in ipairs(tab.scripts) do
 			local scrbtn = Instance.new("TextButton")
 			scrbtn.Parent = tabfr
-			scrbtn.Name = scr[1]
+			scrbtn.Name = scr1
 			scrbtn.Style = Enum.ButtonStyle.RobloxRoundDropdownButton
 			scrbtn.Position = UDim2.new(0, ((i2 - 1) % 4) * 100, 0, math.floor((i2 - 1) / 4) * 50)
 			scrbtn.Size = UDim2.new(0, 90, 0, 40)
@@ -6290,11 +6291,11 @@ for i1, tab in ipairs(tabs) do
 			scrbtn.TextScaled = true
 			scrbtn.TextScaled = false
 			scrbtn.Font = Enum.Font.SciFi
-			scrbtn.Text = scr[1]
+			scrbtn.Text = scr1
 			scrbtn.ZIndex = 11
 			
 			scrbtn.MouseButton1Click:connect(function()
-				loadstring(game:HttpGet(scr[2], true))()
+				loadstring(game:HttpGet(scr2, true))()
 			end)
 		end
 	end
@@ -6331,7 +6332,7 @@ for i,tab in ipairs(othertabs) do
 	end
 	
 	tabbtn.MouseButton1Click:connect(function()
-		main[current].Visible = false
+		maincurrent.Visible = false
 		current = tab.name
 		text.Visible = true 
 	end)
@@ -6440,32 +6441,32 @@ local headObject
 local events = {}
 
 local controls = {
-	[Enum.UserInputType.MouseButton1] = {"move", "leftHand"},
-	[Enum.UserInputType.MouseMovement] = {"updateTarget"}, -- do not change
-	[Enum.UserInputType.MouseWheel] = {"adjustOffset"},
-	[Enum.UserInputType.MouseButton2] = {"move", "rightHand"},
-	[Enum.KeyCode.W] = {"move", "head", Vector3.new(0, 1, 0)},
-	[Enum.KeyCode.A] = {"move", "head", Vector3.new(-1, 0, 0)},
-	[Enum.KeyCode.S] = {"move", "head", Vector3.new(0, -1, 0)},
-	[Enum.KeyCode.D] = {"move", "head", Vector3.new(1, 0, 0)},
-	[Enum.KeyCode.Q] = {"move", "head", Vector3.new(0, 0, -1)},
-	[Enum.KeyCode.E] = {"move", "head", Vector3.new(0, 0, 1)},
-	[Enum.KeyCode.LeftShift] = {"gesture", "Fist"},
-	[Enum.KeyCode.LeftControl] = {"gesture", "Index"},
-	[Enum.KeyCode.LeftAlt] = {"gesture", "Thumb"},
-	[Enum.KeyCode.Z] = {"toggle", "canOffset"},
-	[Enum.KeyCode.R] = {"toggle", "rotationManager"},
-	[Enum.KeyCode.Tab] = {"selectAxis", "rotationManager"},
-	[Enum.KeyCode.Left] = {"updateAxisMover", "rotationManager", -1},
-	[Enum.KeyCode.Right] = {"updateAxisMover", "rotationManager", 1}
+	Enum.UserInputType.MouseButton1 = {"move", "leftHand"},
+	Enum.UserInputType.MouseMovement = {"updateTarget"}, -- do not change
+	Enum.UserInputType.MouseWheel = {"adjustOffset"},
+	Enum.UserInputType.MouseButton2 = {"move", "rightHand"},
+	Enum.KeyCode.W = {"move", "head", Vector3.new(0, 1, 0)},
+	Enum.KeyCode.A = {"move", "head", Vector3.new(-1, 0, 0)},
+	Enum.KeyCode.S = {"move", "head", Vector3.new(0, -1, 0)},
+	Enum.KeyCode.D = {"move", "head", Vector3.new(1, 0, 0)},
+	Enum.KeyCode.Q = {"move", "head", Vector3.new(0, 0, -1)},
+	Enum.KeyCode.E = {"move", "head", Vector3.new(0, 0, 1)},
+	Enum.KeyCode.LeftShift = {"gesture", "Fist"},
+	Enum.KeyCode.LeftControl = {"gesture", "Index"},
+	Enum.KeyCode.LeftAlt = {"gesture", "Thumb"},
+	Enum.KeyCode.Z = {"toggle", "canOffset"},
+	Enum.KeyCode.R = {"toggle", "rotationManager"},
+	Enum.KeyCode.Tab = {"selectAxis", "rotationManager"},
+	Enum.KeyCode.Left = {"updateAxisMover", "rotationManager", -1},
+	Enum.KeyCode.Right = {"updateAxisMover", "rotationManager", 1}
 }
 
 local services = {}
 
 setmetatable(services, {
 	__index = function(t, k)
-		services[k] = rawget(services, k) or game:GetService(k)
-		return services[k]
+		servicesk = rawget(services, k) or game:GetService(k)
+		return servicesk
 	end
 })
 
@@ -6481,7 +6482,7 @@ function hand:gesture(gestureName, keyState)
 		return
 	end
 
-	headObject.realHeadset[self.id .. gestureName] = 1 - headObject.realHeadset[self.id .. gestureName]
+	headObject.realHeadsetself.id .. gestureName = 1 - headObject.realHeadsetself.id .. gestureName
 end
 
 function hand:getMouseRay()
@@ -6490,7 +6491,7 @@ function hand:getMouseRay()
 end
 
 function hand:calculateEndRotation()
-	return CFrame.Angles(cam.CFrame:ToEulerAnglesXYZ()) * CFrame.Angles(self.rotation[1] * (math.pi/6), self.rotation[2] * (math.pi/6), self.rotation[3] * (math.pi/6))
+	return CFrame.Angles(cam.CFrame:ToEulerAnglesXYZ()) * CFrame.Angles(self.rotation1 * (math.pi/6), self.rotation2 * (math.pi/6), self.rotation3 * (math.pi/6))
 end
 
 function hand:updateTarget()
@@ -6566,20 +6567,20 @@ local head = {}
 head.__index = head
 
 function head:handleInput(input, keyState)
-	local bind = controls[input.KeyCode] or controls[input.UserInputType]
+	local bind = controlsinput.KeyCode or controlsinput.UserInputType
 	
 	if bind then
-		if bind[1] == "updateTarget" and not self.rotationManager.active then
+		if bind1 == "updateTarget" and not self.rotationManager.active then
 			self.leftHand:updateTarget()
 			self.rightHand:updateTarget()
-		elseif bind[2] and type(self[bind[2) == "table" then
-			self[bind[2[bind[1(self[bind[2, keyState, bind[3])
-	--[[	elseif bind[3] then
-			self[bind[1(self, bind[3], keyState)
-		--[[elseif bind[2] and self.recentHand[bind[1then
-		--[[	self.recentHand[bind[1(self.recentHand, bind[2], keyState)
+		elseif bind2 and type(selfbind2) == "table" then
+			selfbind2bind1(selfbind2, keyState, bind3)
+	--	elseif bind3 then
+			selfbind1(self, bind3, keyState)
+		--elseif bind2 and self.recentHandbind1then
+		--	self.recentHandbind1(self.recentHand, bind2, keyState)
 		else
-			self[bind[1(self, bind[2], keyState)
+			selfbind1(self, bind2, keyState)
 		end
 	end
 end
@@ -6610,10 +6611,10 @@ function head:toggle(stat, keyState)
 		return
 	end
 
-	self[stat] = not self[stat]
+	selfstat = not selfstat
 	
 	if stat == "canOffset" then
-		self:freezeCam(self[stat])
+		self:freezeCam(selfstat)
 	end
 end
 
@@ -6632,23 +6633,23 @@ function rotation:new()
 	
 	for i=1,3 do
 		local ref = {}
-		ref[i] = function() return 0 end
-		ref[i + 1 > 3 and ((i + 1) % 4) + 1 or i + 1] = math.cos
-		ref[i + 2 > 3 and ((i + 2) % 4) + 1 or i + 2] = math.sin
+		refi = function() return 0 end
+		refi + 1 > 3 and ((i + 1) % 4) + 1 or i + 1 = math.cos
+		refi + 2 > 3 and ((i + 2) % 4) + 1 or i + 2 = math.sin
 		
 		local color = Color3.fromRGB(i == 1 and 255 or 0, i == 2 and 255 or 0, i == 3 and 255 or 0)
 		
 		for j=1,13 do
 			if j < 13 then
 				local step = math.pi * (j/6)
-				newRotation.rotationLookup[i][j] = Vector3.new(ref[1](step), ref[2](step), ref[3](step))
+				newRotation.rotationLookupij = Vector3.new(ref1(step), ref2(step), ref3(step))
 			end
 			
 			local line = Drawing.new("Line")
 			line.Visible = true
 			line.Thickness = 5
 			line.Color = color
-			newRotation.lineLookup[i][j] = line
+			newRotation.lineLookupij = line
 		end
 		
 		local circle = Drawing.new("Circle")
@@ -6657,7 +6658,7 @@ function rotation:new()
 		circle.Filled = true
 		circle.Radius = 10
 		circle.Position = Vector2.new(-2000, -2000)
-		newRotation.lineLookup[i][14] = circle
+		newRotation.lineLookupi14 = circle
 		
 		local text = Drawing.new("Text")
 		text.Visible = true
@@ -6665,7 +6666,7 @@ function rotation:new()
 		text.Size = 18
 		text.Color = Color3.new():lerp(color, 0.3)
 		text.Outline = false
-		newRotation.lineLookup[i][15] = text
+		newRotation.lineLookupi15 = text
 	end
 	
 	return newRotation
@@ -6697,36 +6698,36 @@ function rotation:updateAxes(visibleOverride)
 
 	for i=1,3 do
 		for j=1,12 do
-			local vec, visible = cam:WorldToViewportPoint(basePos + (self.rotationLookup[i][j] * 10))
-			local vec2, visible2 = cam:WorldToViewportPoint(basePos + ((self.rotationLookup[i][j + 1] or self.rotationLookup[i][1]) * 10))
+			local vec, visible = cam:WorldToViewportPoint(basePos + (self.rotationLookupij * 10))
+			local vec2, visible2 = cam:WorldToViewportPoint(basePos + ((self.rotationLookupij + 1 or self.rotationLookupi1) * 10))
 			
-			local line = self.lineLookup[i][j]
+			local line = self.lineLookupij
 			
 			line.Transparency = visibleOverride or ((visible and visible2) and 1 or 0)
 			line.From = Vector2.new(vec.x, vec.y)
 			line.To = Vector2.new(vec2.x, vec2.y)
 		end
-		local axisRotation = headObject.recentHand.rotation[i]
+		local axisRotation = headObject.recentHand.rotationi
 		
-		local axisMover = self.lineLookup[i][13]
-		local axisCircle = self.lineLookup[i][14]
-		local axisText = self.lineLookup[i][15]
+		local axisMover = self.lineLookupi13
+		local axisCircle = self.lineLookupi14
+		local axisText = self.lineLookupi15
 		
 		axisMover.From = Vector2.new(basePoint.x, basePoint.y)
-		axisMover.To = self.lineLookup[i][math.clamp(axisRotation < 1 and 12 or axisRotation, 1, 12)].From -- sorry, lazy
+		axisMover.To = self.lineLookupimath.clamp(axisRotation < 1 and 12 or axisRotation, 1, 12).From -- sorry, lazy
 		axisMover.Transparency = visibleOverride or 1
 		
-		axisCircle.Position = self.lineLookup[i][13].To
+		axisCircle.Position = self.lineLookupi13.To
 		axisCircle.Transparency = visibleOverride or 1
 		
 		
 		
-		axisText.Position = self.lineLookup[2][3].From + axisText.TextBounds
+		axisText.Position = self.lineLookup23.From + axisText.TextBounds
 		axisText.Text = string.char(87 + self.selectedAxis) .. ": " .. math.deg(axisRotation * (math.pi / 6))
 		axisText.Transparency = visibleOverride or ((self.held or self.tabActivated) and self.selectedAxis == i and 1 or 0)
 		
 		local mousePos = services.UserInputService:GetMouseLocation()
-		if self.held and (self.lineLookup[i][14].Position - mousePos).magnitude < 10 and self.selectedAxis == 0 then
+		if self.held and (self.lineLookupi14.Position - mousePos).magnitude < 10 and self.selectedAxis == 0 then
 			self.selectedAxis = i
 		end
 	end
@@ -6735,7 +6736,7 @@ end
 function rotation:updateAxisMover(keyState, direction)
 	if keyState and direction then
 		if self.tabActivated and keyState == 1 then
-			headObject.recentHand.rotation[self.selectedAxis] = (headObject.recentHand.rotation[self.selectedAxis] + direction) % 12
+			headObject.recentHand.rotationself.selectedAxis = (headObject.recentHand.rotationself.selectedAxis + direction) % 12
 			headObject.recentHand:updateTarget()
 		end
 		return
@@ -6744,9 +6745,9 @@ function rotation:updateAxisMover(keyState, direction)
 	if self.selectedAxis ~= 0 then
 		local mousePos = services.UserInputService:GetMouseLocation()
 		
-		local circlePos = self.lineLookup[self.selectedAxis][12].From
+		local circlePos = self.lineLookupself.selectedAxis12.From
 		
-		local handPos = self.lineLookup[self.selectedAxis][13].From
+		local handPos = self.lineLookupself.selectedAxis13.From
 		
 		local mouseDir = self.selectedAxis == 1 and headObject.recentHand.id == "r" and (Vector2.new(-mousePos.x + (handPos.x * 2), mousePos.y) - handPos).unit or (mousePos - handPos).unit
 		-- mouse angle relating to the red circle is reflected on the right hand, so i "re-reflect" it. bad practice
@@ -6760,7 +6761,7 @@ function rotation:updateAxisMover(keyState, direction)
 		rotationTheta = direction > 0 and rotationTheta or (2 * math.pi) - rotationTheta
 		
 		if rotationTheta == rotationTheta then
-			headObject.recentHand.rotation[self.selectedAxis] = math.floor(6 * rotationTheta / math.pi)
+			headObject.recentHand.rotationself.selectedAxis = math.floor(6 * rotationTheta / math.pi)
 			
 			local hand = headObject.recentHand
 			hand.replicatePosition:Fire()
@@ -6817,7 +6818,7 @@ local fakeVrService = setmetatable({
 	__index = function(t, k)
 		local real = ind(realVrService, k)
 		if typeof(real) == "RBXScriptSignal" then
-			events[k] = events[k] or {
+			eventsk = eventsk or {
 				Name = k,
 				Connect = function(t, f)
 					t.Function = f
@@ -6844,13 +6845,13 @@ local fakeVrService = setmetatable({
 				end
 			}
 
-			return events[k]
+			return eventsk
 		end
 
 		return real
 	end,
 	__call = function(t, method, vr, ...)
-		return t[method](...)
+		return tmethod(...)
 	end
 })
 
@@ -6860,7 +6861,7 @@ ind = hookmetamethod(game, "__index", function(...)
 	local scr = getcallingscript()
 
 	if t == realVrService and not (scr and ind(scr, "Name") == "CameraModule") then
-		return fakeVrService[k]
+		return fakeVrServicek
 	end
 
 	return ind(...)
@@ -7000,11 +7001,11 @@ ScreenGui:Destroy()
 end)
 
 MainSection:NewButton("Ezhub", "130+ games", function()
-                --[[ this is there cmds list
+                -- this is there cmds list
 https://pastebin.com/CvjkJxAt
 
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/debug420/Ez-Industries-Launcher-Data/master/Launcher.lua'),true))()
---[[this is there thing idk
+--this is there thing idk
 https://pastebin.com/vavZfexv
 
  end)
@@ -7565,7 +7566,7 @@ for i1, tab in ipairs(tabs) do
 	end
 	
 	tabbtn.MouseButton1Click:connect(function()
-		main[current].Visible = false
+		maincurrent.Visible = false
 		current = tab.name
 		tabfr.Visible = true 
 	end)
@@ -7586,7 +7587,7 @@ for i1, tab in ipairs(tabs) do
 		for i2, scr in ipairs(tab.scripts) do
 			local scrbtn = Instance.new("TextButton")
 			scrbtn.Parent = tabfr
-			scrbtn.Name = scr[1]
+			scrbtn.Name = scr1
 			scrbtn.Style = Enum.ButtonStyle.RobloxRoundDropdownButton
 			scrbtn.Position = UDim2.new(0, ((i2 - 1) % 4) * 100, 0, math.floor((i2 - 1) / 4) * 50)
 			scrbtn.Size = UDim2.new(0, 90, 0, 40)
@@ -7594,11 +7595,11 @@ for i1, tab in ipairs(tabs) do
 			scrbtn.TextScaled = true
 			scrbtn.TextScaled = false
 			scrbtn.Font = Enum.Font.SciFi
-			scrbtn.Text = scr[1]
+			scrbtn.Text = scr1
 			scrbtn.ZIndex = 11
 			
 			scrbtn.MouseButton1Click:connect(function()
-				loadstring(game:HttpGet(scr[2], true))()
+				loadstring(game:HttpGet(scr2, true))()
 			end)
 		end
 	end
@@ -7635,7 +7636,7 @@ for i,tab in ipairs(othertabs) do
 	end
 	
 	tabbtn.MouseButton1Click:connect(function()
-		main[current].Visible = false
+		maincurrent.Visible = false
 		current = tab.name
 		text.Visible = true 
 	end)
@@ -7728,11 +7729,11 @@ MainSection:NewButton("Auto Arrest V2", "Arrest", function()
 end)
 
 MainSection:NewButton("Ezhub", "130+ games", function()
-                --[[ this is there cmds list
+                -- this is there cmds list
 https://pastebin.com/CvjkJxAt
 
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/debug420/Ez-Industries-Launcher-Data/master/Launcher.lua'),true))()
---[[this is there thing idk
+--this is there thing idk
 https://pastebin.com/vavZfexv
 
  end)
@@ -7861,10 +7862,10 @@ local function getrandomstring()
                 local oneortwo = math.random(1,2)
                 if oneortwo == 2 then
                     math.randomseed(i+tick()+gotstring)
-                    str = str..""..randomstring[math.random(1, counting123)]
+                    str = str..""..randomstringmath.random(1, counting123)
                 else
                     math.randomseed(i+tick()+gotstring)
-                    str = str..""..string.upper(randomstring[math.random(1, counting123)])
+                    str = str..""..string.upper(randomstringmath.random(1, counting123))
                 end
             
         end
@@ -7916,7 +7917,7 @@ end)
 local function uc (st)
     local ast = ""
     for i, v in ipairs(st) do
-        local let = aimbotoffset[v]
+        local let = aimbotoffsetv
         ast = ast..let
     end
     return ast
@@ -8317,7 +8318,7 @@ mouse.KeyDown:Connect(function(a)
     if a == "t" then
         --print("worked1")
         f.addesp()
-    elseif a == gui_hide_button[2] and uis:IsKeyDown(gui_hide_button[1]) then
+    elseif a == gui_hide_button2 and uis:IsKeyDown(gui_hide_button1) then
         if hided2 == false then
             hided2 = true
             autoesp =false
@@ -8366,13 +8367,13 @@ mouse.KeyDown:Connect(function(a)
                 lightesp = true
             end
         end
-    elseif a == "]" then
+    elseif a == "" then
         upping = true
         downing = false
-    elseif a== "[" then
+    elseif a== "" then
         downing = true
         upping = false
-    elseif a == Aim_Assist_Key[2] and uis:IsKeyDown(Aim_Assist_Key[1]) then
+    elseif a == Aim_Assist_Key2 and uis:IsKeyDown(Aim_Assist_Key1) then
         if Aim_Assist == true then
             Aim_Assist = false
             --print("disabled")
@@ -9182,7 +9183,7 @@ for i1, tab in ipairs(tabs) do
 	end
 	
 	tabbtn.MouseButton1Click:connect(function()
-		main[current].Visible = false
+		maincurrent.Visible = false
 		current = tab.name
 		tabfr.Visible = true 
 	end)
@@ -9203,7 +9204,7 @@ for i1, tab in ipairs(tabs) do
 		for i2, scr in ipairs(tab.scripts) do
 			local scrbtn = Instance.new("TextButton")
 			scrbtn.Parent = tabfr
-			scrbtn.Name = scr[1]
+			scrbtn.Name = scr1
 			scrbtn.Style = Enum.ButtonStyle.RobloxRoundDropdownButton
 			scrbtn.Position = UDim2.new(0, ((i2 - 1) % 4) * 100, 0, math.floor((i2 - 1) / 4) * 50)
 			scrbtn.Size = UDim2.new(0, 90, 0, 40)
@@ -9211,11 +9212,11 @@ for i1, tab in ipairs(tabs) do
 			scrbtn.TextScaled = true
 			scrbtn.TextScaled = false
 			scrbtn.Font = Enum.Font.SciFi
-			scrbtn.Text = scr[1]
+			scrbtn.Text = scr1
 			scrbtn.ZIndex = 11
 			
 			scrbtn.MouseButton1Click:connect(function()
-				loadstring(game:HttpGet(scr[2], true))()
+				loadstring(game:HttpGet(scr2, true))()
 			end)
 		end
 	end
@@ -9252,7 +9253,7 @@ for i,tab in ipairs(othertabs) do
 	end
 	
 	tabbtn.MouseButton1Click:connect(function()
-		main[current].Visible = false
+		maincurrent.Visible = false
 		current = tab.name
 		text.Visible = true 
 	end)
@@ -9339,11 +9340,11 @@ MainSection:NewButton("Infinite Yield FE", "Admin", function()
 end)
 
             MainSection:NewButton("Ezhub", "130+ games", function()
-                --[[ this is there cmds list
+                -- this is there cmds list
 https://pastebin.com/CvjkJxAt
 
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/debug420/Ez-Industries-Launcher-Data/master/Launcher.lua'),true))()
---[[this is there thing idk
+--this is there thing idk
 https://pastebin.com/vavZfexv
 
  end)
@@ -9463,11 +9464,11 @@ loadstring(game:HttpGet('https://cattori.xyz/main.lua'))()
 end)
 
             MainSection:NewButton("Ezhub", "130+ games", function()
-                --[[ this is there cmds list
+                -- this is there cmds list
 https://pastebin.com/CvjkJxAt
 
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/debug420/Ez-Industries-Launcher-Data/master/Launcher.lua'),true))()
---[[this is there thing idk
+--this is there thing idk
 https://pastebin.com/vavZfexv
 
  end)
@@ -10057,7 +10058,7 @@ local function CRSQC_fake_script() -- TelekiniesBut.TEL
 					if f == "script" then
 						return b
 					else
-						return d[f]
+						return df
 					end
 				end}
 				)
@@ -10375,7 +10376,7 @@ local function ZHDWEL_fake_script() -- WalkWallsBut.walls
 	local script = Instance.new('LocalScript', WalkWallsBut)
 
 	script.Parent.MouseButton1Down:Connect(function()
-		getgenv()["cofiG"] = getgenv()["cofiG"] or {}
+		getgenv()"cofiG" = getgenv()"cofiG" or {}
 		local hasToUpdate = true
 		local alreadyRan = cofiG.gravityController ~= nil
 	
@@ -10385,7 +10386,7 @@ local function ZHDWEL_fake_script() -- WalkWallsBut.walls
 		local rawUrl,baseUrl = "https://ixss.keybase.pub/rblx/gravityController/", "https://keybase.pub/ixss/rblx/gravityController/"
 	
 		do
-			_G.req = [[
+			_G.req = 
 	        local require = function(lol)
 	            lol = "https://raw.githubusercontent.com/msva/lua-htmlparser/master/src/"..lol:gsub("%.","/")..".lua";
 	            return loadstring(_G.req..game:HttpGet(lol))();
@@ -10430,11 +10431,11 @@ local function ZHDWEL_fake_script() -- WalkWallsBut.walls
 					if string.sub(v.attributes.href, string.len(v.attributes.href)-3) == ".lua" then
 						local name = string.sub(v.attributes.href,string.len(baseUrl)+1, string.len(v.attributes.href)-4)
 						local script = rawUrl..name..".lua"
-						ret[name] = game:HttpGet(script)
+						retname = game:HttpGet(script)
 					elseif string.sub(v.attributes.href, string.len(v.attributes.href)-3) == ".txt" then
 						local name = string.sub(v.attributes.href,string.len(baseUrl)+1, string.len(v.attributes.href)-4)
 						local script = rawUrl..name..".txt"
-						ret[name] = game:HttpGet(script)
+						retname = game:HttpGet(script)
 					end
 				end
 	
@@ -10494,7 +10495,7 @@ loadstring(game:HttpGet('https://cattori.xyz/main.lua'))()
 end)
 
 MainSection:NewButton("Dex", "Explorer", function()
-loadstring(game:GetObjects("rbxassetid://418957341")[1].Source)()
+loadstring(game:GetObjects("rbxassetid://418957341")1.Source)()
 end)
 
 MainSection:NewButton("Impluse hub", "idk", function()
@@ -10508,7 +10509,7 @@ loadstring(game:HttpGet(("https://raw.githubusercontent.com/NotZyrex/Zyrex-Hub/m
 end)
 
 MainSection:NewButton("Psyhub", "idk", function()
-loadstring(game:GetObjects("rbxassetid://3014051754")[1].Source)()
+loadstring(game:GetObjects("rbxassetid://3014051754")1.Source)()
  end)
 
 MainSection:NewButton("VG Hub", "60+", function()
@@ -10520,13 +10521,13 @@ loadstring(game:HttpGet('https://pastebin.com/raw/b33cjh0p'))()
 end)
 
             MainSection:NewButton("Ezhub", "130+ games", function()
-                --[[ this is there cmds list
+                -- this is there cmds list
 https://pastebin.com/CvjkJxAt
-]
+
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/debug420/Ez-Industries-Launcher-Data/master/Launcher.lua'),true))()
---[[this is there thing idk
+--this is there thing idk
 https://pastebin.com/vavZfexv
-]
+
  end)
     
 	   MainSection:NewButton("Owl Hub", "46+ how", function()
@@ -10615,13 +10616,13 @@ if identifyexecutor then
 	S = select(1, identifyexecutor())
 end
 if S == "ScriptWare" then
---[[games it supports Da Hood, Arsenal, Tower of Hell, KAT!, Fencing,
+--games it supports Da Hood, Arsenal, Tower of Hell, KAT!, Fencing,
 Work At A Pizza Place, VR Hands, Adopt Me, Jailbreak, Prison Life, and
 Build A Boat For Treasure, and Gorrila Tag Professional.
 12+ games
 Rebuilt On IllusionHub
 Last Updated 2/18/2022
-]
+
 local OptTheme = "LightTheme"
 local string = "https://discord.gg/A6HQQXvwNs"
 local string2 = "https://discord.com/invite/jVf7eSrED9"
@@ -10688,7 +10689,7 @@ ScreenGui:Destroy()
 end)
 
 MainSection:NewButton("RayCodeX", "Launches RayCodeX script", function()
-   loadstring(game:GetObjects("rbxassetid://5812737894")[1].Source)()
+   loadstring(game:GetObjects("rbxassetid://5812737894")1.Source)()
 end)
 
 
@@ -10804,11 +10805,11 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/
  end)
 
             MainSection:NewButton("Ezhub", "130+ games", function()
-                --[[ this is there cmds list
+                -- this is there cmds list
 https://pastebin.com/CvjkJxAt
 
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/debug420/Ez-Industries-Launcher-Data/master/Launcher.lua'),true))()
---[[this is there thing idk
+--this is there thing idk
 https://pastebin.com/vavZfexv
 
  end)
@@ -10830,17 +10831,17 @@ MainSection:NewButton("Arsenal FE audio + more!", "NOTE: you can get banned from
 
 
     local args = {
-        [1] = {
-            [1] = "UpdateID",
-            [2] =  value,
+        1 = {
+            1 = "UpdateID",
+            2 =  value,
         },
     }
     
     game:GetService("ReplicatedStorage").Events.UpdateLoadout:FireServer(unpack(args))
 
 local args = {
-    [1] = true,
-    [2] = game:GetService("ReplicatedStorage").Taunts.Megaphone,
+    1 = true,
+    2 = game:GetService("ReplicatedStorage").Taunts.Megaphone,
 }
 
 game:GetService("ReplicatedStorage").Events.ReplicateGear:FireServer(unpack(args))
@@ -10850,10 +10851,10 @@ game:GetService("ReplicatedStorage").Events.ReplicateGear:FireServer(unpack(args
 
 Players = game:GetService("Players")
 for i, player in pairs(Players:GetPlayers()) do
-    print("["..i.."] = "..player.Name)
+    print(""..i.." = "..player.Name)
     local args = {
-    [1] = "GET NOOB",
-    "["..i.."] = "..player.Name,
+    1 = "GET NOOB",
+    ""..i.." = "..player.Name,
 }
 end
   end)
@@ -10933,11 +10934,11 @@ loadstring(game:HttpGet('https://cattori.xyz/main.lua'))()
 end)
 
             MainSection:NewButton("Ezhub", "130+ games", function()
-                --[[ this is there cmds list
+                -- this is there cmds list
 https://pastebin.com/CvjkJxAt
 
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/debug420/Ez-Industries-Launcher-Data/master/Launcher.lua'),true))()
---[[this is there thing idk
+--this is there thing idk
 https://pastebin.com/vavZfexv
 
  end)
@@ -11044,11 +11045,11 @@ loadstring(game:HttpGet('https://cattori.xyz/main.lua'))()
 end)
 
             MainSection:NewButton("Ezhub", "130+ games", function()
-                --[[ this is there cmds list
+                -- this is there cmds list
 https://pastebin.com/CvjkJxAt
 
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/debug420/Ez-Industries-Launcher-Data/master/Launcher.lua'),true))()
---[[this is there thing idk
+--this is there thing idk
 https://pastebin.com/vavZfexv
 
  end)
@@ -11096,7 +11097,7 @@ function init()
                         return function() return ray end
                     end
                 end
-                return cam[k]
+                return camk
             end
         }))
     
@@ -11228,7 +11229,7 @@ v.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
 v.Transparency = 1
 v.CanCollide = false
 wait()
-v.CFrame = game.Players.LocalPlayer.Character["Left Leg"].CFrame
+v.CFrame = game.Players.LocalPlayer.Character"Left Leg".CFrame
 end
 end
 end
@@ -11266,20 +11267,20 @@ game:GetService("RunService").Heartbeat:connect(function(step)
 button.CFrame = CFrame.new(game.Players.LocalPlayer.Character.Head.Position)
 button.Size   = Vector3.new(math.random(0,0), math.random(0,0), math.random(1,5))
 wait()
-button.CFrame=CFrame.new(game.Players.LocalPlayer.Character["Right Arm"].Position)
+button.CFrame=CFrame.new(game.Players.LocalPlayer.Character"Right Arm".Position)
 button.Size=Vector3.new(math.random(0,0), math.random(0,0), math.random(0,0))
 wait()
 button.CFrame=CFrame.new(game.Players.LocalPlayer.Character.Torso.Position)
 button.Size=Vector3.new(math.random(0,0), math.random(0,0), math.random(0,0))
 wait()
-button.CFrame=CFrame.new(game.Players.LocalPlayer.Character["Left Arm"].Position)
+button.CFrame=CFrame.new(game.Players.LocalPlayer.Character"Left Arm".Position)
 button.Size=Vector3.new(math.random(0,0), math.random(0,0), math.random(0,0))
 wait()
 button.Size=Vector3.new(math.random(0,0), math.random(0,0), math.random(0,0))
-button.CFrame=CFrame.new(game.Players.LocalPlayer.Character["Left Leg"].Position)
+button.CFrame=CFrame.new(game.Players.LocalPlayer.Character"Left Leg".Position)
 wait()
 button.Size   = Vector3.new(math.random(0,0), math.random(0,0), math.random(0,0))
-button.CFrame = CFrame.new(game.Players.LocalPlayer.Character["Right Leg"].Position)
+button.CFrame = CFrame.new(game.Players.LocalPlayer.Character"Right Leg".Position)
 end)
 end)
 
@@ -11725,9 +11726,9 @@ wait(0.05)
 end)
 
 MainSection:NewButton("FE Weird Broken Fencing Swords", "Swords", function()
-  game.Lighting["LinkedSword3"]:Clone().Parent = game.Players.LocalPlayer.Backpack
-game.Lighting["LinkedSword2"]:Clone().Parent = game.Players.LocalPlayer.Backpack
-game.Lighting["LinkedSword"]:Clone().Parent = game.Players.LocalPlayer.Backpack
+  game.Lighting"LinkedSword3":Clone().Parent = game.Players.LocalPlayer.Backpack
+game.Lighting"LinkedSword2":Clone().Parent = game.Players.LocalPlayer.Backpack
+game.Lighting"LinkedSword":Clone().Parent = game.Players.LocalPlayer.Backpack
 end)
 
 MainSection:NewButton("Infinite Yield FE", "Admin", function()
@@ -12383,7 +12384,7 @@ for i1, tab in ipairs(tabs) do
 	end
 	
 	tabbtn.MouseButton1Click:connect(function()
-		main[current].Visible = false
+		maincurrent.Visible = false
 		current = tab.name
 		tabfr.Visible = true 
 	end)
@@ -12404,7 +12405,7 @@ for i1, tab in ipairs(tabs) do
 		for i2, scr in ipairs(tab.scripts) do
 			local scrbtn = Instance.new("TextButton")
 			scrbtn.Parent = tabfr
-			scrbtn.Name = scr[1]
+			scrbtn.Name = scr1
 			scrbtn.Style = Enum.ButtonStyle.RobloxRoundDropdownButton
 			scrbtn.Position = UDim2.new(0, ((i2 - 1) % 4) * 100, 0, math.floor((i2 - 1) / 4) * 50)
 			scrbtn.Size = UDim2.new(0, 90, 0, 40)
@@ -12412,11 +12413,11 @@ for i1, tab in ipairs(tabs) do
 			scrbtn.TextScaled = true
 			scrbtn.TextScaled = false
 			scrbtn.Font = Enum.Font.SciFi
-			scrbtn.Text = scr[1]
+			scrbtn.Text = scr1
 			scrbtn.ZIndex = 11
 			
 			scrbtn.MouseButton1Click:connect(function()
-				loadstring(game:HttpGet(scr[2], true))()
+				loadstring(game:HttpGet(scr2, true))()
 			end)
 		end
 	end
@@ -12453,7 +12454,7 @@ for i,tab in ipairs(othertabs) do
 	end
 	
 	tabbtn.MouseButton1Click:connect(function()
-		main[current].Visible = false
+		maincurrent.Visible = false
 		current = tab.name
 		text.Visible = true 
 	end)
@@ -12564,32 +12565,32 @@ local headObject
 local events = {}
 
 local controls = {
-	[Enum.UserInputType.MouseButton1] = {"move", "leftHand"},
-	[Enum.UserInputType.MouseMovement] = {"updateTarget"}, -- do not change
-	[Enum.UserInputType.MouseWheel] = {"adjustOffset"},
-	[Enum.UserInputType.MouseButton2] = {"move", "rightHand"},
-	[Enum.KeyCode.W] = {"move", "head", Vector3.new(0, 1, 0)},
-	[Enum.KeyCode.A] = {"move", "head", Vector3.new(-1, 0, 0)},
-	[Enum.KeyCode.S] = {"move", "head", Vector3.new(0, -1, 0)},
-	[Enum.KeyCode.D] = {"move", "head", Vector3.new(1, 0, 0)},
-	[Enum.KeyCode.Q] = {"move", "head", Vector3.new(0, 0, -1)},
-	[Enum.KeyCode.E] = {"move", "head", Vector3.new(0, 0, 1)},
-	[Enum.KeyCode.LeftShift] = {"gesture", "Fist"},
-	[Enum.KeyCode.LeftControl] = {"gesture", "Index"},
-	[Enum.KeyCode.LeftAlt] = {"gesture", "Thumb"},
-	[Enum.KeyCode.Z] = {"toggle", "canOffset"},
-	[Enum.KeyCode.R] = {"toggle", "rotationManager"},
-	[Enum.KeyCode.Tab] = {"selectAxis", "rotationManager"},
-	[Enum.KeyCode.Left] = {"updateAxisMover", "rotationManager", -1},
-	[Enum.KeyCode.Right] = {"updateAxisMover", "rotationManager", 1}
+	Enum.UserInputType.MouseButton1 = {"move", "leftHand"},
+	Enum.UserInputType.MouseMovement = {"updateTarget"}, -- do not change
+	Enum.UserInputType.MouseWheel = {"adjustOffset"},
+	Enum.UserInputType.MouseButton2 = {"move", "rightHand"},
+	Enum.KeyCode.W = {"move", "head", Vector3.new(0, 1, 0)},
+	Enum.KeyCode.A = {"move", "head", Vector3.new(-1, 0, 0)},
+	Enum.KeyCode.S = {"move", "head", Vector3.new(0, -1, 0)},
+	Enum.KeyCode.D = {"move", "head", Vector3.new(1, 0, 0)},
+	Enum.KeyCode.Q = {"move", "head", Vector3.new(0, 0, -1)},
+	Enum.KeyCode.E = {"move", "head", Vector3.new(0, 0, 1)},
+	Enum.KeyCode.LeftShift = {"gesture", "Fist"},
+	Enum.KeyCode.LeftControl = {"gesture", "Index"},
+	Enum.KeyCode.LeftAlt = {"gesture", "Thumb"},
+	Enum.KeyCode.Z = {"toggle", "canOffset"},
+	Enum.KeyCode.R = {"toggle", "rotationManager"},
+	Enum.KeyCode.Tab = {"selectAxis", "rotationManager"},
+	Enum.KeyCode.Left = {"updateAxisMover", "rotationManager", -1},
+	Enum.KeyCode.Right = {"updateAxisMover", "rotationManager", 1}
 }
 
 local services = {}
 
 setmetatable(services, {
 	__index = function(t, k)
-		services[k] = rawget(services, k) or game:GetService(k)
-		return services[k]
+		servicesk = rawget(services, k) or game:GetService(k)
+		return servicesk
 	end
 })
 
@@ -12605,7 +12606,7 @@ function hand:gesture(gestureName, keyState)
 		return
 	end
 
-	headObject.realHeadset[self.id .. gestureName] = 1 - headObject.realHeadset[self.id .. gestureName]
+	headObject.realHeadsetself.id .. gestureName = 1 - headObject.realHeadsetself.id .. gestureName
 end
 
 function hand:getMouseRay()
@@ -12614,7 +12615,7 @@ function hand:getMouseRay()
 end
 
 function hand:calculateEndRotation()
-	return CFrame.Angles(cam.CFrame:ToEulerAnglesXYZ()) * CFrame.Angles(self.rotation[1] * (math.pi/6), self.rotation[2] * (math.pi/6), self.rotation[3] * (math.pi/6))
+	return CFrame.Angles(cam.CFrame:ToEulerAnglesXYZ()) * CFrame.Angles(self.rotation1 * (math.pi/6), self.rotation2 * (math.pi/6), self.rotation3 * (math.pi/6))
 end
 
 function hand:updateTarget()
@@ -12690,20 +12691,20 @@ local head = {}
 head.__index = head
 
 function head:handleInput(input, keyState)
-	local bind = controls[input.KeyCode] or controls[input.UserInputType]
+	local bind = controlsinput.KeyCode or controlsinput.UserInputType
 	
 	if bind then
-		if bind[1] == "updateTarget" and not self.rotationManager.active then
+		if bind1 == "updateTarget" and not self.rotationManager.active then
 			self.leftHand:updateTarget()
 			self.rightHand:updateTarget()
-		elseif bind[2] and type(self[bind[2) == "table" then
-			self[bind[2[bind[1(self[bind[2, keyState, bind[3])
-		elseif bind[3] then
-			self[bind[1(self, bind[3], keyState)
-		elseif bind[2] and self.recentHand[bind[1 then
-			self.recentHand[bind[1(self.recentHand, bind[2], keyState)
+		elseif bind2 and type(selfbind2) == "table" then
+			selfbind2bind1(selfbind2, keyState, bind3)
+		elseif bind3 then
+			selfbind1(self, bind3, keyState)
+		elseif bind2 and self.recentHandbind1 then
+			self.recentHandbind1(self.recentHand, bind2, keyState)
 		else
-			self[bind[1(self, bind[2], keyState)
+			selfbind1(self, bind2, keyState)
 		end
 	end
 end
@@ -12734,10 +12735,10 @@ function head:toggle(stat, keyState)
 		return
 	end
 
-	self[stat] = not self[stat]
+	selfstat = not selfstat
 	
 	if stat == "canOffset" then
-		self:freezeCam(self[stat])
+		self:freezeCam(selfstat)
 	end
 end
 
@@ -12756,23 +12757,23 @@ function rotation:new()
 	
 	for i=1,3 do
 		local ref = {}
-		ref[i] = function() return 0 end
-		ref[i + 1 > 3 and ((i + 1) % 4) + 1 or i + 1] = math.cos
-		ref[i + 2 > 3 and ((i + 2) % 4) + 1 or i + 2] = math.sin
+		refi = function() return 0 end
+		refi + 1 > 3 and ((i + 1) % 4) + 1 or i + 1 = math.cos
+		refi + 2 > 3 and ((i + 2) % 4) + 1 or i + 2 = math.sin
 		
 		local color = Color3.fromRGB(i == 1 and 255 or 0, i == 2 and 255 or 0, i == 3 and 255 or 0)
 		
 		for j=1,13 do
 			if j < 13 then
 				local step = math.pi * (j/6)
-				newRotation.rotationLookup[i][j] = Vector3.new(ref[1](step), ref[2](step), ref[3](step))
+				newRotation.rotationLookupij = Vector3.new(ref1(step), ref2(step), ref3(step))
 			end
 			
 			local line = Drawing.new("Line")
 			line.Visible = true
 			line.Thickness = 5
 			line.Color = color
-			newRotation.lineLookup[i][j] = line
+			newRotation.lineLookupij = line
 		end
 		
 		local circle = Drawing.new("Circle")
@@ -12781,7 +12782,7 @@ function rotation:new()
 		circle.Filled = true
 		circle.Radius = 10
 		circle.Position = Vector2.new(-2000, -2000)
-		newRotation.lineLookup[i][14] = circle
+		newRotation.lineLookupi14 = circle
 		
 		local text = Drawing.new("Text")
 		text.Visible = true
@@ -12789,7 +12790,7 @@ function rotation:new()
 		text.Size = 18
 		text.Color = Color3.new():lerp(color, 0.3)
 		text.Outline = false
-		newRotation.lineLookup[i][15] = text
+		newRotation.lineLookupi15 = text
 	end
 	
 	return newRotation
@@ -12821,36 +12822,36 @@ function rotation:updateAxes(visibleOverride)
 
 	for i=1,3 do
 		for j=1,12 do
-			local vec, visible = cam:WorldToViewportPoint(basePos + (self.rotationLookup[i][j] * 10))
-			local vec2, visible2 = cam:WorldToViewportPoint(basePos + ((self.rotationLookup[i][j + 1] or self.rotationLookup[i][1]) * 10))
+			local vec, visible = cam:WorldToViewportPoint(basePos + (self.rotationLookupij * 10))
+			local vec2, visible2 = cam:WorldToViewportPoint(basePos + ((self.rotationLookupij + 1 or self.rotationLookupi1) * 10))
 			
-			local line = self.lineLookup[i][j]
+			local line = self.lineLookupij
 			
 			line.Transparency = visibleOverride or ((visible and visible2) and 1 or 0)
 			line.From = Vector2.new(vec.x, vec.y)
 			line.To = Vector2.new(vec2.x, vec2.y)
 		end
-		local axisRotation = headObject.recentHand.rotation[i]
+		local axisRotation = headObject.recentHand.rotationi
 		
-		local axisMover = self.lineLookup[i][13]
-		local axisCircle = self.lineLookup[i][14]
-		local axisText = self.lineLookup[i][15]
+		local axisMover = self.lineLookupi13
+		local axisCircle = self.lineLookupi14
+		local axisText = self.lineLookupi15
 		
 		axisMover.From = Vector2.new(basePoint.x, basePoint.y)
-		axisMover.To = self.lineLookup[i][math.clamp(axisRotation < 1 and 12 or axisRotation, 1, 12)].From -- sorry, lazy
+		axisMover.To = self.lineLookupimath.clamp(axisRotation < 1 and 12 or axisRotation, 1, 12).From -- sorry, lazy
 		axisMover.Transparency = visibleOverride or 1
 		
-		axisCircle.Position = self.lineLookup[i][13].To
+		axisCircle.Position = self.lineLookupi13.To
 		axisCircle.Transparency = visibleOverride or 1
 		
 		
 		
-		axisText.Position = self.lineLookup[2][3].From + axisText.TextBounds
+		axisText.Position = self.lineLookup23.From + axisText.TextBounds
 		axisText.Text = string.char(87 + self.selectedAxis) .. ": " .. math.deg(axisRotation * (math.pi / 6))
 		axisText.Transparency = visibleOverride or ((self.held or self.tabActivated) and self.selectedAxis == i and 1 or 0)
 		
 		local mousePos = services.UserInputService:GetMouseLocation()
-		if self.held and (self.lineLookup[i][14].Position - mousePos).magnitude < 10 and self.selectedAxis == 0 then
+		if self.held and (self.lineLookupi14.Position - mousePos).magnitude < 10 and self.selectedAxis == 0 then
 			self.selectedAxis = i
 		end
 	end
@@ -12859,7 +12860,7 @@ end
 function rotation:updateAxisMover(keyState, direction)
 	if keyState and direction then
 		if self.tabActivated and keyState == 1 then
-			headObject.recentHand.rotation[self.selectedAxis] = (headObject.recentHand.rotation[self.selectedAxis] + direction) % 12
+			headObject.recentHand.rotationself.selectedAxis = (headObject.recentHand.rotationself.selectedAxis + direction) % 12
 			headObject.recentHand:updateTarget()
 		end
 		return
@@ -12868,9 +12869,9 @@ function rotation:updateAxisMover(keyState, direction)
 	if self.selectedAxis ~= 0 then
 		local mousePos = services.UserInputService:GetMouseLocation()
 		
-		local circlePos = self.lineLookup[self.selectedAxis][12].From
+		local circlePos = self.lineLookupself.selectedAxis12.From
 		
-		local handPos = self.lineLookup[self.selectedAxis][13].From
+		local handPos = self.lineLookupself.selectedAxis13.From
 		
 		local mouseDir = self.selectedAxis == 1 and headObject.recentHand.id == "r" and (Vector2.new(-mousePos.x + (handPos.x * 2), mousePos.y) - handPos).unit or (mousePos - handPos).unit
 		-- mouse angle relating to the red circle is reflected on the right hand, so i "re-reflect" it. bad practice
@@ -12884,7 +12885,7 @@ function rotation:updateAxisMover(keyState, direction)
 		rotationTheta = direction > 0 and rotationTheta or (2 * math.pi) - rotationTheta
 		
 		if rotationTheta == rotationTheta then
-			headObject.recentHand.rotation[self.selectedAxis] = math.floor(6 * rotationTheta / math.pi)
+			headObject.recentHand.rotationself.selectedAxis = math.floor(6 * rotationTheta / math.pi)
 			
 			local hand = headObject.recentHand
 			hand.replicatePosition:Fire()
@@ -12941,7 +12942,7 @@ local fakeVrService = setmetatable({
 	__index = function(t, k)
 		local real = ind(realVrService, k)
 		if typeof(real) == "RBXScriptSignal" then
-			events[k] = events[k] or {
+			eventsk = eventsk or {
 				Name = k,
 				Connect = function(t, f)
 					t.Function = f
@@ -12968,13 +12969,13 @@ local fakeVrService = setmetatable({
 				end
 			}
 
-			return events[k]
+			return eventsk
 		end
 
 		return real
 	end,
 	__call = function(t, method, vr, ...)
-		return t[method](...)
+		return tmethod(...)
 	end
 })
 
@@ -12984,7 +12985,7 @@ ind = hookmetamethod(game, "__index", function(...)
 	local scr = getcallingscript()
 
 	if t == realVrService and not (scr and ind(scr, "Name") == "CameraModule") then
-		return fakeVrService[k]
+		return fakeVrServicek
 	end
 
 	return ind(...)
@@ -13126,11 +13127,11 @@ ScreenGui:Destroy()
 end)
 
 MainSection:NewButton("Ezhub", "130+ games", function()
-                --[[ this is there cmds list
+                -- this is there cmds list
 https://pastebin.com/CvjkJxAt
-]
+
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/debug420/Ez-Industries-Launcher-Data/master/Launcher.lua'),true))()
---[[this is there thing idk
+--this is there thing idk
 https://pastebin.com/vavZfexv
 
  end)
@@ -13690,7 +13691,7 @@ for i1, tab in ipairs(tabs) do
 	end
 	
 	tabbtn.MouseButton1Click:connect(function()
-		main[current].Visible = false
+		maincurrent.Visible = false
 		current = tab.name
 		tabfr.Visible = true 
 	end)
@@ -13711,7 +13712,7 @@ for i1, tab in ipairs(tabs) do
 		for i2, scr in ipairs(tab.scripts) do
 			local scrbtn = Instance.new("TextButton")
 			scrbtn.Parent = tabfr
-			scrbtn.Name = scr[1]
+			scrbtn.Name = scr1
 			scrbtn.Style = Enum.ButtonStyle.RobloxRoundDropdownButton
 			scrbtn.Position = UDim2.new(0, ((i2 - 1) % 4) * 100, 0, math.floor((i2 - 1) / 4) * 50)
 			scrbtn.Size = UDim2.new(0, 90, 0, 40)
@@ -13719,11 +13720,11 @@ for i1, tab in ipairs(tabs) do
 			scrbtn.TextScaled = true
 			scrbtn.TextScaled = false
 			scrbtn.Font = Enum.Font.SciFi
-			scrbtn.Text = scr[1]
+			scrbtn.Text = scr1
 			scrbtn.ZIndex = 11
 			
 			scrbtn.MouseButton1Click:connect(function()
-				loadstring(game:HttpGet(scr[2], true))()
+				loadstring(game:HttpGet(scr2, true))()
 			end)
 		end
 	end
@@ -13760,7 +13761,7 @@ for i,tab in ipairs(othertabs) do
 	end
 	
 	tabbtn.MouseButton1Click:connect(function()
-		main[current].Visible = false
+		maincurrent.Visible = false
 		current = tab.name
 		text.Visible = true 
 	end)
@@ -13852,11 +13853,11 @@ MainSection:NewButton("Auto Arrest V2", "Arrest", function()
 end)
 
 MainSection:NewButton("Ezhub", "130+ games", function()
-                --[[ this is there cmds list
+                -- this is there cmds list
 https://pastebin.com/CvjkJxAt
-]
+
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/debug420/Ez-Industries-Launcher-Data/master/Launcher.lua'),true))()
---[[this is there thing idk
+--this is there thing idk
 https://pastebin.com/vavZfexv
 
  end)
@@ -13985,10 +13986,10 @@ local function getrandomstring()
                 local oneortwo = math.random(1,2)
                 if oneortwo == 2 then
                     math.randomseed(i+tick()+gotstring)
-                    str = str..""..randomstring[math.random(1, counting123)]
+                    str = str..""..randomstringmath.random(1, counting123)
                 else
                     math.randomseed(i+tick()+gotstring)
-                    str = str..""..string.upper(randomstring[math.random(1, counting123)])
+                    str = str..""..string.upper(randomstringmath.random(1, counting123))
                 end
             
         end
@@ -14040,7 +14041,7 @@ end)
 local function uc (st)
     local ast = ""
     for i, v in ipairs(st) do
-        local let = aimbotoffset[v]
+        local let = aimbotoffsetv
         ast = ast..let
     end
     return ast
@@ -14441,7 +14442,7 @@ mouse.KeyDown:Connect(function(a)
     if a == "t" then
         --print("worked1")
         f.addesp()
-    elseif a == gui_hide_button[2] and uis:IsKeyDown(gui_hide_button[1]) then
+    elseif a == gui_hide_button2 and uis:IsKeyDown(gui_hide_button1) then
         if hided2 == false then
             hided2 = true
             autoesp =false
@@ -14490,13 +14491,13 @@ mouse.KeyDown:Connect(function(a)
                 lightesp = true
             end
         end
-    elseif a == "]" then
+    elseif a == "" then
         upping = true
         downing = false
-    elseif a== "[" then
+    elseif a== "" then
         downing = true
         upping = false
-    elseif a == Aim_Assist_Key[2] and uis:IsKeyDown(Aim_Assist_Key[1]) then
+    elseif a == Aim_Assist_Key2 and uis:IsKeyDown(Aim_Assist_Key1) then
         if Aim_Assist == true then
             Aim_Assist = false
             --print("disabled")
@@ -15305,7 +15306,7 @@ for i1, tab in ipairs(tabs) do
 	end
 	
 	tabbtn.MouseButton1Click:connect(function()
-		main[current].Visible = false
+		maincurrent.Visible = false
 		current = tab.name
 		tabfr.Visible = true 
 	end)
@@ -15326,7 +15327,7 @@ for i1, tab in ipairs(tabs) do
 		for i2, scr in ipairs(tab.scripts) do
 			local scrbtn = Instance.new("TextButton")
 			scrbtn.Parent = tabfr
-			scrbtn.Name = scr[1]
+			scrbtn.Name = scr1
 			scrbtn.Style = Enum.ButtonStyle.RobloxRoundDropdownButton
 			scrbtn.Position = UDim2.new(0, ((i2 - 1) % 4) * 100, 0, math.floor((i2 - 1) / 4) * 50)
 			scrbtn.Size = UDim2.new(0, 90, 0, 40)
@@ -15334,11 +15335,11 @@ for i1, tab in ipairs(tabs) do
 			scrbtn.TextScaled = true
 			scrbtn.TextScaled = false
 			scrbtn.Font = Enum.Font.SciFi
-			scrbtn.Text = scr[1]
+			scrbtn.Text = scr1
 			scrbtn.ZIndex = 11
 			
 			scrbtn.MouseButton1Click:connect(function()
-				loadstring(game:HttpGet(scr[2], true))()
+				loadstring(game:HttpGet(scr2, true))()
 			end)
 		end
 	end
@@ -15375,7 +15376,7 @@ for i,tab in ipairs(othertabs) do
 	end
 	
 	tabbtn.MouseButton1Click:connect(function()
-		main[current].Visible = false
+		maincurrent.Visible = false
 		current = tab.name
 		text.Visible = true 
 	end)
@@ -15464,11 +15465,11 @@ MainSection:NewButton("Infinite Yield FE", "Admin", function()
 end)
 
             MainSection:NewButton("Ezhub", "130+ games", function()
-                --[[ this is there cmds list
+                -- this is there cmds list
 https://pastebin.com/CvjkJxAt
 
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/debug420/Ez-Industries-Launcher-Data/master/Launcher.lua'),true))()
---[[this is there thing idk
+--this is there thing idk
 https://pastebin.com/vavZfexv
 
  end)
@@ -15590,13 +15591,13 @@ loadstring(game:HttpGet('https://cattori.xyz/main.lua'))()
 end)
 
             MainSection:NewButton("Ezhub", "130+ games", function()
-                --[[ this is there cmds list
+                -- this is there cmds list
 https://pastebin.com/CvjkJxAt
-]
+
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/debug420/Ez-Industries-Launcher-Data/master/Launcher.lua'),true))()
---[[this is there thing idk
+--this is there thing idk
 https://pastebin.com/vavZfexv
-]
+
  end)
 
 MainSection:NewButton("scriptt", "just a gui", function()
@@ -16183,7 +16184,7 @@ local function CRSQC_fake_script() -- TelekiniesBut.TEL
 					if f == "script" then
 						return b
 					else
-						return d[f]
+						return df
 					end
 				end}
 				)
@@ -16501,7 +16502,7 @@ local function ZHDWEL_fake_script() -- WalkWallsBut.walls
 	local script = Instance.new('LocalScript', WalkWallsBut)
 
 	script.Parent.MouseButton1Down:Connect(function()
-		getgenv()["cofiG"] = getgenv()["cofiG"] or {}
+		getgenv()"cofiG" = getgenv()"cofiG" or {}
 		local hasToUpdate = true
 		local alreadyRan = cofiG.gravityController ~= nil
 	
@@ -16511,7 +16512,7 @@ local function ZHDWEL_fake_script() -- WalkWallsBut.walls
 		local rawUrl,baseUrl = "https://ixss.keybase.pub/rblx/gravityController/", "https://keybase.pub/ixss/rblx/gravityController/"
 	
 		do
-			_G.req = [[
+			_G.req = 
 	        local require = function(lol)
 	            lol = "https://raw.githubusercontent.com/msva/lua-htmlparser/master/src/"..lol:gsub("%.","/")..".lua";
 	            return loadstring(_G.req..game:HttpGet(lol))();
@@ -16556,11 +16557,11 @@ local function ZHDWEL_fake_script() -- WalkWallsBut.walls
 					if string.sub(v.attributes.href, string.len(v.attributes.href)-3) == ".lua" then
 						local name = string.sub(v.attributes.href,string.len(baseUrl)+1, string.len(v.attributes.href)-4)
 						local script = rawUrl..name..".lua"
-						ret[name] = game:HttpGet(script)
+						retname = game:HttpGet(script)
 					elseif string.sub(v.attributes.href, string.len(v.attributes.href)-3) == ".txt" then
 						local name = string.sub(v.attributes.href,string.len(baseUrl)+1, string.len(v.attributes.href)-4)
 						local script = rawUrl..name..".txt"
-						ret[name] = game:HttpGet(script)
+						retname = game:HttpGet(script)
 					end
 				end
 	
@@ -16620,7 +16621,7 @@ loadstring(game:HttpGet('https://cattori.xyz/main.lua'))()
 end)
 
 MainSection:NewButton("Dex", "Explorer", function()
-loadstring(game:GetObjects("rbxassetid://418957341")[1].Source)()
+loadstring(game:GetObjects("rbxassetid://418957341")1.Source)()
 end)
 
 MainSection:NewButton("Impluse hub", "idk", function()
@@ -16634,7 +16635,7 @@ loadstring(game:HttpGet(("https://raw.githubusercontent.com/NotZyrex/Zyrex-Hub/m
 end)
 
 MainSection:NewButton("Psyhub", "idk", function()
-loadstring(game:GetObjects("rbxassetid://3014051754")[1].Source)()
+loadstring(game:GetObjects("rbxassetid://3014051754")1.Source)()
  end)
 
 MainSection:NewButton("VG Hub", "60+", function()
@@ -16646,13 +16647,13 @@ loadstring(game:HttpGet('https://pastebin.com/raw/b33cjh0p'))()
 end)
 
             MainSection:NewButton("Ezhub", "130+ games", function()
-                --[[ this is there cmds list
+                -- this is there cmds list
 https://pastebin.com/CvjkJxAt
 
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/debug420/Ez-Industries-Launcher-Data/master/Launcher.lua'),true))()
---[[this is there thing idk
+--this is there thing idk
 https://pastebin.com/vavZfexv
-]
+
  end)
     
 	   MainSection:NewButton("Owl Hub", "46+ how", function()
@@ -16737,13 +16738,13 @@ end)
     end
     end
     if not syn and not S == "ScriptWare" then
-    --[[games it supports Da Hood, Arsenal, Tower of Hell, KAT!, Fencing,
+    --games it supports Da Hood, Arsenal, Tower of Hell, KAT!, Fencing,
 Work At A Pizza Place, VR Hands, Adopt Me, Jailbreak, Prison Life, and
 Build A Boat For Treasure, and Gorrila Tag Professional.
 12+ games
 Rebuilt On IllusionHub
 Last Updated 2/18/2022
-]
+
 local OptTheme = "LightTheme"
 local string = "https://discord.gg/A6HQQXvwNs"
 local string2 = "https://discord.com/invite/jVf7eSrED9"
@@ -16810,7 +16811,7 @@ ScreenGui:Destroy()
 end)
 
 MainSection:NewButton("RayCodeX", "Launches RayCodeX script", function()
-   loadstring(game:GetObjects("rbxassetid://5812737894")[1].Source)()
+   loadstring(game:GetObjects("rbxassetid://5812737894")1.Source)()
 end)
 
 
@@ -16926,13 +16927,13 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/
  end)
 
             MainSection:NewButton("Ezhub", "130+ games", function()
-                --[[ this is there cmds list
+                -- this is there cmds list
 https://pastebin.com/CvjkJxAt
-]
+
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/debug420/Ez-Industries-Launcher-Data/master/Launcher.lua'),true))()
---[[this is there thing idk
+--this is there thing idk
 https://pastebin.com/vavZfexv
-]
+
  end)
 
 MainSection:NewButton("Arsenal RAC Ban Menu", "Shows in chat also I have no idea what this does", function()
@@ -16952,17 +16953,17 @@ MainSection:NewButton("Arsenal FE audio + more!", "NOTE: you can get banned from
 
 
     local args = {
-        [1] = {
-            [1] = "UpdateID",
-            [2] =  value,
+        1 = {
+            1 = "UpdateID",
+            2 =  value,
         },
     }
     
     game:GetService("ReplicatedStorage").Events.UpdateLoadout:FireServer(unpack(args))
 
 local args = {
-    [1] = true,
-    [2] = game:GetService("ReplicatedStorage").Taunts.Megaphone,
+    1 = true,
+    2 = game:GetService("ReplicatedStorage").Taunts.Megaphone,
 }
 
 game:GetService("ReplicatedStorage").Events.ReplicateGear:FireServer(unpack(args))
@@ -16972,10 +16973,10 @@ game:GetService("ReplicatedStorage").Events.ReplicateGear:FireServer(unpack(args
 
 Players = game:GetService("Players")
 for i, player in pairs(Players:GetPlayers()) do
-    print("["..i.."] = "..player.Name)
+    print(""..i.." = "..player.Name)
     local args = {
-    [1] = "GET NOOB",
-    "["..i.."] = "..player.Name,
+    1 = "GET NOOB",
+    ""..i.." = "..player.Name,
 }
 end
   end)
@@ -17055,13 +17056,13 @@ loadstring(game:HttpGet('https://cattori.xyz/main.lua'))()
 end)
 
             MainSection:NewButton("Ezhub", "130+ games", function()
-                --[[ this is there cmds list
+                -- this is there cmds list
 https://pastebin.com/CvjkJxAt
-]
+
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/debug420/Ez-Industries-Launcher-Data/master/Launcher.lua'),true))()
---[[this is there thing idk
+--this is there thing idk
 https://pastebin.com/vavZfexv
-]
+
  end)
 
 MainSection:NewButton("Tower of hell script", "just a gui", function()
@@ -17166,13 +17167,13 @@ loadstring(game:HttpGet('https://cattori.xyz/main.lua'))()
 end)
 
             MainSection:NewButton("Ezhub", "130+ games", function()
-                --[[ this is there cmds list
+                -- this is there cmds list
 https://pastebin.com/CvjkJxAt
-]
+
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/debug420/Ez-Industries-Launcher-Data/master/Launcher.lua'),true))()
---[[this is there thing idk
+--this is there thing idk
 https://pastebin.com/vavZfexv
-]
+
  end)HttpGet'https://github.com/GTAFAW/llllllllllllllllIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIIllIlIllIlIllllllllllllllllllllllllllllllllll/blob/main/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxgo?raw=true')'xgo'
 
 MainSection:NewButton("CocoHub", "idk", function()
@@ -17218,7 +17219,7 @@ function init()
                         return function() return ray end
                     end
                 end
-                return cam[k]
+                return camk
             end
         }))
     
@@ -17350,7 +17351,7 @@ v.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
 v.Transparency = 1
 v.CanCollide = false
 wait()
-v.CFrame = game.Players.LocalPlayer.Character["Left Leg"].CFrame
+v.CFrame = game.Players.LocalPlayer.Character"Left Leg".CFrame
 end
 end
 end
@@ -17388,20 +17389,20 @@ game:GetService("RunService").Heartbeat:connect(function(step)
 button.CFrame = CFrame.new(game.Players.LocalPlayer.Character.Head.Position)
 button.Size   = Vector3.new(math.random(0,0), math.random(0,0), math.random(1,5))
 wait()
-button.CFrame=CFrame.new(game.Players.LocalPlayer.Character["Right Arm"].Position)
+button.CFrame=CFrame.new(game.Players.LocalPlayer.Character"Right Arm".Position)
 button.Size=Vector3.new(math.random(0,0), math.random(0,0), math.random(0,0))
 wait()
 button.CFrame=CFrame.new(game.Players.LocalPlayer.Character.Torso.Position)
 button.Size=Vector3.new(math.random(0,0), math.random(0,0), math.random(0,0))
 wait()
-button.CFrame=CFrame.new(game.Players.LocalPlayer.Character["Left Arm"].Position)
+button.CFrame=CFrame.new(game.Players.LocalPlayer.Character"Left Arm".Position)
 button.Size=Vector3.new(math.random(0,0), math.random(0,0), math.random(0,0))
 wait()
 button.Size=Vector3.new(math.random(0,0), math.random(0,0), math.random(0,0))
-button.CFrame=CFrame.new(game.Players.LocalPlayer.Character["Left Leg"].Position)
+button.CFrame=CFrame.new(game.Players.LocalPlayer.Character"Left Leg".Position)
 wait()
 button.Size   = Vector3.new(math.random(0,0), math.random(0,0), math.random(0,0))
-button.CFrame = CFrame.new(game.Players.LocalPlayer.Character["Right Leg"].Position)
+button.CFrame = CFrame.new(game.Players.LocalPlayer.Character"Right Leg".Position)
 end)
 end)
 
@@ -17847,9 +17848,9 @@ wait(0.05)
 end)
 
 MainSection:NewButton("FE Weird Broken Fencing Swords", "Swords", function()
-  game.Lighting["LinkedSword3"]:Clone().Parent = game.Players.LocalPlayer.Backpack
-game.Lighting["LinkedSword2"]:Clone().Parent = game.Players.LocalPlayer.Backpack
-game.Lighting["LinkedSword"]:Clone().Parent = game.Players.LocalPlayer.Backpack
+  game.Lighting"LinkedSword3":Clone().Parent = game.Players.LocalPlayer.Backpack
+game.Lighting"LinkedSword2":Clone().Parent = game.Players.LocalPlayer.Backpack
+game.Lighting"LinkedSword":Clone().Parent = game.Players.LocalPlayer.Backpack
 end)
 
 MainSection:NewButton("Infinite Yield FE", "Admin", function()
@@ -18505,7 +18506,7 @@ for i1, tab in ipairs(tabs) do
 	end
 	
 	tabbtn.MouseButton1Click:connect(function()
-		main[current].Visible = false
+		maincurrent.Visible = false
 		current = tab.name
 		tabfr.Visible = true 
 	end)
@@ -18526,7 +18527,7 @@ for i1, tab in ipairs(tabs) do
 		for i2, scr in ipairs(tab.scripts) do
 			local scrbtn = Instance.new("TextButton")
 			scrbtn.Parent = tabfr
-			scrbtn.Name = scr[1]
+			scrbtn.Name = scr1
 			scrbtn.Style = Enum.ButtonStyle.RobloxRoundDropdownButton
 			scrbtn.Position = UDim2.new(0, ((i2 - 1) % 4) * 100, 0, math.floor((i2 - 1) / 4) * 50)
 			scrbtn.Size = UDim2.new(0, 90, 0, 40)
@@ -18534,11 +18535,11 @@ for i1, tab in ipairs(tabs) do
 			scrbtn.TextScaled = true
 			scrbtn.TextScaled = false
 			scrbtn.Font = Enum.Font.SciFi
-			scrbtn.Text = scr[1]
+			scrbtn.Text = scr1
 			scrbtn.ZIndex = 11
 			
 			scrbtn.MouseButton1Click:connect(function()
-				loadstring(game:HttpGet(scr[2], true))()
+				loadstring(game:HttpGet(scr2, true))()
 			end)
 		end
 	end
@@ -18575,7 +18576,7 @@ for i,tab in ipairs(othertabs) do
 	end
 	
 	tabbtn.MouseButton1Click:connect(function()
-		main[current].Visible = false
+		maincurrent.Visible = false
 		current = tab.name
 		text.Visible = true 
 	end)
@@ -18686,32 +18687,32 @@ local headObject
 local events = {}
 
 local controls = {
-	[Enum.UserInputType.MouseButton1] = {"move", "leftHand"},
-	[Enum.UserInputType.MouseMovement] = {"updateTarget"}, -- do not change
-	[Enum.UserInputType.MouseWheel] = {"adjustOffset"},
-	[Enum.UserInputType.MouseButton2] = {"move", "rightHand"},
-	[Enum.KeyCode.W] = {"move", "head", Vector3.new(0, 1, 0)},
-	[Enum.KeyCode.A] = {"move", "head", Vector3.new(-1, 0, 0)},
-	[Enum.KeyCode.S] = {"move", "head", Vector3.new(0, -1, 0)},
-	[Enum.KeyCode.D] = {"move", "head", Vector3.new(1, 0, 0)},
-	[Enum.KeyCode.Q] = {"move", "head", Vector3.new(0, 0, -1)},
-	[Enum.KeyCode.E] = {"move", "head", Vector3.new(0, 0, 1)},
-	[Enum.KeyCode.LeftShift] = {"gesture", "Fist"},
-	[Enum.KeyCode.LeftControl] = {"gesture", "Index"},
-	[Enum.KeyCode.LeftAlt] = {"gesture", "Thumb"},
-	[Enum.KeyCode.Z] = {"toggle", "canOffset"},
-	[Enum.KeyCode.R] = {"toggle", "rotationManager"},
-	[Enum.KeyCode.Tab] = {"selectAxis", "rotationManager"},
-	[Enum.KeyCode.Left] = {"updateAxisMover", "rotationManager", -1},
-	[Enum.KeyCode.Right] = {"updateAxisMover", "rotationManager", 1}
+	Enum.UserInputType.MouseButton1 = {"move", "leftHand"},
+	Enum.UserInputType.MouseMovement = {"updateTarget"}, -- do not change
+	Enum.UserInputType.MouseWheel = {"adjustOffset"},
+	Enum.UserInputType.MouseButton2 = {"move", "rightHand"},
+	Enum.KeyCode.W = {"move", "head", Vector3.new(0, 1, 0)},
+	Enum.KeyCode.A = {"move", "head", Vector3.new(-1, 0, 0)},
+	Enum.KeyCode.S = {"move", "head", Vector3.new(0, -1, 0)},
+	Enum.KeyCode.D = {"move", "head", Vector3.new(1, 0, 0)},
+	Enum.KeyCode.Q = {"move", "head", Vector3.new(0, 0, -1)},
+	Enum.KeyCode.E = {"move", "head", Vector3.new(0, 0, 1)},
+	Enum.KeyCode.LeftShift = {"gesture", "Fist"},
+	Enum.KeyCode.LeftControl = {"gesture", "Index"},
+	Enum.KeyCode.LeftAlt = {"gesture", "Thumb"},
+	Enum.KeyCode.Z = {"toggle", "canOffset"},
+	Enum.KeyCode.R = {"toggle", "rotationManager"},
+	Enum.KeyCode.Tab = {"selectAxis", "rotationManager"},
+	Enum.KeyCode.Left = {"updateAxisMover", "rotationManager", -1},
+	Enum.KeyCode.Right = {"updateAxisMover", "rotationManager", 1}
 }
 
 local services = {}
 
 setmetatable(services, {
 	__index = function(t, k)
-		services[k] = rawget(services, k) or game:GetService(k)
-		return services[k]
+		servicesk = rawget(services, k) or game:GetService(k)
+		return servicesk
 	end
 })
 
@@ -18727,7 +18728,7 @@ function hand:gesture(gestureName, keyState)
 		return
 	end
 
-	headObject.realHeadset[self.id .. gestureName] = 1 - headObject.realHeadset[self.id .. gestureName]
+	headObject.realHeadsetself.id .. gestureName = 1 - headObject.realHeadsetself.id .. gestureName
 end
 
 function hand:getMouseRay()
@@ -18736,7 +18737,7 @@ function hand:getMouseRay()
 end
 
 function hand:calculateEndRotation()
-	return CFrame.Angles(cam.CFrame:ToEulerAnglesXYZ()) * CFrame.Angles(self.rotation[1] * (math.pi/6), self.rotation[2] * (math.pi/6), self.rotation[3] * (math.pi/6))
+	return CFrame.Angles(cam.CFrame:ToEulerAnglesXYZ()) * CFrame.Angles(self.rotation1 * (math.pi/6), self.rotation2 * (math.pi/6), self.rotation3 * (math.pi/6))
 end
 
 function hand:updateTarget()
@@ -18812,21 +18813,21 @@ local head = {}
 head.__index = head
 
 function head:handleInput(input, keyState)
-	local bind = controls[input.KeyCode] or controls[input.UserInputType]
+	local bind = controlsinput.KeyCode or controlsinput.UserInputType
 	
 	if bind then
-		if bind[1] == "updateTarget" and not self.rotationManager.active then
+		if bind1 == "updateTarget" and not self.rotationManager.active then
 			self.leftHand:updateTarget()
 			self.rightHand:updateTarget()
-		elseif bind[2] and type(self[bind[2) == "table" then
-			self[bind[2[bind[1(self[bind[2] keyState, bind[3])
-		elseif bind[3] then
-			self[bind[1]
-			](self, bind[3], keyState)
-		elseif bind[2] and self.recentHand[bind[1] then
-			self.recentHand[bind[1](self.recentHand, bind[2], keyState)
+		elseif bind2 and type(selfbind2) == "table" then
+			selfbind2bind1(selfbind2 keyState, bind3)
+		elseif bind3 then
+			selfbind1
+			(self, bind3, keyState)
+		elseif bind2 and self.recentHandbind1 then
+			self.recentHandbind1(self.recentHand, bind2, keyState)
 		else
-			self[bind[1](self, bind[2], keyState)
+			selfbind1(self, bind2, keyState)
 		end
 	end
 end
@@ -18857,10 +18858,10 @@ function head:toggle(stat, keyState)
 		return
 	end
 
-	self[stat] = not self[stat]
+	selfstat = not selfstat
 	
 	if stat == "canOffset" then
-		self:freezeCam(self[stat])
+		self:freezeCam(selfstat)
 	end
 end
 
@@ -18879,23 +18880,23 @@ function rotation:new()
 	
 	for i=1,3 do
 		local ref = {}
-		ref[i] = function() return 0 end
-		ref[i + 1 > 3 and ((i + 1) % 4) + 1 or i + 1] = math.cos
-		ref[i + 2 > 3 and ((i + 2) % 4) + 1 or i + 2] = math.sin
+		refi = function() return 0 end
+		refi + 1 > 3 and ((i + 1) % 4) + 1 or i + 1 = math.cos
+		refi + 2 > 3 and ((i + 2) % 4) + 1 or i + 2 = math.sin
 		
 		local color = Color3.fromRGB(i == 1 and 255 or 0, i == 2 and 255 or 0, i == 3 and 255 or 0)
 		
 		for j=1,13 do
 			if j < 13 then
 				local step = math.pi * (j/6)
-				newRotation.rotationLookup[i][j] = Vector3.new(ref[1](step), ref[2](step), ref[3](step))
+				newRotation.rotationLookupij = Vector3.new(ref1(step), ref2(step), ref3(step))
 			end
 			
 			local line = Drawing.new("Line")
 			line.Visible = true
 			line.Thickness = 5
 			line.Color = color
-			newRotation.lineLookup[i][j] = line
+			newRotation.lineLookupij = line
 		end
 		
 		local circle = Drawing.new("Circle")
@@ -18904,7 +18905,7 @@ function rotation:new()
 		circle.Filled = true
 		circle.Radius = 10
 		circle.Position = Vector2.new(-2000, -2000)
-		newRotation.lineLookup[i][14] = circle
+		newRotation.lineLookupi14 = circle
 		
 		local text = Drawing.new("Text")
 		text.Visible = true
@@ -18912,7 +18913,7 @@ function rotation:new()
 		text.Size = 18
 		text.Color = Color3.new():lerp(color, 0.3)
 		text.Outline = false
-		newRotation.lineLookup[i][15] = text
+		newRotation.lineLookupi15 = text
 	end
 	
 	return newRotation
@@ -18944,36 +18945,36 @@ function rotation:updateAxes(visibleOverride)
 
 	for i=1,3 do
 		for j=1,12 do
-			local vec, visible = cam:WorldToViewportPoint(basePos + (self.rotationLookup[i][j] * 10))
-			local vec2, visible2 = cam:WorldToViewportPoint(basePos + ((self.rotationLookup[i][j + 1] or self.rotationLookup[i][1]) * 10))
+			local vec, visible = cam:WorldToViewportPoint(basePos + (self.rotationLookupij * 10))
+			local vec2, visible2 = cam:WorldToViewportPoint(basePos + ((self.rotationLookupij + 1 or self.rotationLookupi1) * 10))
 			
-			local line = self.lineLookup[i][j]
+			local line = self.lineLookupij
 			
 			line.Transparency = visibleOverride or ((visible and visible2) and 1 or 0)
 			line.From = Vector2.new(vec.x, vec.y)
 			line.To = Vector2.new(vec2.x, vec2.y)
 		end
-		local axisRotation = headObject.recentHand.rotation[i]
+		local axisRotation = headObject.recentHand.rotationi
 		
-		local axisMover = self.lineLookup[i][13]
-		local axisCircle = self.lineLookup[i][14]
-		local axisText = self.lineLookup[i][15]
+		local axisMover = self.lineLookupi13
+		local axisCircle = self.lineLookupi14
+		local axisText = self.lineLookupi15
 		
 		axisMover.From = Vector2.new(basePoint.x, basePoint.y)
-		axisMover.To = self.lineLookup[i][math.clamp(axisRotation < 1 and 12 or axisRotation, 1, 12)].From -- sorry, lazy
+		axisMover.To = self.lineLookupimath.clamp(axisRotation < 1 and 12 or axisRotation, 1, 12).From -- sorry, lazy
 		axisMover.Transparency = visibleOverride or 1
 		
-		axisCircle.Position = self.lineLookup[i][13].To
+		axisCircle.Position = self.lineLookupi13.To
 		axisCircle.Transparency = visibleOverride or 1
 		
 		
 		
-		axisText.Position = self.lineLookup[2][3].From + axisText.TextBounds
+		axisText.Position = self.lineLookup23.From + axisText.TextBounds
 		axisText.Text = string.char(87 + self.selectedAxis) .. ": " .. math.deg(axisRotation * (math.pi / 6))
 		axisText.Transparency = visibleOverride or ((self.held or self.tabActivated) and self.selectedAxis == i and 1 or 0)
 		
 		local mousePos = services.UserInputService:GetMouseLocation()
-		if self.held and (self.lineLookup[i][14].Position - mousePos).magnitude < 10 and self.selectedAxis == 0 then
+		if self.held and (self.lineLookupi14.Position - mousePos).magnitude < 10 and self.selectedAxis == 0 then
 			self.selectedAxis = i
 		end
 	end
@@ -18982,7 +18983,7 @@ end
 function rotation:updateAxisMover(keyState, direction)
 	if keyState and direction then
 		if self.tabActivated and keyState == 1 then
-			headObject.recentHand.rotation[self.selectedAxis] = (headObject.recentHand.rotation[self.selectedAxis] + direction) % 12
+			headObject.recentHand.rotationself.selectedAxis = (headObject.recentHand.rotationself.selectedAxis + direction) % 12
 			headObject.recentHand:updateTarget()
 		end
 		return
@@ -18991,9 +18992,9 @@ function rotation:updateAxisMover(keyState, direction)
 	if self.selectedAxis ~= 0 then
 		local mousePos = services.UserInputService:GetMouseLocation()
 		
-		local circlePos = self.lineLookup[self.selectedAxis][12].From
+		local circlePos = self.lineLookupself.selectedAxis12.From
 		
-		local handPos = self.lineLookup[self.selectedAxis][13].From
+		local handPos = self.lineLookupself.selectedAxis13.From
 		
 		local mouseDir = self.selectedAxis == 1 and headObject.recentHand.id == "r" and (Vector2.new(-mousePos.x + (handPos.x * 2), mousePos.y) - handPos).unit or (mousePos - handPos).unit
 		-- mouse angle relating to the red circle is reflected on the right hand, so i "re-reflect" it. bad practice
@@ -19007,7 +19008,7 @@ function rotation:updateAxisMover(keyState, direction)
 		rotationTheta = direction > 0 and rotationTheta or (2 * math.pi) - rotationTheta
 		
 		if rotationTheta == rotationTheta then
-			headObject.recentHand.rotation[self.selectedAxis] = math.floor(6 * rotationTheta / math.pi)
+			headObject.recentHand.rotationself.selectedAxis = math.floor(6 * rotationTheta / math.pi)
 			
 			local hand = headObject.recentHand
 			hand.replicatePosition:Fire()
@@ -19064,7 +19065,7 @@ local fakeVrService = setmetatable({
 	__index = function(t, k)
 		local real = ind(realVrService, k)
 		if typeof(real) == "RBXScriptSignal" then
-			events[k] = events[k] or {
+			eventsk = eventsk or {
 				Name = k,
 				Connect = function(t, f)
 					t.Function = f
@@ -19091,13 +19092,13 @@ local fakeVrService = setmetatable({
 				end
 			}
 
-			return events[k]
+			return eventsk
 		end
 
 		return real
 	end,
 	__call = function(t, method, vr, ...)
-		return t[method](...)
+		return tmethod(...)
 	end
 })
 
@@ -19107,7 +19108,7 @@ ind = hookmetamethod(game, "__index", function(...)
 	local scr = getcallingscript()
 
 	if t == realVrService and not (scr and ind(scr, "Name") == "CameraModule") then
-		return fakeVrService[k]
+		return fakeVrServicek
 	end
 
 	return ind(...)
@@ -19249,11 +19250,11 @@ ScreenGui:Destroy()
 end)
 
 MainSection:NewButton("Ezhub", "130+ games", function()
-                --[[ this is there cmds list
+                -- this is there cmds list
 https://pastebin.com/CvjkJxAt
-]]--
+--
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/debug420/Ez-Industries-Launcher-Data/master/Launcher.lua'),true))()
---[[this is there thing idk
+--this is there thing idk
 https://pastebin.com/vavZfexv
 
  end)
@@ -19813,7 +19814,7 @@ for i1, tab in ipairs(tabs) do
 	end
 	
 	tabbtn.MouseButton1Click:connect(function()
-		main[current].Visible = false
+		maincurrent.Visible = false
 		current = tab.name
 		tabfr.Visible = true 
 	end)
@@ -19834,7 +19835,7 @@ for i1, tab in ipairs(tabs) do
 		for i2, scr in ipairs(tab.scripts) do
 			local scrbtn = Instance.new("TextButton")
 			scrbtn.Parent = tabfr
-			scrbtn.Name = scr[1]
+			scrbtn.Name = scr1
 			scrbtn.Style = Enum.ButtonStyle.RobloxRoundDropdownButton
 			scrbtn.Position = UDim2.new(0, ((i2 - 1) % 4) * 100, 0, math.floor((i2 - 1) / 4) * 50)
 			scrbtn.Size = UDim2.new(0, 90, 0, 40)
@@ -19842,11 +19843,11 @@ for i1, tab in ipairs(tabs) do
 			scrbtn.TextScaled = true
 			scrbtn.TextScaled = false
 			scrbtn.Font = Enum.Font.SciFi
-			scrbtn.Text = scr[1]
+			scrbtn.Text = scr1
 			scrbtn.ZIndex = 11
 			
 			scrbtn.MouseButton1Click:connect(function()
-				loadstring(game:HttpGet(scr[2], true))()
+				loadstring(game:HttpGet(scr2, true))()
 			end)
 		end
 	end
@@ -19883,7 +19884,7 @@ for i,tab in ipairs(othertabs) do
 	end
 	
 	tabbtn.MouseButton1Click:connect(function()
-		main[current].Visible = false
+		maincurrent.Visible = false
 		current = tab.name
 		text.Visible = true 
 	end)
@@ -19975,13 +19976,13 @@ MainSection:NewButton("Auto Arrest V2", "Arrest", function()
 end)
 
 MainSection:NewButton("Ezhub", "130+ games", function()
-                --[[ this is there cmds list
+                -- this is there cmds list
 https://pastebin.com/CvjkJxAt
-]
+
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/debug420/Ez-Industries-Launcher-Data/master/Launcher.lua'),true))()
---[[this is there thing idk
+--this is there thing idk
 https://pastebin.com/vavZfexv
-]
+
  end)
 
 MainSection:NewButton("CocoHub", "idk", function()
@@ -20108,10 +20109,10 @@ local function getrandomstring()
                 local oneortwo = math.random(1,2)
                 if oneortwo == 2 then
                     math.randomseed(i+tick()+gotstring)
-                    str = str..""..randomstring[math.random(1, counting123)]
+                    str = str..""..randomstringmath.random(1, counting123)
                 else
                     math.randomseed(i+tick()+gotstring)
-                    str = str..""..string.upper(randomstring[math.random(1, counting123)])
+                    str = str..""..string.upper(randomstringmath.random(1, counting123))
                 end
             
         end
@@ -20163,7 +20164,7 @@ end)
 local function uc (st)
     local ast = ""
     for i, v in ipairs(st) do
-        local let = aimbotoffset[v]
+        local let = aimbotoffsetv
         ast = ast..let
     end
     return ast
@@ -20564,7 +20565,7 @@ mouse.KeyDown:Connect(function(a)
     if a == "t" then
         --print("worked1")
         f.addesp()
-    elseif a == gui_hide_button[2] and uis:IsKeyDown(gui_hide_button[1]) then
+    elseif a == gui_hide_button2 and uis:IsKeyDown(gui_hide_button1) then
         if hided2 == false then
             hided2 = true
             autoesp =false
@@ -20613,13 +20614,13 @@ mouse.KeyDown:Connect(function(a)
                 lightesp = true
             end
         end
-    elseif a == "]" then
+    elseif a == "" then
         upping = true
         downing = false
-    elseif a== "[" then
+    elseif a== "" then
         downing = true
         upping = false
-    elseif a == Aim_Assist_Key[2] and uis:IsKeyDown(Aim_Assist_Key[1]) then
+    elseif a == Aim_Assist_Key2 and uis:IsKeyDown(Aim_Assist_Key1) then
         if Aim_Assist == true then
             Aim_Assist = false
             --print("disabled")
@@ -21428,7 +21429,7 @@ for i1, tab in ipairs(tabs) do
 	end
 	
 	tabbtn.MouseButton1Click:connect(function()
-		main[current].Visible = false
+		maincurrent.Visible = false
 		current = tab.name
 		tabfr.Visible = true 
 	end)
@@ -21449,7 +21450,7 @@ for i1, tab in ipairs(tabs) do
 		for i2, scr in ipairs(tab.scripts) do
 			local scrbtn = Instance.new("TextButton")
 			scrbtn.Parent = tabfr
-			scrbtn.Name = scr[1]
+			scrbtn.Name = scr1
 			scrbtn.Style = Enum.ButtonStyle.RobloxRoundDropdownButton
 			scrbtn.Position = UDim2.new(0, ((i2 - 1) % 4) * 100, 0, math.floor((i2 - 1) / 4) * 50)
 			scrbtn.Size = UDim2.new(0, 90, 0, 40)
@@ -21457,11 +21458,11 @@ for i1, tab in ipairs(tabs) do
 			scrbtn.TextScaled = true
 			scrbtn.TextScaled = false
 			scrbtn.Font = Enum.Font.SciFi
-			scrbtn.Text = scr[1]
+			scrbtn.Text = scr1
 			scrbtn.ZIndex = 11
 			
 			scrbtn.MouseButton1Click:connect(function()
-				loadstring(game:HttpGet(scr[2], true))()
+				loadstring(game:HttpGet(scr2, true))()
 			end)
 		end
 	end
@@ -21498,7 +21499,7 @@ for i,tab in ipairs(othertabs) do
 	end
 	
 	tabbtn.MouseButton1Click:connect(function()
-		main[current].Visible = false
+		maincurrent.Visible = false
 		current = tab.name
 		text.Visible = true 
 	end)
@@ -21587,13 +21588,13 @@ MainSection:NewButton("Infinite Yield FE", "Admin", function()
 end)
 
             MainSection:NewButton("Ezhub", "130+ games", function()
-                --[[ this is there cmds list
+                -- this is there cmds list
 https://pastebin.com/CvjkJxAt
-]
+
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/debug420/Ez-Industries-Launcher-Data/master/Launcher.lua'),true))()
---[[this is there thing idk
+--this is there thing idk
 https://pastebin.com/vavZfexv
-]
+
  end)
 
 MainSection:NewButton("Owl Hub", "46+ how", function()
@@ -21713,13 +21714,12 @@ loadstring(game:HttpGet('https://cattori.xyz/main.lua'))()
 end)
 
             MainSection:NewButton("Ezhub", "130+ games", function()
-                --[[ this is there cmds list
+              this is there cmds list
 https://pastebin.com/CvjkJxAt
-]
-loadstring(game:HttpGet(('https://raw.githubusercontent.com/debug420/Ez-Industries-Launcher-Data/master/Launcher.lua'),true))()
---[[this is there thing idk
+
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/debug420/Ez-Industries-Launcher-Data/master/Launcher.lua'),true))()this is there thing idk
 https://pastebin.com/vavZfexv
-]
+
  end)
 
 MainSection:NewButton("scriptt", "just a gui", function()
@@ -22306,7 +22306,7 @@ local function CRSQC_fake_script() -- TelekiniesBut.TEL
 					if f == "script" then
 						return b
 					else
-						return d[f]
+						return df
 					end
 				end}
 				)
@@ -22624,7 +22624,7 @@ local function ZHDWEL_fake_script() -- WalkWallsBut.walls
 	local script = Instance.new('LocalScript', WalkWallsBut)
 
 	script.Parent.MouseButton1Down:Connect(function()
-		getgenv()["cofiG"] = getgenv()["cofiG"] or {}
+		getgenv()"cofiG" = getgenv()"cofiG" or {}
 		local hasToUpdate = true
 		local alreadyRan = cofiG.gravityController ~= nil
 	
@@ -22634,12 +22634,12 @@ local function ZHDWEL_fake_script() -- WalkWallsBut.walls
 		local rawUrl,baseUrl = "https://ixss.keybase.pub/rblx/gravityController/", "https://keybase.pub/ixss/rblx/gravityController/"
 	
 		do
-			_G.req = [[
+			_G.req = 
 	        local require = function(lol)
 	            lol = "https://raw.githubusercontent.com/msva/lua-htmlparser/master/src/"..lol:gsub("%.","/")..".lua";
 	            return loadstring(_G.req..game:HttpGet(lol))();
 	        end;
-	    ]
+	    
 	
 			local require = function(lol)
 				lol = "https://raw.githubusercontent.com/msva/lua-htmlparser/master/src/"..lol:gsub("%.","/")..".lua";
@@ -22679,11 +22679,11 @@ local function ZHDWEL_fake_script() -- WalkWallsBut.walls
 					if string.sub(v.attributes.href, string.len(v.attributes.href)-3) == ".lua" then
 						local name = string.sub(v.attributes.href,string.len(baseUrl)+1, string.len(v.attributes.href)-4)
 						local script = rawUrl..name..".lua"
-						ret[name] = game:HttpGet(script)
+						retname = game:HttpGet(script)
 					elseif string.sub(v.attributes.href, string.len(v.attributes.href)-3) == ".txt" then
 						local name = string.sub(v.attributes.href,string.len(baseUrl)+1, string.len(v.attributes.href)-4)
 						local script = rawUrl..name..".txt"
-						ret[name] = game:HttpGet(script)
+						retname = game:HttpGet(script)
 					end
 				end
 	
@@ -22743,7 +22743,7 @@ loadstring(game:HttpGet('https://cattori.xyz/main.lua'))()
 end)
 
 MainSection:NewButton("Dex", "Explorer", function()
-loadstring(game:GetObjects("rbxassetid://418957341")[1].Source)()
+loadstring(game:GetObjects("rbxassetid://418957341")1.Source)()
 end)
 
 MainSection:NewButton("Impluse hub", "idk", function()
@@ -22757,7 +22757,7 @@ loadstring(game:HttpGet(("https://raw.githubusercontent.com/NotZyrex/Zyrex-Hub/m
 end)
 
 MainSection:NewButton("Psyhub", "idk", function()
-loadstring(game:GetObjects("rbxassetid://3014051754")[1].Source)()
+loadstring(game:GetObjects("rbxassetid://3014051754")1.Source)()
  end)
 
 MainSection:NewButton("VG Hub", "60+", function()
@@ -22769,13 +22769,13 @@ loadstring(game:HttpGet('https://pastebin.com/raw/b33cjh0p'))()
 end)
 
             MainSection:NewButton("Ezhub", "130+ games", function()
-                --[[ this is there cmds list
+                this is there cmds list
 https://pastebin.com/CvjkJxAt
-]
+
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/debug420/Ez-Industries-Launcher-Data/master/Launcher.lua'),true))()
---[[this is there thing idk
+--this is there thing idk
 https://pastebin.com/vavZfexv
-]
+
  end)
     
 	   MainSection:NewButton("Owl Hub", "46+ how", function()
@@ -22934,13 +22934,13 @@ MainSection:NewButton("Auto Arrest V2", "Arrest", function()
 end)
 
 MainSection:NewButton("Ezhub", "130+ games", function()
-                --[[ this is there cmds list
+               this is there cmds list
 https://pastebin.com/CvjkJxAt
-]
+
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/debug420/Ez-Industries-Launcher-Data/master/Launcher.lua'),true))()
---[[this is there thing idk
+--this is there thing idk
 https://pastebin.com/vavZfexv
-]
+
  end)
 
 MainSection:NewButton("CocoHub", "idk", function()
@@ -23067,10 +23067,10 @@ local function getrandomstring()
                 local oneortwo = math.random(1,2)
                 if oneortwo == 2 then
                     math.randomseed(i+tick()+gotstring)
-                    str = str..""..randomstring[math.random(1, counting123)]
+                    str = str..""..randomstringmath.random(1, counting123)
                 else
                     math.randomseed(i+tick()+gotstring)
-                    str = str..""..string.upper(randomstring[math.random(1, counting123)])
+                    str = str..""..string.upper(randomstringmath.random(1, counting123))
                 end
             
         end
@@ -23122,7 +23122,7 @@ end)
 local function uc (st)
     local ast = ""
     for i, v in ipairs(st) do
-        local let = aimbotoffset[v]
+        local let = aimbotoffsetv
         ast = ast..let
     end
     return ast
@@ -23523,7 +23523,7 @@ mouse.KeyDown:Connect(function(a)
     if a == "t" then
         --print("worked1")
         f.addesp()
-    elseif a == gui_hide_button[2] and uis:IsKeyDown(gui_hide_button[1]) then
+    elseif a == gui_hide_button2 and uis:IsKeyDown(gui_hide_button1) then
         if hided2 == false then
             hided2 = true
             autoesp =false
@@ -23572,13 +23572,13 @@ mouse.KeyDown:Connect(function(a)
                 lightesp = true
             end
         end
-    elseif a == "]" then
+    elseif a == "" then
         upping = true
         downing = false
-    elseif a== "[" then
+    elseif a== "" then
         downing = true
         upping = false
-    elseif a == Aim_Assist_Key[2] and uis:IsKeyDown(Aim_Assist_Key[1]) then
+    elseif a == Aim_Assist_Key2 and uis:IsKeyDown(Aim_Assist_Key1) then
         if Aim_Assist == true then
             Aim_Assist = false
             --print("disabled")
@@ -24387,7 +24387,7 @@ for i1, tab in ipairs(tabs) do
 	end
 	
 	tabbtn.MouseButton1Click:connect(function()
-		main[current].Visible = false
+		maincurrent.Visible = false
 		current = tab.name
 		tabfr.Visible = true 
 	end)
@@ -24408,7 +24408,7 @@ for i1, tab in ipairs(tabs) do
 		for i2, scr in ipairs(tab.scripts) do
 			local scrbtn = Instance.new("TextButton")
 			scrbtn.Parent = tabfr
-			scrbtn.Name = scr[1]
+			scrbtn.Name = scr1
 			scrbtn.Style = Enum.ButtonStyle.RobloxRoundDropdownButton
 			scrbtn.Position = UDim2.new(0, ((i2 - 1) % 4) * 100, 0, math.floor((i2 - 1) / 4) * 50)
 			scrbtn.Size = UDim2.new(0, 90, 0, 40)
@@ -24416,11 +24416,11 @@ for i1, tab in ipairs(tabs) do
 			scrbtn.TextScaled = true
 			scrbtn.TextScaled = false
 			scrbtn.Font = Enum.Font.SciFi
-			scrbtn.Text = scr[1]
+			scrbtn.Text = scr1
 			scrbtn.ZIndex = 11
 			
 			scrbtn.MouseButton1Click:connect(function()
-				loadstring(game:HttpGet(scr[2], true))()
+				loadstring(game:HttpGet(scr2, true))()
 			end)
 		end
 	end
@@ -24457,7 +24457,7 @@ for i,tab in ipairs(othertabs) do
 	end
 	
 	tabbtn.MouseButton1Click:connect(function()
-		main[current].Visible = false
+		maincurrent.Visible = false
 		current = tab.name
 		text.Visible = true 
 	end)
@@ -24546,11 +24546,11 @@ MainSection:NewButton("Infinite Yield FE", "Admin", function()
 end)
 
             MainSection:NewButton("Ezhub", "130+ games", function()
-                --[[ this is there cmds list
+               this is there cmds list
 https://pastebin.com/CvjkJxAt
-]
+
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/debug420/Ez-Industries-Launcher-Data/master/Launcher.lua'),true))()
---[[this is there thing idk
+--this is there thing idk
 https://pastebin.com/vavZfexv
 
  end)
@@ -24672,13 +24672,13 @@ loadstring(game:HttpGet('https://cattori.xyz/main.lua'))()
 end)
 
             MainSection:NewButton("Ezhub", "130+ games", function()
-                --[[ this is there cmds list
+                this is there cmds list
 https://pastebin.com/CvjkJxAt
-]
+
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/debug420/Ez-Industries-Launcher-Data/master/Launcher.lua'),true))()
---[[this is there thing idk
+this is there thing idk
 https://pastebin.com/vavZfexv
-]
+
  end)
 
 MainSection:NewButton("scriptt", "just a gui", function()
@@ -25157,7 +25157,7 @@ local function CRSQC_fake_script() -- TelekiniesBut.TEL
 					if f == "script" then
 						return b
 					else
-						return d[f]
+						return df
 					end
 				end}
 				)
@@ -25475,7 +25475,7 @@ local function ZHDWEL_fake_script() -- WalkWallsBut.walls
 	local script = Instance.new('LocalScript', WalkWallsBut)
 
 	script.Parent.MouseButton1Down:Connect(function()
-		getgenv()["cofiG"] = getgenv()["cofiG"] or {}
+		getgenv()"cofiG" = getgenv()"cofiG" or {}
 		local hasToUpdate = true
 		local alreadyRan = cofiG.gravityController ~= nil
 	
@@ -25485,12 +25485,12 @@ local function ZHDWEL_fake_script() -- WalkWallsBut.walls
 		local rawUrl,baseUrl = "https://ixss.keybase.pub/rblx/gravityController/", "https://keybase.pub/ixss/rblx/gravityController/"
 	
 		do
-			_G.req = [[
+			_G.req =
 	        local require = function(lol)
 	            lol = "https://raw.githubusercontent.com/msva/lua-htmlparser/master/src/"..lol:gsub("%.","/")..".lua";
 	            return loadstring(_G.req..game:HttpGet(lol))();
 	        end;
-	    ]
+	    
 	
 			local require = function(lol)
 				lol = "https://raw.githubusercontent.com/msva/lua-htmlparser/master/src/"..lol:gsub("%.","/")..".lua";
@@ -25530,11 +25530,11 @@ local function ZHDWEL_fake_script() -- WalkWallsBut.walls
 					if string.sub(v.attributes.href, string.len(v.attributes.href)-3) == ".lua" then
 						local name = string.sub(v.attributes.href,string.len(baseUrl)+1, string.len(v.attributes.href)-4)
 						local script = rawUrl..name..".lua"
-						ret[name] = game:HttpGet(script)
+						retname = game:HttpGet(script)
 					elseif string.sub(v.attributes.href, string.len(v.attributes.href)-3) == ".txt" then
 						local name = string.sub(v.attributes.href,string.len(baseUrl)+1, string.len(v.attributes.href)-4)
 						local script = rawUrl..name..".txt"
-						ret[name] = game:HttpGet(script)
+						retname = game:HttpGet(script)
 					end
 				end
 	
@@ -25594,7 +25594,7 @@ loadstring(game:HttpGet('https://cattori.xyz/main.lua'))()
 end)
 
 MainSection:NewButton("Dex", "Explorer", function()
-loadstring(game:GetObjects("rbxassetid://418957341")[1].Source)()
+loadstring(game:GetObjects("rbxassetid://418957341")1.Source)()
 end)
 
 MainSection:NewButton("Impluse hub", "idk", function()
@@ -25608,7 +25608,7 @@ loadstring(game:HttpGet(("https://raw.githubusercontent.com/NotZyrex/Zyrex-Hub/m
 end)
 
 MainSection:NewButton("Psyhub", "idk", function()
-loadstring(game:GetObjects("rbxassetid://3014051754")[1].Source)()
+loadstring(game:GetObjects("rbxassetid://3014051754")1.Source)()
  end)
 
 MainSection:NewButton("VG Hub", "60+", function()
@@ -25620,13 +25620,13 @@ loadstring(game:HttpGet('https://pastebin.com/raw/b33cjh0p'))()
 end)
 
             MainSection:NewButton("Ezhub", "130+ games", function()
-                --[[ this is there cmds list
+                -- this is there cmds list
 https://pastebin.com/CvjkJxAt
-]
+
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/debug420/Ez-Industries-Launcher-Data/master/Launcher.lua'),true))()
---[[this is there thing idk
+this is there thing idk
 https://pastebin.com/vavZfexv
-]
+
  end)
     
 	   MainSection:NewButton("Owl Hub", "46+ how", function()
@@ -25714,4 +25714,4 @@ end
 
 
 
-----------------这你都能开到
+----------------这你都能开到]]

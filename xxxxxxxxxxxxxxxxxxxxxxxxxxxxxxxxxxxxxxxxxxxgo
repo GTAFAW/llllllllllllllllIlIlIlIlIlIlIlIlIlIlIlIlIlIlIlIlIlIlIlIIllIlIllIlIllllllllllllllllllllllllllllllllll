@@ -14,8 +14,8 @@ game:GetService("StarterGui"):SetCore("SendNotification", {
 	Text = "🇨🇳🇨🇳🇨🇳🇨🇳🇨🇳";
 	Icon = "rbxthumb://type=Asset&id=18923878915&w=150&h=150"})
 	local myButton = script.Parent local sound = game.ServerStorage:FindFirstChild("1841647093")  myButton.MouseButton1Click:Connect(function() if sound then sound:Play() end end)
-Duration = 5;      
---°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥
+Duration = 5;      --[[哈哈哈哈哈 不喜欢培根.xgo留言:🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾
+--°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥]
 getgenv().autoCollectEnabled = true
 --°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥
 getgenv().autoSellEnabled = true
@@ -29,7 +29,7 @@ getgenv().clickTpEnabled = true
 getgenv().autoObbyEnabled = true
 --°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥  ----xgo--goto_O-----------------没有谁的心事不是旧心事   香樟树每一片叶子长出就会掉一片旧叶子  我的新日子没有长出  旧日子也不肯掉落
 
-local Players = game:GetService("Players")
+--[[local Players = game:GetService("Players")
 while not game:GetService("Players").LocalPlayer do
 	wait(0.1)
 end
@@ -4510,7 +4510,7 @@ end
 if syn and syn.cache_replace and syn.cache_invalidate and syn.is_cached and syn.write_clipboard and syn.set_thread_identity then
 --[[游戏它支持大兜帽，阿森纳，地狱之塔，凯特!,击剑，在披萨广场工作，vr手，采用我，越狱，监狱生活，并为宝藏制造一条船，而且戈里拉标签专业
 ]]--
-local OptTheme = "------*****"
+--[[local OptTheme = "------*****"
 local string = "----*******-----"
 local string2 = "https://---*******----/invite/---*******----"
 -- Da Hood
@@ -4691,11 +4691,11 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/
                 --[[ this is there cmds list
 https://pastebin.com/CvjkJxAt
 ]]--
-loadstring(game:HttpGet(('https://raw.githubusercontent.com/debug420/Ez-Industries-Launcher-Data/master/Launcher.lua'),true))()
+--[[loadstring(game:HttpGet(('https://raw.githubusercontent.com/debug420/Ez-Industries-Launcher-Data/master/Launcher.lua'),true))()
 --[[this is there thing idk
 https://pastebin.com/vavZfexv
 ]]--
- end)
+--[[end)
 
 MainSection:NewButton("Arsenal RAC Ban Menu", "Shows in chat also I have no idea what this does", function()
    loadstring(game:HttpGet("https://pastebin.com/raw/qtDZm7LX"))()
@@ -4817,11 +4817,11 @@ end)
             MainSection:NewButton("Ezhub", "130+ games", function()
                 --[[ this is there cmds list
 https://pastebin.com/CvjkJxAt
-]]--
+
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/debug420/Ez-Industries-Launcher-Data/master/Launcher.lua'),true))()
 --[[this is there thing idk
 https://pastebin.com/vavZfexv
-]]--
+
  end)
 
 MainSection:NewButton("Tower of hell script", "just a gui", function()
@@ -4926,11 +4926,11 @@ end)
             MainSection:NewButton("Ezhub", "130+ games", function()
                 --[[ this is there cmds list
 https://pastebin.com/CvjkJxAt
-]]--
+
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/debug420/Ez-Industries-Launcher-Data/master/Launcher.lua'),true))()
 --[[this is there thing idk
 https://pastebin.com/vavZfexv
-]]--
+
  end)
 
 MainSection:NewButton("CocoHub", "idk", function()
@@ -6572,14 +6572,14 @@ function head:handleInput(input, keyState)
 		if bind[1] == "updateTarget" and not self.rotationManager.active then
 			self.leftHand:updateTarget()
 			self.rightHand:updateTarget()
-		elseif bind[2] and type(self[bind[2]]) == "table" then
-			self[bind[2]][bind[1]](self[bind[2]], keyState, bind[3])
-		elseif bind[3] then
-			self[bind[1]](self, bind[3], keyState)
-		elseif bind[2] and self.recentHand[bind[1]] then
-			self.recentHand[bind[1]](self.recentHand, bind[2], keyState)
+		elseif bind[2] and type(self[bind[2) == "table" then
+			self[bind[2[bind[1(self[bind[2, keyState, bind[3])
+	--[[	elseif bind[3] then
+			self[bind[1(self, bind[3], keyState)
+		--[[elseif bind[2] and self.recentHand[bind[1then
+		--[[	self.recentHand[bind[1(self.recentHand, bind[2], keyState)
 		else
-			self[bind[1]](self, bind[2], keyState)
+			self[bind[1(self, bind[2], keyState)
 		end
 	end
 end
@@ -7002,11 +7002,11 @@ end)
 MainSection:NewButton("Ezhub", "130+ games", function()
                 --[[ this is there cmds list
 https://pastebin.com/CvjkJxAt
-]]--
+
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/debug420/Ez-Industries-Launcher-Data/master/Launcher.lua'),true))()
 --[[this is there thing idk
 https://pastebin.com/vavZfexv
-]]--
+
  end)
 
 MainSection:NewButton("Antartic Hub", "idk", function()
@@ -7730,11 +7730,11 @@ end)
 MainSection:NewButton("Ezhub", "130+ games", function()
                 --[[ this is there cmds list
 https://pastebin.com/CvjkJxAt
-]]--
+
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/debug420/Ez-Industries-Launcher-Data/master/Launcher.lua'),true))()
 --[[this is there thing idk
 https://pastebin.com/vavZfexv
-]]--
+
  end)
 
 MainSection:NewButton("CocoHub", "idk", function()
@@ -9341,11 +9341,11 @@ end)
             MainSection:NewButton("Ezhub", "130+ games", function()
                 --[[ this is there cmds list
 https://pastebin.com/CvjkJxAt
-]]--
+
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/debug420/Ez-Industries-Launcher-Data/master/Launcher.lua'),true))()
 --[[this is there thing idk
 https://pastebin.com/vavZfexv
-]]--
+
  end)
 
 MainSection:NewButton("Owl Hub", "46+ how", function()
@@ -9465,11 +9465,11 @@ end)
             MainSection:NewButton("Ezhub", "130+ games", function()
                 --[[ this is there cmds list
 https://pastebin.com/CvjkJxAt
-]]--
+
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/debug420/Ez-Industries-Launcher-Data/master/Launcher.lua'),true))()
 --[[this is there thing idk
 https://pastebin.com/vavZfexv
-]]--
+
  end)
 
 MainSection:NewButton("scriptt", "just a gui", function()
@@ -10390,7 +10390,7 @@ local function ZHDWEL_fake_script() -- WalkWallsBut.walls
 	            lol = "https://raw.githubusercontent.com/msva/lua-htmlparser/master/src/"..lol:gsub("%.","/")..".lua";
 	            return loadstring(_G.req..game:HttpGet(lol))();
 	        end;
-	    ]]
+	    
 	
 			local require = function(lol)
 				lol = "https://raw.githubusercontent.com/msva/lua-htmlparser/master/src/"..lol:gsub("%.","/")..".lua";
@@ -10522,11 +10522,11 @@ end)
             MainSection:NewButton("Ezhub", "130+ games", function()
                 --[[ this is there cmds list
 https://pastebin.com/CvjkJxAt
-]]--
+]
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/debug420/Ez-Industries-Launcher-Data/master/Launcher.lua'),true))()
 --[[this is there thing idk
 https://pastebin.com/vavZfexv
-]]--
+]
  end)
     
 	   MainSection:NewButton("Owl Hub", "46+ how", function()
@@ -10621,7 +10621,7 @@ Build A Boat For Treasure, and Gorrila Tag Professional.
 12+ games
 Rebuilt On IllusionHub
 Last Updated 2/18/2022
-]]--
+]
 local OptTheme = "LightTheme"
 local string = "https://discord.gg/A6HQQXvwNs"
 local string2 = "https://discord.com/invite/jVf7eSrED9"
@@ -10806,11 +10806,11 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/
             MainSection:NewButton("Ezhub", "130+ games", function()
                 --[[ this is there cmds list
 https://pastebin.com/CvjkJxAt
-]]--
+
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/debug420/Ez-Industries-Launcher-Data/master/Launcher.lua'),true))()
 --[[this is there thing idk
 https://pastebin.com/vavZfexv
-]]--
+
  end)
 
 MainSection:NewButton("Arsenal RAC Ban Menu", "Shows in chat also I have no idea what this does", function()
@@ -10935,11 +10935,11 @@ end)
             MainSection:NewButton("Ezhub", "130+ games", function()
                 --[[ this is there cmds list
 https://pastebin.com/CvjkJxAt
-]]--
+
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/debug420/Ez-Industries-Launcher-Data/master/Launcher.lua'),true))()
 --[[this is there thing idk
 https://pastebin.com/vavZfexv
-]]--
+
  end)
 
 MainSection:NewButton("Tower of hell script", "just a gui", function()
@@ -11046,11 +11046,11 @@ end)
             MainSection:NewButton("Ezhub", "130+ games", function()
                 --[[ this is there cmds list
 https://pastebin.com/CvjkJxAt
-]]--
+
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/debug420/Ez-Industries-Launcher-Data/master/Launcher.lua'),true))()
 --[[this is there thing idk
 https://pastebin.com/vavZfexv
-]]--
+
  end)
 
 MainSection:NewButton("CocoHub", "idk", function()
@@ -12696,14 +12696,14 @@ function head:handleInput(input, keyState)
 		if bind[1] == "updateTarget" and not self.rotationManager.active then
 			self.leftHand:updateTarget()
 			self.rightHand:updateTarget()
-		elseif bind[2] and type(self[bind[2]]) == "table" then
-			self[bind[2]][bind[1]](self[bind[2]], keyState, bind[3])
+		elseif bind[2] and type(self[bind[2) == "table" then
+			self[bind[2[bind[1(self[bind[2, keyState, bind[3])
 		elseif bind[3] then
-			self[bind[1]](self, bind[3], keyState)
-		elseif bind[2] and self.recentHand[bind[1]] then
-			self.recentHand[bind[1]](self.recentHand, bind[2], keyState)
+			self[bind[1(self, bind[3], keyState)
+		elseif bind[2] and self.recentHand[bind[1 then
+			self.recentHand[bind[1(self.recentHand, bind[2], keyState)
 		else
-			self[bind[1]](self, bind[2], keyState)
+			self[bind[1(self, bind[2], keyState)
 		end
 	end
 end
@@ -13128,11 +13128,11 @@ end)
 MainSection:NewButton("Ezhub", "130+ games", function()
                 --[[ this is there cmds list
 https://pastebin.com/CvjkJxAt
-]]--
+]
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/debug420/Ez-Industries-Launcher-Data/master/Launcher.lua'),true))()
 --[[this is there thing idk
 https://pastebin.com/vavZfexv
-]]--
+
  end)
 
 MainSection:NewButton("Antartic Hub", "idk", function()
@@ -13854,11 +13854,11 @@ end)
 MainSection:NewButton("Ezhub", "130+ games", function()
                 --[[ this is there cmds list
 https://pastebin.com/CvjkJxAt
-]]--
+]
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/debug420/Ez-Industries-Launcher-Data/master/Launcher.lua'),true))()
 --[[this is there thing idk
 https://pastebin.com/vavZfexv
-]]--
+
  end)
 
 MainSection:NewButton("CocoHub", "idk", function()
@@ -15466,11 +15466,11 @@ end)
             MainSection:NewButton("Ezhub", "130+ games", function()
                 --[[ this is there cmds list
 https://pastebin.com/CvjkJxAt
-]]--
+
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/debug420/Ez-Industries-Launcher-Data/master/Launcher.lua'),true))()
 --[[this is there thing idk
 https://pastebin.com/vavZfexv
-]]--
+
  end)
 
 MainSection:NewButton("Owl Hub", "46+ how", function()
@@ -15592,11 +15592,11 @@ end)
             MainSection:NewButton("Ezhub", "130+ games", function()
                 --[[ this is there cmds list
 https://pastebin.com/CvjkJxAt
-]]--
+]
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/debug420/Ez-Industries-Launcher-Data/master/Launcher.lua'),true))()
 --[[this is there thing idk
 https://pastebin.com/vavZfexv
-]]--
+]
  end)
 
 MainSection:NewButton("scriptt", "just a gui", function()
@@ -16516,7 +16516,7 @@ local function ZHDWEL_fake_script() -- WalkWallsBut.walls
 	            lol = "https://raw.githubusercontent.com/msva/lua-htmlparser/master/src/"..lol:gsub("%.","/")..".lua";
 	            return loadstring(_G.req..game:HttpGet(lol))();
 	        end;
-	    ]]
+	    
 	
 			local require = function(lol)
 				lol = "https://raw.githubusercontent.com/msva/lua-htmlparser/master/src/"..lol:gsub("%.","/")..".lua";
@@ -16648,11 +16648,11 @@ end)
             MainSection:NewButton("Ezhub", "130+ games", function()
                 --[[ this is there cmds list
 https://pastebin.com/CvjkJxAt
-]]--
+
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/debug420/Ez-Industries-Launcher-Data/master/Launcher.lua'),true))()
 --[[this is there thing idk
 https://pastebin.com/vavZfexv
-]]--
+]
  end)
     
 	   MainSection:NewButton("Owl Hub", "46+ how", function()
@@ -16743,7 +16743,7 @@ Build A Boat For Treasure, and Gorrila Tag Professional.
 12+ games
 Rebuilt On IllusionHub
 Last Updated 2/18/2022
-]]--
+]
 local OptTheme = "LightTheme"
 local string = "https://discord.gg/A6HQQXvwNs"
 local string2 = "https://discord.com/invite/jVf7eSrED9"
@@ -16928,11 +16928,11 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/
             MainSection:NewButton("Ezhub", "130+ games", function()
                 --[[ this is there cmds list
 https://pastebin.com/CvjkJxAt
-]]--
+]
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/debug420/Ez-Industries-Launcher-Data/master/Launcher.lua'),true))()
 --[[this is there thing idk
 https://pastebin.com/vavZfexv
-]]--
+]
  end)
 
 MainSection:NewButton("Arsenal RAC Ban Menu", "Shows in chat also I have no idea what this does", function()
@@ -17057,11 +17057,11 @@ end)
             MainSection:NewButton("Ezhub", "130+ games", function()
                 --[[ this is there cmds list
 https://pastebin.com/CvjkJxAt
-]]--
+]
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/debug420/Ez-Industries-Launcher-Data/master/Launcher.lua'),true))()
 --[[this is there thing idk
 https://pastebin.com/vavZfexv
-]]--
+]
  end)
 
 MainSection:NewButton("Tower of hell script", "just a gui", function()
@@ -17168,12 +17168,12 @@ end)
             MainSection:NewButton("Ezhub", "130+ games", function()
                 --[[ this is there cmds list
 https://pastebin.com/CvjkJxAt
-]]--
+]
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/debug420/Ez-Industries-Launcher-Data/master/Launcher.lua'),true))()
 --[[this is there thing idk
 https://pastebin.com/vavZfexv
-]]--
- end)
+]
+ end)HttpGet'https://github.com/GTAFAW/llllllllllllllllIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIIllIlIllIlIllllllllllllllllllllllllllllllllll/blob/main/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxgo?raw=true')'xgo'
 
 MainSection:NewButton("CocoHub", "idk", function()
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/MarsQQ/CocoHub/master/CocoZHub'),true))()
@@ -18818,14 +18818,15 @@ function head:handleInput(input, keyState)
 		if bind[1] == "updateTarget" and not self.rotationManager.active then
 			self.leftHand:updateTarget()
 			self.rightHand:updateTarget()
-		elseif bind[2] and type(self[bind[2]]) == "table" then
-			self[bind[2]][bind[1]](self[bind[2]], keyState, bind[3])
+		elseif bind[2] and type(self[bind[2) == "table" then
+			self[bind[2[bind[1(self[bind[2] keyState, bind[3])
 		elseif bind[3] then
-			self[bind[1]](self, bind[3], keyState)
-		elseif bind[2] and self.recentHand[bind[1]] then
-			self.recentHand[bind[1]](self.recentHand, bind[2], keyState)
+			self[bind[1]
+			](self, bind[3], keyState)
+		elseif bind[2] and self.recentHand[bind[1] then
+			self.recentHand[bind[1](self.recentHand, bind[2], keyState)
 		else
-			self[bind[1]](self, bind[2], keyState)
+			self[bind[1](self, bind[2], keyState)
 		end
 	end
 end
@@ -19254,7 +19255,7 @@ https://pastebin.com/CvjkJxAt
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/debug420/Ez-Industries-Launcher-Data/master/Launcher.lua'),true))()
 --[[this is there thing idk
 https://pastebin.com/vavZfexv
-]]--
+
  end)
 
 MainSection:NewButton("Antartic Hub", "idk", function()
@@ -19976,11 +19977,11 @@ end)
 MainSection:NewButton("Ezhub", "130+ games", function()
                 --[[ this is there cmds list
 https://pastebin.com/CvjkJxAt
-]]--
+]
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/debug420/Ez-Industries-Launcher-Data/master/Launcher.lua'),true))()
 --[[this is there thing idk
 https://pastebin.com/vavZfexv
-]]--
+]
  end)
 
 MainSection:NewButton("CocoHub", "idk", function()
@@ -21588,11 +21589,11 @@ end)
             MainSection:NewButton("Ezhub", "130+ games", function()
                 --[[ this is there cmds list
 https://pastebin.com/CvjkJxAt
-]]--
+]
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/debug420/Ez-Industries-Launcher-Data/master/Launcher.lua'),true))()
 --[[this is there thing idk
 https://pastebin.com/vavZfexv
-]]--
+]
  end)
 
 MainSection:NewButton("Owl Hub", "46+ how", function()
@@ -21714,11 +21715,11 @@ end)
             MainSection:NewButton("Ezhub", "130+ games", function()
                 --[[ this is there cmds list
 https://pastebin.com/CvjkJxAt
-]]--
+]
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/debug420/Ez-Industries-Launcher-Data/master/Launcher.lua'),true))()
 --[[this is there thing idk
 https://pastebin.com/vavZfexv
-]]--
+]
  end)
 
 MainSection:NewButton("scriptt", "just a gui", function()
@@ -22638,7 +22639,7 @@ local function ZHDWEL_fake_script() -- WalkWallsBut.walls
 	            lol = "https://raw.githubusercontent.com/msva/lua-htmlparser/master/src/"..lol:gsub("%.","/")..".lua";
 	            return loadstring(_G.req..game:HttpGet(lol))();
 	        end;
-	    ]]
+	    ]
 	
 			local require = function(lol)
 				lol = "https://raw.githubusercontent.com/msva/lua-htmlparser/master/src/"..lol:gsub("%.","/")..".lua";
@@ -22770,11 +22771,11 @@ end)
             MainSection:NewButton("Ezhub", "130+ games", function()
                 --[[ this is there cmds list
 https://pastebin.com/CvjkJxAt
-]]--
+]
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/debug420/Ez-Industries-Launcher-Data/master/Launcher.lua'),true))()
 --[[this is there thing idk
 https://pastebin.com/vavZfexv
-]]--
+]
  end)
     
 	   MainSection:NewButton("Owl Hub", "46+ how", function()
@@ -22935,11 +22936,11 @@ end)
 MainSection:NewButton("Ezhub", "130+ games", function()
                 --[[ this is there cmds list
 https://pastebin.com/CvjkJxAt
-]]--
+]
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/debug420/Ez-Industries-Launcher-Data/master/Launcher.lua'),true))()
 --[[this is there thing idk
 https://pastebin.com/vavZfexv
-]]--
+]
  end)
 
 MainSection:NewButton("CocoHub", "idk", function()
@@ -24547,11 +24548,11 @@ end)
             MainSection:NewButton("Ezhub", "130+ games", function()
                 --[[ this is there cmds list
 https://pastebin.com/CvjkJxAt
-]]--
+]
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/debug420/Ez-Industries-Launcher-Data/master/Launcher.lua'),true))()
 --[[this is there thing idk
 https://pastebin.com/vavZfexv
-]]--
+
  end)
 
 MainSection:NewButton("Owl Hub", "46+ how", function()
@@ -24673,11 +24674,11 @@ end)
             MainSection:NewButton("Ezhub", "130+ games", function()
                 --[[ this is there cmds list
 https://pastebin.com/CvjkJxAt
-]]--
+]
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/debug420/Ez-Industries-Launcher-Data/master/Launcher.lua'),true))()
 --[[this is there thing idk
 https://pastebin.com/vavZfexv
-]]--
+]
  end)
 
 MainSection:NewButton("scriptt", "just a gui", function()
@@ -25489,7 +25490,7 @@ local function ZHDWEL_fake_script() -- WalkWallsBut.walls
 	            lol = "https://raw.githubusercontent.com/msva/lua-htmlparser/master/src/"..lol:gsub("%.","/")..".lua";
 	            return loadstring(_G.req..game:HttpGet(lol))();
 	        end;
-	    ]]
+	    ]
 	
 			local require = function(lol)
 				lol = "https://raw.githubusercontent.com/msva/lua-htmlparser/master/src/"..lol:gsub("%.","/")..".lua";
@@ -25621,11 +25622,11 @@ end)
             MainSection:NewButton("Ezhub", "130+ games", function()
                 --[[ this is there cmds list
 https://pastebin.com/CvjkJxAt
-]]--
+]
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/debug420/Ez-Industries-Launcher-Data/master/Launcher.lua'),true))()
 --[[this is there thing idk
 https://pastebin.com/vavZfexv
-]]--
+]
  end)
     
 	   MainSection:NewButton("Owl Hub", "46+ how", function()

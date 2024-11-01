@@ -1,6 +1,6 @@
 game:GetService("StarterGui"):SetCore("SendNotification", { 
-	Title = "ฅ欢迎宝宝回家ฅ"..game.Players.LocalPlayer.Character.Name;
-	Text = "ฅ喵喵喵ฅ~";
+	Title = "欢迎宝宝"..game.Players.LocalPlayer.Character.Name;
+	Text = "ฅ喵喵喵回家喽ฅ~";
 	Icon = "rbxthumb://type=Asset&id=18923878915&w=150&h=150"})
 	Duration = 1;
 local CoreGui = game:GetService("StarterGui") 
@@ -25706,7 +25706,7 @@ end)
        end)
     end
 end
-----------------这你都能开到]]--
+----------------这你都能开到]]
 game:GetService("StarterGui"):SetCore("SendNotification", { 
 	Title = "🇨🇳🇨🇳🇨🇳🇨🇳🇨🇳";
 	Text = "🇨🇳🇨🇳🇨🇳🇨🇳🇨🇳";

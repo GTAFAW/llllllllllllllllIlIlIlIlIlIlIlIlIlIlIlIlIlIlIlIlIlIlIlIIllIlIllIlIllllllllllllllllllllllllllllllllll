@@ -1,13 +1,13 @@
 game:GetService("StarterGui"):SetCore("SendNotification", { 
-	Title = "欢迎宝宝ฅ[..game.Players.LocalPlayer.Character.Name]ฅ回家";
+	Title = "ฅ欢迎宝宝回家ฅ"..game.Players.LocalPlayer.Character.Name;
 	Text = "ฅ喵喵喵ฅ~";
 	Icon = "rbxthumb://type=Asset&id=18923878915&w=150&h=150"})
-	Duration = 5;
+	Duration = 1;
 local CoreGui = game:GetService("StarterGui") 
-CoreGui:SetCore("SendNotification", {    Title = "………️",    Text = "………",    Duration = 6, })
-CoreGui:SetCore("SendNotification", {    Title = "加载..数据..",    Text = "🐾…🐾…🐾…",    Duration = 6, })
-CoreGui:SetCore("SendNotification", {    Title = "嗯，好像卡住了",    Text = "🐾🐾…🐾…",    Duration = 7, })
-CoreGui:SetCore("SendNotification", {    Title = "主人等待一下马上好",    Text = "🐾🐾🐾……",    Duration = 8, })
+CoreGui:SetCore("SendNotification", {    Title = "………️",    Text = "………",    Duration = 4, })
+CoreGui:SetCore("SendNotification", {    Title = "加载..数据..",    Text = "🐾…🐾…🐾…",    Duration = 5, })
+CoreGui:SetCore("SendNotification", {    Title = "嗯，好像卡住了",    Text = "🐾🐾…🐾…",    Duration = 6, })
+CoreGui:SetCore("SendNotification", {    Title = "主人等待一下马上好",    Text = "🐾🐾🐾……",    Duration = 7, })
 --[[哈哈哈哈哈 不喜欢培根.xgo留言:🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾
 --°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥°̥̥̥̥̥̥̥̥
 getgenv().autoCollectEnabled = true

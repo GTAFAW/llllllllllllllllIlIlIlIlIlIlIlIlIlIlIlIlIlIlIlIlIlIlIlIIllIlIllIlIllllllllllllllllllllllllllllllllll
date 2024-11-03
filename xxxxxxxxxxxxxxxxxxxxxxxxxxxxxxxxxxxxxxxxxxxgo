@@ -1,5 +1,5 @@
 game:GetService("StarterGui"):SetCore("SendNotification", { 
-	Title = "欢迎宝宝"..game.Players.LocalPlayer.Character.Name;
+	Title = "欢迎宝宝"..game.Players.LocalPlayer.DisplayName;
 	Text = "ฅ喵喵喵回家喽ฅ~";
 	Icon = "rbxthumb://type=Asset&id=18923878915&w=150&h=150"})
 	Duration = 1;

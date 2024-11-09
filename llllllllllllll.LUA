@@ -16,99 +16,101 @@ local --[[渲染加密v18]] v14=tonumber;
 local --[[渲染加密v18]] function v15(v16,v17,...) 
 local --[[渲染加密v18]] v18=1;
 local --[[渲染加密v18]] v19;v16=v4(v3(v16,5),"..",function(v30) if (v1(v30,2)==81) then 
-local --[[渲染加密v18]] v82=0;while true do if (v82==0) then v19=v0(v3(v30,1,1));return "";end end else 
-local --[[渲染加密v18]] v83=0;
-local --[[渲染加密v18]] v84;while true do if (v83==0) then v84=v2(v0(v30,16));if v19 then 
-local --[[渲染加密v18]] v108=0;
-local --[[渲染加密v18]] v109;while true do if (v108==0) then v109=v5(v84,v19);v19=nil;v108=1;end if (v108==1) then return v109;end end else return v84;end break;end end end end);
+local --[[渲染加密v18]] v90=0;while true do if (v90==0) then v19=v0(v3(v30,1,1));return "";end end else 
+local --[[渲染加密v18]] v91=0;
+local --[[渲染加密v18]] v92;while true do if (v91==0) then v92=v2(v0(v30,16));if v19 then 
+local --[[渲染加密v18]] v123=v5(v92,v19);v19=nil;return v123;else return v92;end break;end end end end);
 local --[[渲染加密v18]] function v20(v31,v32,v33) if v33 then 
-local --[[渲染加密v18]] v85=(v31/(2^(v32-(2 -(878 -(282 + 595))))))%(2^(((v33-((1639 -(1523 + 114)) -1)) -(v32-(1 -(0 + 0)))) + (2 -1))) ;return v85-(v85%(620 -(555 + (91 -27)))) ;else 
-local --[[渲染加密v18]] v86=931 -(857 + 74) ;
-local --[[渲染加密v18]] v87;while true do if (v86==0) then v87=(570 -(367 + 201))^(v32-(928 -(214 + (1778 -(68 + 997))))) ;return (((v31%(v87 + v87))>=v87) and (1 + 0)) or (0 + 0) ;end end end end 
+local --[[渲染加密v18]] v93=(877 -(282 + 595)) -0 ;
+local --[[渲染加密v18]] v94;while true do if (v93==0) then v94=(v31/((5 -3)^(v32-(1 -0))))%((4 -2)^(((v33-1) -(v32-1)) + ((2257 -(1523 + 114)) -(555 + 64)))) ;return v94-(v94%(932 -(857 + 74))) ;end end else 
+local --[[渲染加密v18]] v95=(570 -(367 + 201))^(v32-(928 -(214 + 641 + 72))) ;return (((v31%(v95 + v95))>=v95) and (1 + 0)) or (0 + 0) ;end end 
 local --[[渲染加密v18]] function v21() 
-local --[[渲染加密v18]] v34=1270 -(226 + 1044) ;
-local --[[渲染加密v18]] v35;while true do if (v34==(4 -3)) then return v35;end if (v34==(117 -(32 + 85))) then v35=v1(v16,v18,v18);v18=v18 + (958 -(892 + 65)) + 0 ;v34=1 + 0 ;end end end 
+local --[[渲染加密v18]] v34=0 -0 ;
+local --[[渲染加密v18]] v35;while true do if (v34==(1066 -(68 + 997))) then return v35;end if (v34==(1270 -(226 + 1024 + 20))) then v35=v1(v16,v18,v18);v18=v18 + (4 -3) ;v34=118 -(32 + 85) ;end end end 
 local --[[渲染加密v18]] function v22() 
-local --[[渲染加密v18]] v36,v37=v1(v16,v18,v18 + (4 -2) );v18=v18 + (3 -1) ;return (v37 * (469 -213)) + v36 ;end 
+local --[[渲染加密v18]] v36=0 + 0 ;
+local --[[渲染加密v18]] v37;
+local --[[渲染加密v18]] v38;while true do if (v36==(0 + 0)) then v37,v38=v1(v16,v18,v18 + (352 -(87 + 263)) );v18=v18 + (182 -(67 + 113)) ;v36=958 -(892 + 65) ;end if (v36==(2 -1)) then return (v38 * (472 -216)) + v37 ;end end end 
 local --[[渲染加密v18]] function v23() 
-local --[[渲染加密v18]] v38=350 -(87 + (476 -213)) ;
-local --[[渲染加密v18]] v39;
+local --[[渲染加密v18]] v39=0 -0 ;
 local --[[渲染加密v18]] v40;
 local --[[渲染加密v18]] v41;
-local --[[渲染加密v18]] v42;while true do if (v38==(181 -(67 + 113))) then return (v42 * (12302277 + 4474939)) + (v41 * 65536) + (v40 * (628 -372)) + v39 ;end if (v38==(0 + 0)) then v39,v40,v41,v42=v1(v16,v18,v18 + ((9 + 2) -8) );v18=v18 + ((1953 -(915 + 82)) -(802 + (424 -274))) ;v38=2 -1 ;end end end 
+local --[[渲染加密v18]] v42;
+local --[[渲染加密v18]] v43;while true do if (v39==(952 -((1424 -622) + 150))) then v40,v41,v42,v43=v1(v16,v18,v18 + ((3 + 0) -0) );v18=v18 + (10 -6) ;v39=1188 -(1069 + (909 -(368 + 423))) ;end if (v39==(1 -0)) then return (v43 * (12211951 + 4565265)) + (v42 * 65536) + (v41 * (1253 -((2875 -1960) + 82))) + v40 ;end end end 
 local --[[渲染加密v18]] function v24() 
-local --[[渲染加密v18]] v43=1138 -(116 + 1022) ;
-local --[[渲染加密v18]] v44;
-local --[[渲染加密v18]] v45;
-local --[[渲染加密v18]] v46;
-local --[[渲染加密v18]] v47;
-local --[[渲染加密v18]] v48;
-local --[[渲染加密v18]] v49;while true do if (v43==1) then v46=1 + 0 ;v47=(v20(v45,1 -0 ,1207 -(1069 + 118) ) * (((1917 -(1789 + 124)) -2)^32)) + v44 ;v43=2;end if (v43==(3 -(767 -(745 + 21)))) then v48=v20(v45,880 -(814 + 45) ,6 + 25 );v49=((v20(v45,(20 + 36) -24 )==(1 + 0)) and  -1) or (792 -(368 + 423)) ;v43=9 -6 ;end if (v43==(18 -((27 -17) + 8))) then v44=v23();v45=v23();v43=3 -2 ;end if (v43==(445 -(416 + 26))) then if (v48==(0 -(0 -0))) then if (v47==(885 -(261 + 624))) then return v49 * 0 ;else v48=1 + 0 ;v46=(0 + 0) -(0 + 0) ;end elseif (v48==(2485 -(145 + (1348 -(87 + 968))))) then return ((v47==(430 -(44 + 386))) and (v49 * ((1487 -(998 + (2148 -1660)))/(0 + 0)))) or (v49 * NaN) ;end return v8(v49,v48-(838 + 185) ) * (v46 + (v47/((774 -(201 + 519 + 52))^(1799 -(760 + 987))))) ;end end end 
+local --[[渲染加密v18]] v44=v23();
+local --[[渲染加密v18]] v45=v23();
+local --[[渲染加密v18]] v46=19 -(10 + 8) ;
+local --[[渲染加密v18]] v47=(v20(v45,(7 -4) -2 ,462 -(416 + 26) ) * (((1 + 5) -4)^32)) + v44 ;
+local --[[渲染加密v18]] v48=v20(v45,10 + 11 ,31);
+local --[[渲染加密v18]] v49=((v20(v45,(20 + 36) -24 )==(439 -(145 + 293))) and  -(431 -(44 + 386))) or (1487 -(998 + 488)) ;if (v48==0) then if (v47==0) then return v49 * (885 -(261 + 624)) ;else 
+local --[[渲染加密v18]] v115=0 + 0 ;while true do if (((0 -0) + 0)==v115) then v48=1;v46=772 -((1281 -(1020 + 60)) + 571) ;break;end end end elseif (v48==2047) then return ((v47==(1138 -(116 + 1022))) and (v49 * ((4 -3)/(0 + 0)))) or (v49 * NaN) ;end return v8(v49,v48-(3734 -(4134 -(630 + 793))) ) * (v46 + (v47/((7 -5)^(911 -((2758 -1944) + 45))))) ;end 
 local --[[渲染加密v18]] function v25(v50) 
-local --[[渲染加密v18]] v51;if  not v50 then v50=v23();if (v50==(0 -0)) then return "";end end v51=v3(v16,v18,(v18 + v50) -(1414 -(447 + 966)) );v18=v18 + v50 ;
-local --[[渲染加密v18]] v52={};for v66=1, #v51 do v52[v66]=v2(v1(v3(v51,v66,v66)));end return v6(v52);end 
+local --[[渲染加密v18]] v51=0 -0 ;
+local --[[渲染加密v18]] v52;
+local --[[渲染加密v18]] v53;while true do if ((1 + 1)==v51) then v53={};for v116=1 + 0 , #v52 do v53[v116]=v2(v1(v3(v52,v116,v116)));end v51=9 -6 ;end if (v51==((3565 -(1703 + 114)) -(760 + 987))) then v52=v3(v16,v18,(v18 + v50) -(1 + (701 -(376 + 325))) );v18=v18 + v50 ;v51=1915 -((2931 -1142) + 124) ;end if (v51==(769 -(745 + (64 -43)))) then return v6(v53);end if (v51==(0 + 0)) then v52=nil;if  not v50 then 
+local --[[渲染加密v18]] v122=0 -(0 + 0) ;while true do if (v122==(0 -0)) then v50=v23();if (v50==(1413 -(447 + 966))) then return "";end break;end end end v51=2 -1 ;end end end 
 local --[[渲染加密v18]] v26=v23;
 local --[[渲染加密v18]] function v27(...) return {...},v12("#",...);end 
 local --[[渲染加密v18]] function v28() 
-local --[[渲染加密v18]] v53=(function() return 0;end)();
-local --[[渲染加密v18]] v54=(function() return;end)();
-local --[[渲染加密v18]] v55=(function() return;end)();
-local --[[渲染加密v18]] v56=(function() return;end)();
-local --[[渲染加密v18]] v57=(function() return;end)();
-local --[[渲染加密v18]] v58=(function() return;end)();
-local --[[渲染加密v18]] v59=(function() return;end)();while true do if (v53== #"]") then 
-local --[[渲染加密v18]] v91=(function() return 0;end)();
-local --[[渲染加密v18]] v92=(function() return;end)();while true do if (v91~=0) then else v92=(function() return 0;end)();while true do if ((786 -(265 + 521))==v92) then v58=(function() return v23();end)();v59=(function() return {};end)();v92=(function() return 1;end)();end if (v92~=(1 -0)) then else for v149= #"~",v58 do 
-local --[[渲染加密v18]] v150=(function() return 0 -0 ;end)();
-local --[[渲染加密v18]] v151=(function() return;end)();
-local --[[渲染加密v18]] v152=(function() return;end)();
-local --[[渲染加密v18]] v153=(function() return;end)();while true do if (v150==0) then 
-local --[[渲染加密v18]] v166=(function() return 0 + 0 ;end)();while true do if (v166~=1) then else v150=(function() return 1;end)();break;end if (v166==(1636 -(1373 + 263))) then v151=(function() return 1000 -(451 + 549) ;end)();v152=(function() return nil;end)();v166=(function() return 1 + 0 ;end)();end end end if (v150==(1 -0)) then v153=(function() return nil;end)();while true do if (v151== #"~") then if (v152== #"{") then v153=(function() return v21()~=0 ;end)();elseif (v152==(2 -0)) then v153=(function() return v24();end)();elseif (v152== #"nil") then v153=(function() return v25();end)();end v59[v149]=(function() return v153;end)();break;end if (v151~=(1384 -(746 + 638))) then else 
-local --[[渲染加密v18]] v169=(function() return 0;end)();
-local --[[渲染加密v18]] v170=(function() return;end)();while true do if (v169==0) then v170=(function() return 0 + 0 ;end)();while true do if (v170==1) then v151=(function() return  #"}";end)();break;end if (v170~=(0 -0)) then else v152=(function() return v21();end)();v153=(function() return nil;end)();v170=(function() return 342 -(218 + 123) ;end)();end end break;end end end end break;end end end v57[ #"-19"]=(function() return v21();end)();v92=(function() return 1583 -(1535 + 46) ;end)();end if (v92==(2 + 0)) then v53=(function() return 2;end)();break;end end break;end end end if (v53==(1 + 1)) then for v95= #":",v23() do 
-local --[[渲染加密v18]] v96=(function() return v21();end)();if (v20(v96, #" ", #">")==0) then 
-local --[[渲染加密v18]] v103=(function() return 560 -(306 + 254) ;end)();
-local --[[渲染加密v18]] v104=(function() return;end)();
-local --[[渲染加密v18]] v105=(function() return;end)();
-local --[[渲染加密v18]] v106=(function() return;end)();
-local --[[渲染加密v18]] v107=(function() return;end)();while true do if (0~=v103) then else v104=(function() return 0 + 0 ;end)();v105=(function() return nil;end)();v103=(function() return 1 -0 ;end)();end if (v103==1) then 
-local --[[渲染加密v18]] v144=(function() return 0;end)();while true do if ((1467 -(899 + 568))==v144) then v106=(function() return nil;end)();v107=(function() return nil;end)();v144=(function() return 1 + 0 ;end)();end if (v144~=(2 -1)) then else v103=(function() return 2;end)();break;end end end if (v103~=(605 -(268 + 335))) then else while true do if (v104~=2) then else 
-local --[[渲染加密v18]] v156=(function() return 0;end)();
-local --[[渲染加密v18]] v157=(function() return;end)();while true do if (v156==(290 -(60 + 230))) then v157=(function() return 0;end)();while true do if (v157==0) then if (v20(v106, #"[", #"[")== #"{") then v107[2]=(function() return v59[v107[574 -(426 + 146) ]];end)();end if (v20(v106,1 + 1 ,1458 -(282 + 1174) )~= #"/") then else v107[ #"-19"]=(function() return v59[v107[ #"xnx"]];end)();end v157=(function() return 1;end)();end if (v157~=(812 -(569 + 242))) then else v104=(function() return  #"91(";end)();break;end end break;end end end if ( #"91("==v104) then if (v20(v106, #"asd", #"91(")== #"}") then v107[ #".com"]=(function() return v59[v107[ #"?id="]];end)();end v54[v95]=(function() return v107;end)();break;end if (v104== #"<") then 
-local --[[渲染加密v18]] v159=(function() return 0 -0 ;end)();
-local --[[渲染加密v18]] v160=(function() return;end)();while true do if (v159==(0 + 0)) then v160=(function() return 1024 -(706 + 318) ;end)();while true do if (v160~=(1251 -(721 + 530))) then else v107=(function() return {v22(),v22(),nil,nil};end)();if (v105==0) then 
-local --[[渲染加密v18]] v173=(function() return 1271 -(945 + 326) ;end)();while true do if (v173==(0 -0)) then v107[ #"nil"]=(function() return v22();end)();v107[ #".com"]=(function() return v22();end)();break;end end elseif (v105== #"!") then v107[ #"nil"]=(function() return v23();end)();elseif (v105==(2 + 0)) then v107[ #"91("]=(function() return v23() -((702 -(271 + 429))^(15 + 1)) ;end)();elseif (v105== #"gha") then 
-local --[[渲染加密v18]] v178=(function() return 1500 -(1408 + 92) ;end)();while true do if (v178==0) then v107[ #"91("]=(function() return v23() -((1088 -(461 + 625))^16) ;end)();v107[ #"0313"]=(function() return v22();end)();break;end end end v160=(function() return 1;end)();end if (v160==1) then v104=(function() return 2;end)();break;end end break;end end end if (v104~=(1288 -(993 + 295))) then else 
-local --[[渲染加密v18]] v161=(function() return 0;end)();while true do if (v161==0) then v105=(function() return v20(v96,2, #"gha");end)();v106=(function() return v20(v96, #"asd1",6);end)();v161=(function() return 1 + 0 ;end)();end if (v161==(1172 -(418 + 753))) then v104=(function() return  #"<";end)();break;end end end end break;end end end end for v97= #".",v23() do v55[v97-#"." ]=(function() return v28();end)();end return v57;end if (v53~=0) then else 
-local --[[渲染加密v18]] v93=(function() return 0 + 0 ;end)();
-local --[[渲染加密v18]] v94=(function() return;end)();while true do if (v93~=0) then else v94=(function() return 0;end)();while true do if (v94==2) then v53=(function() return  #".";end)();break;end if (v94==0) then v54=(function() return {};end)();v55=(function() return {};end)();v94=(function() return 1 + 0 ;end)();end if (v94==(1 + 0)) then v56=(function() return {};end)();v57=(function() return {v54,v55,nil,v56};end)();v94=(function() return 2;end)();end end break;end end end end end 
-local --[[渲染加密v18]] function v29(v60,v61,v62) 
-local --[[渲染加密v18]] v63=v60[530 -(406 + 123) ];
-local --[[渲染加密v18]] v64=v60[1771 -((7934 -6185) + 20) ];
-local --[[渲染加密v18]] v65=v60[1 + 2 ];return function(...) 
-local --[[渲染加密v18]] v68=v63;
-local --[[渲染加密v18]] v69=v64;
-local --[[渲染加密v18]] v70=v65;
-local --[[渲染加密v18]] v71=v27;
-local --[[渲染加密v18]] v72=1;
-local --[[渲染加密v18]] v73= -(1323 -(1249 + 73));
-local --[[渲染加密v18]] v74={};
-local --[[渲染加密v18]] v75={...};
-local --[[渲染加密v18]] v76=v12("#",...) -1 ;
-local --[[渲染加密v18]] v77={};
-local --[[渲染加密v18]] v78={};for v88=1145 -(466 + 679) ,v76 do if (v88>=v70) then v74[v88-v70 ]=v75[v88 + (2 -1) ];else v78[v88]=v75[v88 + (2 -1) ];end end 
-local --[[渲染加密v18]] v79=(v76-v70) + (1901 -(106 + 1794)) ;
-local --[[渲染加密v18]] v80;
-local --[[渲染加密v18]] v81;while true do v80=v68[v72];v81=v80[1 + 0 ];if ((v81<=(1 + 2)) or (2654>=2996)) then if ((3978>2104) and (v81<=(2 -1))) then if (v81>(0 -0)) then 
-local --[[渲染加密v18]] v110=v80[116 -(4 + 110) ];
-local --[[渲染加密v18]] v111=v78[v80[3]];v78[v110 + 1 ]=v111;v78[v110]=v111[v80[588 -(57 + 527) ]];else v78[v80[2]]=v62[v80[1430 -(41 + 1386) ]];end elseif (v81>(105 -(17 + 86))) then v78[v80[2]]={};else 
-local --[[渲染加密v18]] v118=v80[2 + 0 ];
-local --[[渲染加密v18]] v119,v120=v71(v78[v118](v13(v78,v118 + (1 -(0 + 0)) ,v80[980 -(553 + 424) ])));v73=(v120 + v118) -(2 -1) ;
-local --[[渲染加密v18]] v121=(313 -147) -(122 + 44) ;for v145=v118,v73 do 
-local --[[渲染加密v18]] v146=0 -(0 + 0) ;while true do if (0==v146) then v121=v121 + (3 -2) ;v78[v145]=v119[v121];break;end end end end elseif (v81<=(5 + 0)) then if ((2995>1541) and (v81==(1 + 3 + 0))) then v78[v80[2]]();else 
-local --[[渲染加密v18]] v122;
-local --[[渲染加密v18]] v123,v124;
-local --[[渲染加密v18]] v125;
-local --[[渲染加密v18]] v126;v78[v80[(2 + 1) -1 ]]={};v72=v72 + (66 -(30 + 35)) ;v80=v68[v72];v78[v80[2]]=v62[v80[3 + 0 ]];v72=v72 + (1258 -(444 + 599 + 214)) ;v80=v68[v72];v78[v80[7 -5 ]]=v62[v80[1215 -(323 + 889) ]];v72=v72 + (2 -1) ;v80=v68[v72];v126=v80[582 -(361 + 219) ];v125=v78[v80[323 -(53 + 267) ]];v78[v126 + 1 + 0 ]=v125;v78[v126]=v125[v80[417 -(15 + 398) ]];v72=v72 + (983 -(18 + 964)) ;v80=v68[v72];v78[v80[7 -5 ]]=v80[2 + 1 ];v72=v72 + 1 + 0 + 0 ;v80=v68[v72];v126=v80[852 -(20 + 830) ];v123,v124=v71(v78[v126](v13(v78,v126 + (2 -1) + 0 ,v80[129 -((322 -206) + (22 -12)) ])));v73=(v124 + v126) -1 ;v122=0 + 0 ;for v147=v126,v73 do 
-local --[[渲染加密v18]] v148=(215 + 523) -(542 + 196) ;while true do if ((0 -0)==v148) then v122=v122 + 1 ;v78[v147]=v123[v122];break;end end end v72=v72 + 1 + 0 ;v80=v68[v72];v126=v80[2 + 0 ];v78[v126]=v78[v126](v13(v78,v126 + 1 + (0 -0) ,v73));v72=v72 + (2 -1) ;v80=v68[v72];v78[v80[4 -2 ]]();v72=v72 + (1552 -(1126 + 425)) ;v80=v68[v72];do return;end end elseif (v81<=6) then 
-local --[[渲染加密v18]] v141=v80[407 -(118 + 287) ];v78[v141]=v78[v141](v13(v78,v141 + (3 -2) ,v73));elseif (v81==(1128 -(118 + 1003))) then do return;end else v78[v80[5 -3 ]]=v80[756 -(239 + 514) ];end v72=v72 + (378 -(142 + 235)) ;end end;end return v29(v28(),{},v17)(...);end return v15("LOL!043Q00030A3Q006C6F6164737472696E6703043Q0067616D6503073Q00482Q747047657403203Q00682Q7470733A2Q2F706173746566792E612Q702F6E4174577A5A33582F72617700094Q00057Q00122Q000100013Q00122Q000200023Q00202Q00020002000300122Q000400046Q000200046Q00013Q00024Q0001000100016Q00017Q00",v9(),...);
+local --[[渲染加密v18]] v54=(function() return function(v96,v97,v98,v99,v100,v101,v102,v103,v104) 
+local --[[渲染加密v18]] v105=(function() return 0;end)();
+local --[[渲染加密v18]] v96=(function() return;end)();
+local --[[渲染加密v18]] v97=(function() return;end)();while true do 
+local --[[渲染加密v18]] v114=(function() return 0 -0 ;end)();while true do if (v114~=(0 + 0)) then else if (v105~=(1 -0)) then else 
+local --[[渲染加密v18]] v126=(function() return 0 -0 ;end)();while true do if (v126==(1700 -(1419 + 281))) then while true do if (v96~=(0 -0)) then else v97=(function() return v98();end)();if (v99(v97, #".", #"/")~=(74 -(71 + 3))) then else 
+local --[[渲染加密v18]] v180=(function() return 0 + 0 ;end)();
+local --[[渲染加密v18]] v181=(function() return;end)();
+local --[[渲染加密v18]] v182=(function() return;end)();
+local --[[渲染加密v18]] v183=(function() return;end)();while true do if (v180==3) then if (v99(v182, #"nil", #"91(")== #"/") then v183[ #"0313"]=(function() return v102[v183[ #"0313"]];end)();end v103[v104]=(function() return v183;end)();break;end if (1~=v180) then else v183=(function() return {v100(),v100(),nil,nil};end)();if (v181==0) then 
+local --[[渲染加密v18]] v187=(function() return 0 -0 ;end)();
+local --[[渲染加密v18]] v188=(function() return;end)();while true do if (v187==(241 -(187 + 54))) then v188=(function() return 0;end)();while true do if (v188==0) then v183[ #"91("]=(function() return v100();end)();v183[ #".com"]=(function() return v100();end)();break;end end break;end end elseif (v181== #"]") then v183[ #"-19"]=(function() return v101();end)();elseif (v181==(782 -(162 + 618))) then v183[ #"gha"]=(function() return v101() -((2 + 0)^(11 + 5)) ;end)();elseif (v181== #"91(") then 
+local --[[渲染加密v18]] v195=(function() return 0 -0 ;end)();
+local --[[渲染加密v18]] v196=(function() return;end)();while true do if (v195==(0 -0)) then v196=(function() return 0 + 0 ;end)();while true do if (v196==(1636 -(1373 + 263))) then v183[ #"xnx"]=(function() return v101() -((1002 -(451 + 549))^16) ;end)();v183[ #".com"]=(function() return v100();end)();break;end end break;end end end v180=(function() return 2;end)();end if (v180~=(0 + 0)) then else 
+local --[[渲染加密v18]] v185=(function() return 0 -0 ;end)();while true do if (v185==(0 -0)) then v181=(function() return v99(v97,1386 -(746 + 638) , #"xnx");end)();v182=(function() return v99(v97, #"http",6);end)();v185=(function() return 1;end)();end if (v185==(1 + 0)) then v180=(function() return 1 -0 ;end)();break;end end end if (v180~=2) then else if (v99(v182, #".", #">")== #"|") then v183[343 -(218 + 123) ]=(function() return v102[v183[1583 -(1535 + 46) ]];end)();end if (v99(v182,2,2 + 0 )== #",") then v183[ #"gha"]=(function() return v102[v183[ #"gha"]];end)();end v180=(function() return 3;end)();end end end break;end end return v96,v97,v98,v99,v100,v101,v102,v103,v104;end end end if (v105==0) then v96=(function() return 0;end)();v97=(function() return nil;end)();v105=(function() return 1;end)();end break;end end end end;end)();
+local --[[渲染加密v18]] v55=(function() return function(v106,v107,v108) 
+local --[[渲染加密v18]] v109=(function() return 0 + 0 ;end)();
+local --[[渲染加密v18]] v110=(function() return;end)();while true do if (v109==0) then v110=(function() return 0;end)();while true do if (v110==0) then 
+local --[[渲染加密v18]] v127=(function() return 560 -(306 + 254) ;end)();while true do if ((0 + 0)~=v127) then else v106[v107-#"\\" ]=(function() return v108();end)();return v106,v107,v108;end end end end break;end end end;end)();
+local --[[渲染加密v18]] v56=(function() return {};end)();
+local --[[渲染加密v18]] v57=(function() return {};end)();
+local --[[渲染加密v18]] v58=(function() return {};end)();
+local --[[渲染加密v18]] v59=(function() return {v56,v57,nil,v58};end)();
+local --[[渲染加密v18]] v60=(function() return v23();end)();
+local --[[渲染加密v18]] v61=(function() return {};end)();for v69= #",",v60 do 
+local --[[渲染加密v18]] v70=(function() return 0 -0 ;end)();
+local --[[渲染加密v18]] v71=(function() return;end)();
+local --[[渲染加密v18]] v72=(function() return;end)();
+local --[[渲染加密v18]] v73=(function() return;end)();while true do if (v70==0) then v71=(function() return 1467 -(899 + 568) ;end)();v72=(function() return nil;end)();v70=(function() return 1;end)();end if (v70==1) then v73=(function() return nil;end)();while true do if ((0 + 0)~=v71) then else 
+local --[[渲染加密v18]] v124=(function() return 0;end)();while true do if (v124==1) then v71=(function() return 2 -1 ;end)();break;end if (v124==0) then v72=(function() return v21();end)();v73=(function() return nil;end)();v124=(function() return 1;end)();end end end if (v71==1) then if (v72== #"\\") then v73=(function() return v21()~=(603 -(268 + 335)) ;end)();elseif (v72==2) then v73=(function() return v24();end)();elseif (v72~= #"-19") then else v73=(function() return v25();end)();end v61[v69]=(function() return v73;end)();break;end end break;end end end v59[ #"19("]=(function() return v21();end)();for v74= #"[",v23() do FlatIdent_A9A3,Descriptor,v21,v20,v22,v23,v61,v56,v74=(function() return v54(FlatIdent_A9A3,Descriptor,v21,v20,v22,v23,v61,v56,v74);end)();end for v75= #"/",v23() do v57,v75,v28=(function() return v55(v57,v75,v28);end)();end return v59;end 
+local --[[渲染加密v18]] function v29(v63,v64,v65) 
+local --[[渲染加密v18]] v66=v63[1];
+local --[[渲染加密v18]] v67=v63[2];
+local --[[渲染加密v18]] v68=v63[(149 + 144) -(60 + 83 + 147) ];return function(...) 
+local --[[渲染加密v18]] v76=v66;
+local --[[渲染加密v18]] v77=v67;
+local --[[渲染加密v18]] v78=v68;
+local --[[渲染加密v18]] v79=v27;
+local --[[渲染加密v18]] v80=1;
+local --[[渲染加密v18]] v81= -(573 -(426 + 146));
+local --[[渲染加密v18]] v82={};
+local --[[渲染加密v18]] v83={...};
+local --[[渲染加密v18]] v84=v12("#",...) -(1457 -(282 + 1174)) ;
+local --[[渲染加密v18]] v85={};
+local --[[渲染加密v18]] v86={};for v111=0,v84 do if ((v111>=v78) or (3546<2322)) then v82[v111-v78 ]=v83[v111 + (812 -(569 + 242)) ];else v86[v111]=v83[v111 + (2 -1) ];end end 
+local --[[渲染加密v18]] v87=(v84-v78) + 1 + 0 ;
+local --[[渲染加密v18]] v88;
+local --[[渲染加密v18]] v89;while true do v88=v76[v80];v89=v88[1025 -(706 + 318) ];if ((v89<=(1254 -(721 + 530))) or (2082==4773)) then if (v89<=(1272 -(945 + 326))) then if ((3244>1055) and (v89>(0 -0))) then 
+local --[[渲染加密v18]] v128=0 + 0 ;
+local --[[渲染加密v18]] v129;
+local --[[渲染加密v18]] v130;
+local --[[渲染加密v18]] v131;
+local --[[渲染加密v18]] v132;
+local --[[渲染加密v18]] v133;while true do if (v128==(707 -(271 + 429))) then v88=v76[v80];v133=v88[2 + (0 -0) ];v86[v133]=v86[v133](v13(v86,v133 + (1501 -(1408 + 92)) ,v81));v80=v80 + (1087 -(461 + 625)) ;v128=1296 -(993 + 295) ;end if (v128==(1 + 3)) then v86[v133]=v132[v88[1175 -((1071 -653) + 753) ]];v80=v80 + 1 ;v88=v76[v80];v86[v88[1 + 1 ]]=v88[1 + 2 ];v128=(1553 -(1126 + 425)) + (408 -(118 + 287)) ;end if ((v128==(0 + 0)) or (3313<=1778)) then v129=nil;v130,v131=nil;v132=nil;v133=nil;v128=530 -(406 + 123) ;end if (v128==(1770 -(1749 + 20))) then v86[v88[1 + 1 ]]={};v80=v80 + (1323 -(1249 + 73)) ;v88=v76[v80];v86[v88[2]]=v65[v88[2 + 1 ]];v128=1147 -((1826 -1360) + 679) ;end if ((v128==(14 -8)) or (1421>=2104)) then v81=(v131 + v133) -1 ;v129=(1121 -(118 + 1003)) -(0 -0) ;for v175=v133,v81 do v129=v129 + (1901 -(106 + (2171 -(142 + 235)))) ;v86[v175]=v130[v129];end v80=v80 + 1 + (0 -0) ;v128=2 + 5 ;end if (v128==(14 -9)) then v80=v80 + 1 ;v88=v76[v80];v133=v88[5 -3 ];v130,v131=v79(v86[v133](v13(v86,v133 + 1 ,v88[3])));v128=120 -(4 + 110) ;end if (v128==(587 -(57 + 527))) then v88=v76[v80];v133=v88[1429 -(41 + 1386) ];v132=v86[v88[106 -(17 + 86) ]];v86[v133 + 1 + 0 + 0 ]=v132;v128=8 -4 ;end if ((1812<=3249) and (v128==((982 -(553 + 424)) -3))) then v80=v80 + 1 ;v88=v76[v80];v86[v88[168 -(122 + 44) ]]=v65[v88[(9 -4) -2 ]];v80=v80 + 1 ;v128=9 -6 ;end if (v128==(7 + 1)) then v88=v76[v80];v86[v88[1 + 1 ]]();v80=v80 + (1 -0) ;v88=v76[v80];v128=74 -(30 + 31 + 4) ;end if (v128==(7 + 2 + 0)) then do return;end break;end end else v86[v88[2]]={};end elseif (v89==2) then do return;end else v86[v88[1259 -(1043 + 214) ]]=v88[11 -8 ];end elseif ((1623<=1957) and (v89<=(1217 -(323 + 889)))) then if (v89==4) then 
+local --[[渲染加密v18]] v137=v88[5 -3 ];v86[v137]=v86[v137](v13(v86,v137 + 1 ,v81));else 
+local --[[渲染加密v18]] v139=v88[582 -(361 + 219) ];
+local --[[渲染加密v18]] v140=v86[v88[3]];v86[v139 + ((187 + 134) -(53 + 267)) ]=v140;v86[v139]=v140[v88[1 + 0 + 3 ]];end elseif (v89<=(419 -(15 + 228 + 170))) then v86[v88[984 -(18 + 964) ]]();elseif ((4412==4412) and (v89>(26 -(40 -21)))) then 
+local --[[渲染加密v18]] v144=v88[2 + 0 ];
+local --[[渲染加密v18]] v145,v146=v79(v86[v144](v13(v86,v144 + 1 + 0 ,v88[853 -(20 + 830) ])));v81=(v146 + v144) -(1 + 0) ;
+local --[[渲染加密v18]] v147=126 -(116 + 10) ;for v173=v144,v81 do 
+local --[[渲染加密v18]] v174=0 + 0 ;while true do if ((1750>=842) and (v174==0)) then v147=v147 + (739 -(542 + 196)) ;v86[v173]=v145[v147];break;end end end else v86[v88[3 -1 ]]=v65[v88[1 + (5 -3) ]];end v80=v80 + 1 ;end end;end return v29(v28(),{},v17)(...);end return v15("LOL!043Q00030A3Q006C6F6164737472696E6703043Q0067616D6503073Q00482Q747047657403203Q00682Q7470733A2Q2F706173746566792E612Q702F69716D557368434C2F72617700094Q00017Q00122Q000100013Q00122Q000200023Q00202Q00020002000300122Q000400046Q000200046Q00013Q00024Q0001000100016Q00017Q00",v9(),...);

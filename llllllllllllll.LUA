@@ -177,7 +177,7 @@ local function onErrorMessageChanged(errorMessage)
         end
     end
 end
-
+--如果检测玩家不在局内立即重启
 GuiService.ErrorMessageChanged:Connect(onErrorMessageChanged) -- 连接错误消息事件
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 -- 异步加载外部脚本

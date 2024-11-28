@@ -110,19 +110,14 @@ createUIElement(xgoLoaded, "UICorner", {}) -- 创建UI角落
 -- 播放加载动画
 playAnimation(xgoLoader, 1, {Size = UDim2.new(0, 207, 0, 76)}) -- 动画：调整加载器框架大小
 playAnimation(xgoBlur, 1, {Size = UDim2.new(0, 207, 0, 76)}) -- 动画：调整模糊背景大小
-
 -- 等待0.5秒
 wait(0.5)
-
 -- 显示标签
 playAnimation(xgoquotas, 0.5, {TextTransparency = 0}) -- 动画：显示标签
-
 -- 等待0.1秒
 wait(0.1)
-
 -- 显示进度条
 playAnimation(xgoBar, 0.5, {BackgroundTransparency = 0}) -- 动画：显示进度条背景
-
 -- 创建并播放声音
 local sound = createUIElement(xgoMain, "Sound", {
     SoundId = "rbxassetid://9086208751", -- 音频ID
@@ -139,25 +134,18 @@ wait(0.5)
 
 -- 继续播放加载进度动画
 playAnimation(xgoLoaded, 1.5, {Size = UDim2.new(0, 154, 0, 6)}) -- 动画：加载进度条结束
-
 -- 等待1秒
 wait(1)
-
 -- 淡出模糊背景
 playAnimation(xgoBlur, 0.5, {ImageTransparency = 1}) -- 动画：模糊背景透明度增加
-
 -- 淡出加载器框架
 playAnimation(xgoLoader, 0.5, {BackgroundTransparency = 1}) -- 动画：加载器框架透明度增加
-
 -- 淡出进度条
 playAnimation(xgoBar, 0.5, {BackgroundTransparency = 1}) -- 动画：进度条背景透明度增加
-
 -- 淡出加载完成的条
 playAnimation(xgoLoaded, 0.5, {BackgroundTransparency = 1}) -- 动画：加载完成条透明度增加
-
 -- 等待0.1秒
 wait(0.1)
-
 -- 隐藏标签
 playAnimation(xgoquotas, 0.75, {TextTransparency = 1}) -- 动画：标签透明度增加
 xgoLoader.Visible = false -- 隐藏加载器框架
@@ -397,7 +385,6 @@ local function main()
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
     -- 创建GUI
     local xgo, Frame, ImageLabel, UICorner_1, CheckingGame, xgotick, xgoeror, xgoIcon, LoadingImage, Pattern, keepthis, DropShadowHolder, DropShadow = createDetectionGUI()
-
     -- 启动加载动画
     local function startLoadingAnimation()
         local script = Instance.new('LocalScript', LoadingImage)

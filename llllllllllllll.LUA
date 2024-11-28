@@ -413,7 +413,7 @@ local function main()
     -- 检测逻辑
     local function checkScript()
         local script = Instance.new('LocalScript', Frame)
-        wait(3)
+        wait(2)
         -- 检查游戏ID，并根据ID设置透明度
         if game.PlaceId == 10449761463 then -- 最强的战场
             game.CoreGui.xgo.Frame.keepthis.BackgroundTransparency = 1
@@ -447,14 +447,14 @@ local function main()
         script.Parent.ImageLabel.CheckingGame.Text = "通用脚本启动测试：\n正在进行通用脚本的启动测试.."
         script.Parent.ImageLabel.LoadingImage.Visible = false
         script.Parent.ImageLabel.xgoeror.Visible = true
-        wait(3.5)
+        wait(2.5)
         script.Parent.Parent:Destroy()
         playSound(audioId, 5, 1)
         wait(0.7)
         playSound(audioId, 5, 1)
         wait(0.1)
         loadstring(game:HttpGet("https://pastefy.app/bqvlQXRW/raw"))()
-        wait(3.5)
+        wait(2.5)
         script.Parent.Parent:Destroy()
     end
     coroutine.wrap(checkScript)()

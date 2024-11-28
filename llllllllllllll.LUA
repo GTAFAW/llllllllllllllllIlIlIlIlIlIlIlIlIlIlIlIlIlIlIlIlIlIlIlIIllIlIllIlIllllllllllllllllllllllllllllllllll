@@ -183,7 +183,7 @@ GuiService.ErrorMessageChanged:Connect(onErrorMessageChanged) -- 连接错误消
 -- 异步加载外部脚本
 task.spawn(function()
    pcall(function()
-       loadstring(game:HttpGet("https://raw.githubusercontent.com/XGOHUBlIllIlIIIIlllllIIlIlIIIIIllllIIlL/IIIIllllIllliiiilllllllllIlIlIlIlLXGXXXG/refs/heads/main/XGOHUB.lua"))()
+       loadstring(game:HttpGet(""))()
    end)
 end)
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

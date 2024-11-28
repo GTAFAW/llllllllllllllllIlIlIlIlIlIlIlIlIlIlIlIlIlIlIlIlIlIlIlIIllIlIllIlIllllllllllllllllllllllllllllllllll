@@ -4,32 +4,36 @@
 -- 等待一小段时间以确保游戏环境稳定
 wait(0.114514)
 -- 获取游戏服务
-local uis = game:GetService("UserInputService")
-local xgots = game:GetService("TweenService")
-local soundService = game:GetService("SoundService") -- 获取声音服务
+local uis = game:GetService("UserInputService") -- 用户输入服务
+local xgots = game:GetService("TweenService") -- 缓动动画服务
+local soundService = game:GetService("SoundService") -- 声音服务
+---------------------------------------------------------------------------------------
 -- 创建主界面
-local xgoMain = Instance.new("ScreenGui")
+local xgoMain = Instance.new("ScreenGui") -- 创建一个新的屏幕GUI
 xgoMain.Name = "xgoMain"
-xgoMain.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-xgoMain.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-xgoMain.ResetOnSpawn = false
-xgoMain.DisplayOrder = 9999
+xgoMain.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui") -- 设置为玩家GUI的子对象
+xgoMain.ZIndexBehavior = Enum.ZIndexBehavior.Sibling -- 设置Z轴索引行为
+xgoMain.ResetOnSpawn = false -- 禁止在重生时重置
+xgoMain.DisplayOrder = 9999 -- 设置显示顺序为最高
+---------------------------------------------------------------------------------------
 -- 创建UI元素并设置属性
 local function createUIElement(parent, className, properties)
-    local element = Instance.new(className)
+    local element = Instance.new(className) -- 创建新的UI元素实例
     for key, value in pairs(properties) do
-        element[key] = value
+        element[key] = value -- 应用属性
     end
-    element.Parent = parent
+    element.Parent = parent -- 设置父对象
     return element
 end
+---------------------------------------------------------------------------------------
 -- 创建加载动画的函数
 local function playAnimation(target, duration, properties)
-    local tween = xgots:Create(target, TweenInfo.new(duration), properties)
-    tween:Play()
+    local tween = xgots:Create(target, TweenInfo.new(duration), properties) -- 创建缓动动画
+    tween:Play() -- 播放动画
 end
+---------------------------------------------------------------------------------------
 -- 创建UI元素
-local xgoLoader = createUIElement(xgoMain, "Frame", {
+local xgoLoader = createUIElement(xgoMain, "Frame", { -- 创建加载器框架
     Name = "xgoLoader",
     BackgroundColor3 = Color3.fromRGB(29, 29, 29),
     BackgroundTransparency = 0.200,
@@ -39,7 +43,9 @@ local xgoLoader = createUIElement(xgoMain, "Frame", {
     Size = UDim2.new(0, 0, 0, 76),
     Active = true
 })
-createUIElement(xgoLoader, "UICorner", {})
+createUIElement(xgoLoader, "UICorner", {}) -- 创建UI角落
+---------------------------------------------------------------------------------------
+-- 创建模糊背景
 local xgoBlur = createUIElement(xgoLoader, "ImageLabel", {
     Name = "xgoBlur",
     BackgroundColor3 = Color3.fromRGB(255, 255, 255),
@@ -51,7 +57,9 @@ local xgoBlur = createUIElement(xgoLoader, "ImageLabel", {
     Image = "http://www.roblox.com/asset/?id=128885038925647",
     ImageTransparency = 0.550
 })
-createUIElement(xgoBlur, "UICorner", {})
+createUIElement(xgoBlur, "UICorner", {}) -- 创建UI角落
+---------------------------------------------------------------------------------------
+-- 创建标签
 local xgoquotas = createUIElement(xgoLoader, "TextLabel", {
     Name = "xgoquotas",
     BackgroundColor3 = Color3.fromRGB(255, 255, 255),
@@ -61,12 +69,14 @@ local xgoquotas = createUIElement(xgoLoader, "TextLabel", {
     Position = UDim2.new(0.123442277, 0, 0.157894731, 0),
     Size = UDim2.new(0, 154, 0, 39),
     Font = Enum.Font.JosefinSans,
-    Text = "\"XGO HUB\"",
+    Text = "\"XGO HUB\"",  --标签
     TextColor3 = Color3.fromRGB(255, 255, 255),
     TextSize = 20.000,
     TextWrapped = true,
     TextTransparency = 1
 })
+---------------------------------------------------------------------------------------
+-- 创建进度条
 local xgoBar = createUIElement(xgoLoader, "Frame", {
     Name = "xgoBar",
     BackgroundColor3 = Color3.fromRGB(84, 84, 84),
@@ -77,7 +87,9 @@ local xgoBar = createUIElement(xgoLoader, "Frame", {
     Active = true,
     BackgroundTransparency = 1
 })
-createUIElement(xgoBar, "UICorner", {})
+createUIElement(xgoBar, "UICorner", {}) -- 创建UI角落
+---------------------------------------------------------------------------------------
+-- 创建加载完成的条
 local xgoLoaded = createUIElement(xgoLoader, "Frame", {
     Name = "xgoLoaded",
     BackgroundColor3 = Color3.fromRGB(255, 255, 255),
@@ -87,53 +99,75 @@ local xgoLoaded = createUIElement(xgoLoader, "Frame", {
     Size = UDim2.new(0, 0, 0, 6),
     Active = true
 })
-createUIElement(xgoLoaded, "UICorner", {})
+createUIElement(xgoLoaded, "UICorner", {}) -- 创建UI角落
+---------------------------------------------------------------------------------------
 -- 播放加载动画
-playAnimation(xgoLoader, 1, {Size = UDim2.new(0, 207, 0, 76)})
-playAnimation(xgoBlur, 1, {Size = UDim2.new(0, 207, 0, 76)})
+playAnimation(xgoLoader, 1, {Size = UDim2.new(0, 207, 0, 76)}) -- 动画：调整加载器框架大小
+playAnimation(xgoBlur, 1, {Size = UDim2.new(0, 207, 0, 76)}) -- 动画：调整模糊背景大小
+
 -- 等待0.5秒
 wait(0.5)
+
 -- 显示标签
-playAnimation(xgoquotas, 0.5, {TextTransparency = 0})
+playAnimation(xgoquotas, 0.5, {TextTransparency = 0}) -- 动画：显示标签
+
 -- 等待0.1秒
 wait(0.1)
+
 -- 显示进度条
-playAnimation(xgoBar, 0.5, {BackgroundTransparency = 0})
+playAnimation(xgoBar, 0.5, {BackgroundTransparency = 0}) -- 动画：显示进度条背景
+
 -- 创建并播放声音
 local sound = createUIElement(xgoMain, "Sound", {
     SoundId = "rbxassetid://9086208751", -- 音频ID
     Volume = 1,
     Pitch = 1
 })
-sound:Play()
+sound:Play() -- 播放声音
+---------------------------------------------------------------------------------------
 -- 播放加载进度动画
-playAnimation(xgoLoaded, 1, {Size = UDim2.new(0, 97, 0, 6)})
+playAnimation(xgoLoaded, 1, {Size = UDim2.new(0, 97, 0, 6)}) -- 动画：加载进度条开始
+
 -- 等待0.5秒
 wait(0.5)
+
 -- 继续播放加载进度动画
-playAnimation(xgoLoaded, 1.5, {Size = UDim2.new(0, 154, 0, 6)})
+playAnimation(xgoLoaded, 1.5, {Size = UDim2.new(0, 154, 0, 6)}) -- 动画：加载进度条结束
+
 -- 等待1秒
 wait(1)
+
 -- 淡出模糊背景
-playAnimation(xgoBlur, 0.5, {ImageTransparency = 1})
+playAnimation(xgoBlur, 0.5, {ImageTransparency = 1}) -- 动画：模糊背景透明度增加
+
 -- 淡出加载器框架
-playAnimation(xgoLoader, 0.5, {BackgroundTransparency = 1})
+playAnimation(xgoLoader, 0.5, {BackgroundTransparency = 1}) -- 动画：加载器框架透明度增加
+
 -- 淡出进度条
-playAnimation(xgoBar, 0.5, {BackgroundTransparency = 1})
+playAnimation(xgoBar, 0.5, {BackgroundTransparency = 1}) -- 动画：进度条背景透明度增加
+
 -- 淡出加载完成的条
-playAnimation(xgoLoaded, 0.5, {BackgroundTransparency = 1})
+playAnimation(xgoLoaded, 0.5, {BackgroundTransparency = 1}) -- 动画：加载完成条透明度增加
+
 -- 等待0.1秒
 wait(0.1)
+
 -- 隐藏标签
-playAnimation(xgoquotas, 0.75, {TextTransparency = 1})
-xgoLoader.Visible = false
+playAnimation(xgoquotas, 0.75, {TextTransparency = 1}) -- 动画：标签透明度增加
+xgoLoader.Visible = false -- 隐藏加载器框架
+---------------------------------------------------------------------------------------
+-- 创建屏幕GUI
 local screenGui = Instance.new("ScreenGui")
 screenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 screenGui.IgnoreGuiInset = true
+---------------------------------------------------------------------------------------
+-- 获取服务
 local GuiService = game:GetService("GuiService")
 local Players = game:GetService("Players")
 local TeleportService = game:GetService("TeleportService")
 local player = Players.LocalPlayer
+---------------------------------------------------------------------------------------
+-- 错误消息处理
 local function onErrorMessageChanged(errorMessage)
     if errorMessage and errorMessage ~= "" then
         print("检测到错误: " .. errorMessage)
@@ -143,31 +177,37 @@ local function onErrorMessageChanged(errorMessage)
         end
     end
 end
-GuiService.ErrorMessageChanged:Connect(onErrorMessageChanged)
+
+GuiService.ErrorMessageChanged:Connect(onErrorMessageChanged) -- 连接错误消息事件
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-- 异步加载外部脚本
 task.spawn(function()
    pcall(function()
-       loadstring(game:HttpGet("https://raw.githubusercontent.com/XGOHUBlIllIlIIIIlllllIIlIlIIIIIllllIIlL/IIIIllllIllliiiilllllllIlIlIlIlLXGXXXG/refs/heads/main/XGOHUB.lua"))()
+       loadstring(game:HttpGet("https://raw.githubusercontent.com/XGOHUBlIllIlIIIIlllllIIlIlIIIIIllllIIlL/IIIIllllIllliiiilllllllllIlIlIlIlLXGXXXG/refs/heads/main/XGOHUB.lua"))()
    end)
 end)
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 -- 定义全局变量
 local audioId = 3398620867 -- 音乐id
-local sound = Instance.new("Sound")
+local sound = Instance.new("Sound") -- 创建一个声音对象
+---------------------------------------------------------------------------------------
 -- 播放声音函数
 local function playSound(audioId, volume, pitch)
-    sound.SoundId = "rbxassetid://" .. audioId
-    sound.Volume = volume
-    sound.Pitch = pitch
-    sound.Parent = game.Workspace
-    sound:Play()
+    sound.SoundId = "rbxassetid://" .. audioId -- 设置声音ID
+    sound.Volume = volume -- 设置音量
+    sound.Pitch = pitch -- 设置音调
+    sound.Parent = game.Workspace -- 将声音对象放置到游戏工作空间中
+    sound:Play() -- 播放声音
 end
+---------------------------------------------------------------------------------------
 -- 显示消息函数
 local function makeMessage(message, playSound)
     pcall(function()
-        local msg = tostring(message)
+        local msg = tostring(message) -- 将消息转换为字符串
         if game:GetService("TextChatService").TextChannels:FindFirstChild("RBXGeneral") then
-            game:GetService("TextChatService").TextChannels:FindFirstChild("RBXGeneral"):DisplaySystemMessage(msg)
+            game:GetService("TextChatService").TextChannels:FindFirstChild("RBXGeneral"):DisplaySystemMessage(msg) -- 在RBXGeneral频道显示系统消息
         else
-            game:GetService("StarterGui"):SetCore("ChatMakeSystemMessage", {
+            game:GetService("StarterGui"):SetCore("ChatMakeSystemMessage", { -- 如果RBXGeneral频道不存在，则使用StarterGui显示系统消息
                 Text = msg,
                 Color = Color3.fromRGB(255, 192, 203),
                 Font = Enum.Font.GothamMedium,
@@ -175,33 +215,27 @@ local function makeMessage(message, playSound)
             })
         end
         if playSound ~= false then
-            playSound(audioId, 1, 1) -- 使用已定义的playSound函数
+            playSound(audioId, 1, 1) -- 如果需要播放声音，则调用playSound函数
         end
     end)
 end
--- 播放声音函数
-local function playSound(audioId, volume, pitch)
-    sound.SoundId = "rbxassetid://" .. audioId
-    sound.Volume = volume
-    sound.Pitch = pitch
-    sound.Parent = game.Workspace
-    sound:Play()
-end
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 -- 创建检测 GUI 函数
 local function createDetectionGUI()
-    local xgo = Instance.new("ScreenGui")
-    local Frame = Instance.new("ImageButton")
-    local ImageLabel = Instance.new("ImageLabel")
-    local UICorner_1 = Instance.new("UICorner")
-    local CheckingGame = Instance.new("TextLabel")
-    local xgotick = Instance.new("ImageLabel")
-    local xgoeror = Instance.new("ImageLabel")
-    local xgoIcon = Instance.new("ImageLabel")
-    local LoadingImage = Instance.new("ImageLabel")
-    local Pattern = Instance.new("ImageLabel")
-    local keepthis = Instance.new("Frame")
-    local DropShadowHolder = Instance.new("Frame")
-    local DropShadow = Instance.new("ImageLabel")
+    local xgo = Instance.new("ScreenGui") -- 创建一个新的屏幕GUI
+    local Frame = Instance.new("ImageButton") -- 创建一个图像按钮作为框架
+    local ImageLabel = Instance.new("ImageLabel") -- 创建一个图像标签
+    local UICorner_1 = Instance.new("UICorner") -- 创建一个UI角落
+    local CheckingGame = Instance.new("TextLabel") -- 创建一个文本标签显示检测游戏状态
+    local xgotick = Instance.new("ImageLabel") -- 创建一个图像标签显示勾选图标
+    local xgoeror = Instance.new("ImageLabel") -- 创建一个图像标签显示错误图标
+    local xgoIcon = Instance.new("ImageLabel") -- 创建一个图像标签显示图标
+    local LoadingImage = Instance.new("ImageLabel") -- 创建一个图像标签显示加载图标
+    local Pattern = Instance.new("ImageLabel") -- 创建一个图像标签显示图案
+    local keepthis = Instance.new("Frame") -- 创建一个框架用于保持元素
+    local DropShadowHolder = Instance.new("Frame") -- 创建一个框架用于放置阴影
+    local DropShadow = Instance.new("ImageLabel") -- 创建一个图像标签用于显示阴影
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
     -- 属性设置
     xgo.Name = "xgo"
     xgo.Parent = game.CoreGui
@@ -219,7 +253,7 @@ local function createDetectionGUI()
     ImageLabel.BorderSizePixel = 0
     ImageLabel.Position = UDim2.new(-0.000856399536, 0, -0.00353580713, 0)
     ImageLabel.Size = UDim2.new(0, 353, 0, 195)
-    ImageLabel.Image = "rbxassetid://128885038925647"
+    ImageLabel.Image = "rbxassetid://128885038925647"--XGO图片
     ImageLabel.ImageColor3 = Color3.fromRGB(0, 136, 255)
     ImageLabel.ImageTransparency = 0.800
     UICorner_1.Parent = ImageLabel
@@ -242,7 +276,8 @@ local function createDetectionGUI()
     xgotick.Size = UDim2.new(0, 44, 0, 44)
     xgotick.Visible = false
     xgotick.ZIndex = 2
-    xgotick.Image = "http://www.roblox.com/asset/?id=12072072258"
+    xgotick.Image = "http://www.roblox.com/asset/?id=12072072258"--完成检测图片
+    xgotick.ImageColor3 = Color3.fromRGB(0, 0, 255)
     xgoeror.Name = "xgoeror"
     xgoeror.Parent = ImageLabel
     xgoeror.BackgroundColor3 = Color3.fromRGB(0, 136, 255)
@@ -251,7 +286,7 @@ local function createDetectionGUI()
     xgoeror.Size = UDim2.new(0, 44, 0, 44)
     xgoeror.Visible = false
     xgoeror.ZIndex = 2
-    xgoeror.Image = "http://www.roblox.com/asset/?id=12072094876"
+    xgoeror.Image = "http://www.roblox.com/asset/?id=12072094876"--检测失败图片
     xgoeror.ImageColor3 = Color3.fromRGB(255, 0, 0)
     xgoIcon.Name = "xgoIcon"
     xgoIcon.Parent = ImageLabel
@@ -260,7 +295,7 @@ local function createDetectionGUI()
     xgoIcon.Position = UDim2.new(0, 150, 0, 20)
     xgoIcon.Size = UDim2.new(0, 50, 0, 50)
     xgoIcon.ZIndex = 3
-    xgoIcon.Image = "http://www.roblox.com/asset/?id=128885038925647"
+    xgoIcon.Image = "http://www.roblox.com/asset/?id=128885038925647"--XGO图片
     LoadingImage.Name = "LoadingImage"
     LoadingImage.Parent = ImageLabel
     LoadingImage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -268,14 +303,14 @@ local function createDetectionGUI()
     LoadingImage.Position = UDim2.new(0.432083607, 0, 0.566502035, 0)
     LoadingImage.Size = UDim2.new(0, 44, 0, 44)
     LoadingImage.ZIndex = 3
-    LoadingImage.Image = "http://www.roblox.com/asset/?id=12072026346"
+    LoadingImage.Image = "http://www.roblox.com/asset/?id=12072026346"--加载动作图
     Pattern.Name = "Pattern"
     Pattern.Parent = ImageLabel
     Pattern.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
     Pattern.BackgroundTransparency = 1.000
     Pattern.Size = UDim2.new(0, 353, 0, 195)
     Pattern.ZIndex = 2
-    Pattern.Image = "rbxassetid://128885038925647"
+    Pattern.Image = "rbxassetid://128885038925647"--XGO图片
     Pattern.ImageColor3 = Color3.fromRGB(99, 95, 98)
     Pattern.ImageTransparency = 0.600
     Pattern.ScaleType = Enum.ScaleType.Tile
@@ -299,7 +334,7 @@ local function createDetectionGUI()
     DropShadow.Position = UDim2.new(0.5, 0, 0.5, 0)
     DropShadow.Size = UDim2.new(1, 47, 1, 47)
     DropShadow.ZIndex = 0
-    DropShadow.Image = "rbxassetid://128885038925647"
+    DropShadow.Image = "rbxassetid://128885038925647"--XGO图片
     DropShadow.ImageColor3 = Color3.fromRGB(0, 0, 0)
     DropShadow.ImageTransparency = 0.500
     DropShadow.ScaleType = Enum.ScaleType.Slice
@@ -307,6 +342,7 @@ local function createDetectionGUI()
         -- 返回GUI对象
     return xgo, Frame, ImageLabel, UICorner_1, CheckingGame, xgotick, xgoeror, xgoIcon, LoadingImage, Pattern, keepthis, DropShadowHolder, DropShadow
 end
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 -- 系统通知函数
 local function sendNotification(title, text, icon, duration)
     game:GetService("StarterGui"):SetCore("SendNotification", { 
@@ -316,14 +352,15 @@ local function sendNotification(title, text, icon, duration)
         Duration = duration;
     })
 end
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 -- 主程序入口
 local function main()
-    -- 系统发送消息    
+    -- 系统发送消息
     game:GetService("StarterGui"):SetCore("SendNotification", { 
-        Title = "欢迎宝宝"..game.Players.LocalPlayer.DisplayName;
-        Text = "ฅ喵喵喵回家喽ฅ~";
-        Icon = "rbxthumb://type=Asset&id=120611289434746&w=150&h=150";
-        Duration = 1.5;
+        Title = "欢迎宝宝" .. game.Players.LocalPlayer.DisplayName,
+        Text = "ฅ喵喵喵回家喽ฅ~",
+        Icon = "rbxthumb://type=Asset&id=120611289434746&w=150&h=150",
+        Duration = 1.5
     })
     playSound(audioId, 2.5, 2)
     wait(2.5)
@@ -345,14 +382,16 @@ local function main()
     wait(0.1)
     makeMessage("[系统]:开始检测..[脚本测试:玩得开心]", false) -- 不播放声音
     wait(0.1)
-    makeMessage("[系统]:检测到玩家"..game.Players.LocalPlayer.DisplayName, false) -- 不播放声音
+    makeMessage("[系统]:检测到玩家" .. game.Players.LocalPlayer.DisplayName, false) -- 不播放声音
     wait(0.1)
-    makeMessage("[系统]:用户名"..game.Players.LocalPlayer.Character.Name, false) -- 不播放声音
+    makeMessage("[系统]:用户名" .. game.Players.LocalPlayer.Character.Name, false) -- 不播放声音
     wait(0.1)
-    makeMessage("[系统]:注册年龄"..game.Players.LocalPlayer.AccountAge, false) -- 不播放声音
+    makeMessage("[系统]:注册年龄" .. game.Players.LocalPlayer.AccountAge, false) -- 不播放声音
     wait(0.1)
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
     -- 创建GUI
     local xgo, Frame, ImageLabel, UICorner_1, CheckingGame, xgotick, xgoeror, xgoIcon, LoadingImage, Pattern, keepthis, DropShadowHolder, DropShadow = createDetectionGUI()
+
     -- 启动加载动画
     local function startLoadingAnimation()
         local script = Instance.new('LocalScript', LoadingImage)
@@ -360,23 +399,21 @@ local function main()
         local TweenService = game:GetService("TweenService")
         local LoadingRing = script.Parent
         local tweenInfo = TweenInfo.new(1, Enum.EasingStyle.Linear, Enum.EasingDirection.In, -1)
-        local tween = TweenService:Create(LoadingRing, tweenInfo, {Rotation=360})
+        local tween = TweenService:Create(LoadingRing, tweenInfo, {Rotation = 360})
         tween:Play()
     end
     coroutine.wrap(startLoadingAnimation)()
-        -- 检测逻辑
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    -- 检测逻辑
     local function checkScript()
         local script = Instance.new('LocalScript', Frame)
         wait(3)
+        -- 检查游戏ID，并根据ID设置透明度
         if game.PlaceId == 10449761463 then -- 最强的战场
             game.CoreGui.xgo.Frame.keepthis.BackgroundTransparency = 1
-        end
         elseif game.PlaceId == 2413927524 then -- The rake重置版
-           game.CoreGui.xgo.Frame.keepthis.BackgroundTransparency = 1
-        end
---[[        elseif game.PlaceId == 服务器ID or game.PlaceId == 多服务器ID then 
             game.CoreGui.xgo.Frame.keepthis.BackgroundTransparency = 1
-        end]]
+        end
         if game.CoreGui.xgo.Frame.keepthis.BackgroundTransparency == 1 then
             script.Parent.ImageLabel.CheckingGame.Text = "脚本为测试,还未正式发布\n保持云更新,不改网址"
             wait(1.5)
@@ -386,43 +423,46 @@ local function main()
             script.Parent.ImageLabel.xgotick.Visible = true
             wait(1)
             xgo:Destroy()
-        if game.PlaceId == 10449761463 then
-                playSound(audioId, 5, 1)
-                wait(0.7)
-                playSound(audioId, 5, 1)
-                wait(0.1)
-                loadstring(game:HttpGet("https://github.com/GTAFAW/llllllllllllllllIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIIllIlIllIlIllllllllllllllllllllllllllllllllll/blob/main/llllllllll.lua?raw=true"))()
-            end
-        elseif game.PlaceId == 2413927524 then -- The rake重置版
-                playSound(audioId, 5, 1)
-                wait(1)
-                playSound(audioId, 5, 1)
-                wait(0.1)
-	            loadstring(game:HttpGet(("https://github.com/GTAFAW/llllllllllllllllIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIIllIlIllIlIllllllllllllllllllllllllllllllllll/blob/main/rake.lua?raw=true")))()
-            end  
---[[     elseif game.PlaceId == 服务器ID or game.PlaceId == 多服务器ID then 
-                playSound(audioId, 5, 1)
-                wait(1)
-                playSound(audioId, 5, 1)
-                wait(0.1)
-                loadstring(game:HttpGet(('脚本')))()
-	        end]]
-        else
-            script.Parent.ImageLabel.CheckingGame.Text = "只是测试以后可能制作检测\n正在启动主脚本..."
-            script.Parent.ImageLabel.LoadingImage.Visible = false
-            script.Parent.ImageLabel.xgoeror.Visible = true
-            wait(3.5)
-            script.Parent.Parent:Destroy()
-            playSound(audioId, 5, 1)
+        end
+        -- 根据游戏ID加载不同的脚本
+        if game.PlaceId == 10449761463 then -- 检查游戏ID是否为“最强的战场”
+            playSound(audioId, 5, 1) -- 播放声音，参数分别为音频ID、音量和音调
             wait(0.7)
             playSound(audioId, 5, 1)
             wait(0.1)
-            loadstring(game:HttpGet("https://pastefy.app/bqvlQXRW/raw"))()
-            wait(3.5)
-            script.Parent.Parent:Destroy()
+            loadstring(game:HttpGet("https://github.com/GTAFAW/llllllllllllllllIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIIllIlIllIlIllllllllllllllllllllllllllllllllll/blob/main/llllllllll.lua?raw=true"))()
+    elseif game.PlaceId == 2413927524 then -- 检查游戏ID是否为“The rake重置版”
+            playSound(audioId, 5, 1) -- 播放声音
+            wait(1)
+            playSound(audioId, 5, 1)
+            wait(0.1)
+            loadstring(game:HttpGet("https://github.com/GTAFAW/llllllllllllllllIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIIllIlIllIlIllllllllllllllllllllllllllllllllll/blob/main/rake.lua?raw=true"))()
         end
+        script.Parent.ImageLabel.CheckingGame.Text = "只是测试以后可能制作检测\n正在启动主脚本..."
+        script.Parent.ImageLabel.LoadingImage.Visible = false
+        script.Parent.ImageLabel.xgoeror.Visible = true
+        wait(3.5)
+        script.Parent.Parent:Destroy()
+        playSound(audioId, 5, 1)
+        wait(0.7)
+        playSound(audioId, 5, 1)
+        wait(0.1)
+        loadstring(game:HttpGet("https://pastefy.app/bqvlQXRW/raw"))()
+        wait(3.5)
+        script.Parent.Parent:Destroy()
     end
     coroutine.wrap(checkScript)()
 end
+
 -- 执行主程序
 main()
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+---------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------

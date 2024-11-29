@@ -403,9 +403,11 @@ local function main()
         wait(2)
         -- 检查游戏ID，并根据ID设置透明度
         if game.PlaceId == 10449761463 then -- 最强的战场
-            game.CoreGui.xgo.Frame.keepthis.BackgroundTransparency = 1
-        elseif game.PlaceId == 2413927524 then -- The rake重置版
-            game.CoreGui.xgo.Frame.keepthis.BackgroundTransparency = 1
+           game.CoreGui.xgo.Frame.keepthis.BackgroundTransparency = 1
+    elseif game.PlaceId == 2413927524 then -- The rake重置版
+           game.CoreGui.xgo.Frame.keepthis.BackgroundTransparency = 1
+    elseif game.PlaceId == 16732694052 then -- Fisch鱼
+           game.CoreGui.xgo.Frame.keepthis.BackgroundTransparency = 1
         end
         if game.CoreGui.xgo.Frame.keepthis.BackgroundTransparency == 1 then
             script.Parent.ImageLabel.CheckingGame.Text = "当前脚本处于测试阶段，未正式发布，脚本将保持云更新且不更改网址"
@@ -430,7 +432,13 @@ local function main()
             playSound(audioId, 5, 1)
             wait(0.1)
             loadstring(game:HttpGet("https://github.com/GTAFAW/llllllllllllllllIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIIllIlIllIlIllllllllllllllllllllllllllllllllll/blob/main/rake.lua?raw=true"))()
-        end
+    elseif game.PlaceId == 16732694052 then -- 检查游戏ID是否为“Fisch鱼”
+            playSound(audioId, 5, 1) -- 播放声音
+            wait(1)
+            playSound(audioId, 5, 1)
+            wait(0.1)
+            loadstring(game:HttpGet("https://github.com/GTAFAW/llllllllllllllllIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIIllIlIllIlIllllllllllllllllllllllllllllllllll/blob/main/Fisch.lua?raw=true"))()
+        end    
         script.Parent.ImageLabel.CheckingGame.Text = "通用脚本启动测试：\n正在进行通用脚本的启动测试.."
         script.Parent.ImageLabel.LoadingImage.Visible = false
         script.Parent.ImageLabel.xgoeror.Visible = true

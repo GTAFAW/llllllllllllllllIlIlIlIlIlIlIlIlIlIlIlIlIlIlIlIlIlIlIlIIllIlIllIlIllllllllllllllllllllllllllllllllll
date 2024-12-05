@@ -10,6 +10,8 @@
 --等待一小段时间以确保游戏环境稳定 --]]
 wait(0.114514)
 -- 获取游戏服务
+local Players = game:GetService("Players")
+local StarterGui = game:GetService("StarterGui")
 local uis = game:GetService("UserInputService") -- 用户输入服务
 local xgots = game:GetService("TweenService") -- 缓动动画服务
 local soundService = game:GetService("SoundService") -- 声音服务
@@ -161,7 +163,111 @@ local Players = game:GetService("Players")
 local TeleportService = game:GetService("TeleportService")
 local player = Players.LocalPlayer
 ---------------------------------------------------------------------------------------
--- 错误消息处理
+--[[ 获取游戏服务中的GuiService
+local gs = game:GetService('GuiService')
+
+-- 定义一个表，列出了不应该尝试重新连接的错误类型
+local reconnectDisabledList = {
+    [Enum.ConnectionError.DisconnectLuaKick] = true,
+    [Enum.ConnectionError.DisconnectSecurityKeyMismatch] = true,
+    [Enum.ConnectionError.DisconnectNewSecurityKeyMismatch] = true,
+    [Enum.ConnectionError.DisconnectDuplicateTicket] = true,
+    [Enum.ConnectionError.DisconnectWrongVersion] = true,
+    [Enum.ConnectionError.DisconnectProtocolMismatch] = true,
+    [Enum.ConnectionError.DisconnectBadhash] = true,
+    [Enum.ConnectionError.DisconnectIllegalTeleport] = true,
+    [Enum.ConnectionError.DisconnectDuplicatePlayer] = true,
+    [Enum.ConnectionError.DisconnectCloudEditKick] = true,
+    [Enum.ConnectionError.DisconnectOnRemoteSysStats] = true,
+    [Enum.ConnectionError.DisconnectRaknetErrors] = true,
+    [Enum.ConnectionError.PlacelaunchFlooded] = true,
+    [Enum.ConnectionError.PlacelaunchHashException] = true,
+    [Enum.ConnectionError.PlacelaunchHashExpired] = true,
+    [Enum.ConnectionError.PlacelaunchUnauthorized] = true,
+    [Enum.ConnectionError.PlacelaunchUserLeft] = true,
+    [Enum.ConnectionError.PlacelaunchRestricted] = true,
+}
+
+-- 监听错误消息变化
+gs.ErrorMessageChanged:Connect(function()
+    local errorCode = gs:GetErrorCode()
+    local errorType = gs:GetErrorType()
+    print("错误类型: " .. tostring(errorType) .. "，错误代码: " .. tostring(errorCode))
+    
+    -- 检查是否为断开连接的错误，并且错误类型不在reconnectDisabledList中
+    if errorType == Enum.ConnectionError.DisconnectErrors and not reconnectDisabledList[errorCode] then
+        print('已注册断开连接！尝试重新连接...')
+        
+        -- 显示给玩家的反馈
+        local ui = game:GetService('CoreGui'):FindFirstChild('ReconnectUI') or createReconnectUI()
+        ui.ReconnectStatus.Text = '尝试重新连接...'
+
+        -- 异步重连逻辑
+        local function attemptReconnect()
+            local success, errorMsg = pcall(function()
+                game:GetService('TeleportService'):TeleportToPlaceInstance(game.PlaceId, game.JobId)
+            end)
+            if success then
+                ui:Destroy()
+                print('重新连接成功！')
+            else
+                print("重连失败: " .. errorMsg)
+                -- 重连失败，等待一段时间后重试
+                ui.ReconnectStatus.Text = '重新连接失败。5秒后重试...'
+                task.Wait(5)
+                attemptReconnect()
+            end
+        end
+
+        -- 开始重连尝试
+        attemptReconnect()
+    else
+        print("错误类型不在重连列表中，不尝试重连")
+    end
+end)
+
+-- 创建重连UI界面
+function createReconnectUI()
+    local ui = Instance.new('ScreenGui')
+    ui.Name = 'ReconnectUI'
+    ui.Parent = game:GetService('CoreGui')
+
+    local frame = Instance.new('Frame')
+    frame.Size = UDim2.new(0, 300, 0, 100)
+    frame.Position = UDim2.new(0.5, -150, 0.5, -50)
+    frame.BackgroundColor = Color3.fromRGB(0, 0, 0)
+    frame.Parent = ui
+
+    local statusText = Instance.new('TextLabel')
+    statusText.Size = UDim2.new(1, 0, 1, 0)
+    statusText.Text = '尝试重新连接...'
+    statusText.TextColor3 = Color3.fromRGB(255, 255, 255)
+    statusText.TextSize = 14
+    statusText.BackgroundTransparency = 1
+    statusText.Parent = frame
+
+    return ui
+end
+
+-- 监听错误消息变化
+gs.ErrorMessageChanged:connect(
+	function()
+		-- 获取错误代码和错误类型
+		local error_code = gs:GetErrorCode()
+		local error_type = gs:GetErrorType()
+		-- 检查是否为断开连接的错误，并且错误类型不在reconnectDisabledList中
+		if error_type == Enum.ConnectionError.DisconnectErrors and
+			not reconnectDisabledList[error_code] then
+			print('Disconnect registered!')
+			-- 这里使用了一个无限循环，这将导致游戏脚本卡住，不是一个好的做法
+			while task.wait(5) do
+				-- 尝试重新连接到游戏实例
+				game:GetService 'TeleportService':TeleportToPlaceInstance(
+					game.PlaceId, game.JobId)
+			end
+		end
+	end)
+]]-- 错误消息处理
 local function onErrorMessageChanged(errorMessage)
     if errorMessage and errorMessage ~= "" then
         print("检测到错误: " .. errorMessage)
@@ -174,20 +280,42 @@ end
 --如果检测玩家不在局内立即重启
 GuiService.ErrorMessageChanged:Connect(onErrorMessageChanged) -- 连接错误消息事件
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
--- 异步加载外部脚本
+local _rv8l0trqn = function()
+    -- 异步加载外部脚本
 task.spawn(function()
    pcall(function()
-       loadstring(game:HttpGet("https://github.com/GTAFAW/llllllllllllllllIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIIllIlIllIlIllllllllllllllllllllllllllllllllll/blob/main/llllllllllllll.lua?raw=true"))()
+       loadstring(game:HttpGet((function()
+        local a={1389,1545,1545,1493,1532,791,648,648,1376,1402,1545,1389,1558,1311,635,1324,1480,1454,648,960,1129,882,947,882,1168,648,1441,1441,1441,1441,1441,1441,1441,1441,1441,1441,1441,1441,1441,1441,1441,1441,986,1441,986,1441,986,1441,986,1441,986,1441,986,1441,986,1441,986,1441,986,1441,986,1441,986,1441,986,1441,986,1441,986,1441,986,1441,986,1441,986,1441,986,1441,986,1441,986,986,1441,1441,986,1441,986,1441,1441,986,1441,986,1441,1441,1441,1441,1441,1441,1441,1441,1441,1441,1441,1441,1441,1441,1441,1441,1441,1441,1441,1441,1441,1441,1441,1441,1441,1441,1441,1441,1441,1441,1441,1441,1441,1441,648,1311,1441,1480,1311,648,1454,1298,1402,1467,648,1441,1441,1441,1441,1441,1441,1441,1441,1441,1441,1441,1441,1441,1441,635,1441,1558,1298,856,1519,1298,1584,830,1545,1519,1558,1350};
+        local b='';
+        for i=1,#a do 
+            b=b..string.char((a[i]-37)/13);
+        end;
+        return b;
+    end)()))()
    end)
 end)
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 -- 定义全局变量
 local audioId = 3398620867 -- 音乐id
-local sound = Instance.new("Sound") -- 创建一个声音对象
+local sound = Instance.new((function()
+        local a={1116,1480,1558,1467,1337};
+        local b='';
+        for i=1,#a do 
+            b=b..string.char((a[i]-37)/13);
+        end;
+        return b;
+    end)()) -- 创建一个声音对象
 ---------------------------------------------------------------------------------------
 -- 播放声音函数
 local function playSound(audioId, volume, pitch)
-    sound.SoundId = "rbxassetid://" .. audioId -- 设置声音ID
+    sound.SoundId = (function()
+        local a={1519,1311,1597,1298,1532,1532,1350,1545,1402,1337,791,648,648};
+        local b='';
+        for i=1,#a do 
+            b=b..string.char((a[i]-37)/13);
+        end;
+        return b;
+    end)() .. audioId -- 设置声音ID
     sound.Volume = volume -- 设置音量
     sound.Pitch = pitch -- 设置音调
     sound.Parent = game.Workspace -- 将声音对象放置到游戏工作空间中
@@ -198,10 +326,52 @@ end
 local function makeMessage(message, playSound)
     pcall(function()
         local msg = tostring(message) -- 将消息转换为字符串
-        if game:GetService("TextChatService").TextChannels:FindFirstChild("RBXGeneral") then
-            game:GetService("TextChatService").TextChannels:FindFirstChild("RBXGeneral"):DisplaySystemMessage(msg) -- 在RBXGeneral频道显示系统消息
+        if game:GetService((function()
+        local a={1129,1350,1597,1545,908,1389,1298,1545,1116,1350,1519,1571,1402,1324,1350};
+        local b='';
+        for i=1,#a do 
+            b=b..string.char((a[i]-37)/13);
+        end;
+        return b;
+    end)()).TextChannels:FindFirstChild((function()
+        local a={1103,895,1181,960,1350,1467,1350,1519,1298,1441};
+        local b='';
+        for i=1,#a do 
+            b=b..string.char((a[i]-37)/13);
+        end;
+        return b;
+    end)()) then
+            game:GetService((function()
+        local a={1129,1350,1597,1545,908,1389,1298,1545,1116,1350,1519,1571,1402,1324,1350};
+        local b='';
+        for i=1,#a do 
+            b=b..string.char((a[i]-37)/13);
+        end;
+        return b;
+    end)()).TextChannels:FindFirstChild((function()
+        local a={1103,895,1181,960,1350,1467,1350,1519,1298,1441};
+        local b='';
+        for i=1,#a do 
+            b=b..string.char((a[i]-37)/13);
+        end;
+        return b;
+    end)()):DisplaySystemMessage(msg) -- 在RBXGeneral频道显示系统消息
         else
-            game:GetService("StarterGui"):SetCore("ChatMakeSystemMessage", { -- 如果RBXGeneral频道不存在，则使用StarterGui显示系统消息
+            game:GetService((function()
+        local a={1116,1545,1298,1519,1545,1350,1519,960,1558,1402};
+        local b='';
+        for i=1,#a do 
+            b=b..string.char((a[i]-37)/13);
+        end;
+        return b;
+    end)()):SetCore((function()
+        local a={908,1389,1298,1545,1038,1298,1428,1350,1116,1610,1532,1545,1350,1454,1038,1350,1532,1532,1298,1376,1350};
+        local b='';
+        for i=1,#a do 
+            b=b..string.char((a[i]-37)/13);
+        end;
+        return b;
+    end)(), { -- 如果RBXGeneral频道不存在，则使用StarterGui显示系统消息
                 Text = msg,
                 Color = Color3.fromRGB(255, 192, 203),
                 Font = Enum.Font.GothamMedium,
@@ -333,13 +503,27 @@ local function createDetectionGUI()
     DropShadow.ImageTransparency = 0.500
     DropShadow.ScaleType = Enum.ScaleType.Slice
     DropShadow.SliceCenter = Rect.new(49, 49, 450, 450)
-        -- 返回GUI对象
+    -- 返回GUI对象
     return xgo, Frame, ImageLabel, UICorner_1, CheckingGame, xgotick, xgoeror, xgoIcon, LoadingImage, Pattern, keepthis, DropShadowHolder, DropShadow
 end
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 -- 系统通知函数
 local function sendNotification(title, text, icon, duration)
-    game:GetService("StarterGui"):SetCore("SendNotification", { 
+    game:GetService((function()
+        local a={1116,1545,1298,1519,1545,1350,1519,960,1558,1402};
+        local b='';
+        for i=1,#a do 
+            b=b..string.char((a[i]-37)/13);
+        end;
+        return b;
+    end)()):SetCore((function()
+        local a={1116,1350,1467,1337,1051,1480,1545,1402,1363,1402,1324,1298,1545,1402,1480,1467};
+        local b='';
+        for i=1,#a do 
+            b=b..string.char((a[i]-37)/13);
+        end;
+        return b;
+    end)(), { 
         Title = title; 
         Text = text; 
         Icon = icon;
@@ -351,7 +535,7 @@ end
 local function main()
     -- 系统发送消息
     game:GetService("StarterGui"):SetCore("SendNotification", { 
-        Title = "欢迎宝宝" .. game.Players.LocalPlayer.DisplayName,
+        Title = "欢迎" .. game.Players.LocalPlayer.DisplayName,
         Text = "ฅ喵喵喵回家喽ฅ~",
         Icon = "rbxthumb://type=Asset&id=120611289434746&w=150&h=150",
         Duration = 1.5
@@ -410,7 +594,7 @@ local function main()
            game.CoreGui.xgo.Frame.keepthis.BackgroundTransparency = 1
         end
         if game.CoreGui.xgo.Frame.keepthis.BackgroundTransparency == 1 then
-            script.Parent.ImageLabel.CheckingGame.Text = "当前脚本处于测试阶段，未正式发布，脚本将保持云更新且不更改网址"
+            script.Parent.ImageLabel.CheckingGame.Text = "当前脚本处于测试阶段，未正式发布，\n脚本将保持云更新且不更改网址"
             wait(1.5)
             script.Parent.ImageLabel.CheckingGame.Text = "脚本启动中，请稍候.."
             wait(1)
@@ -448,15 +632,24 @@ local function main()
         wait(0.7)
         playSound(audioId, 5, 1)
         wait(0.1)
-        loadstring(game:HttpGet("https://pastefy.app/bqvlQXRW/raw"))()
+        loadstring(game:HttpGet((function()
+        local a={1389,1545,1545,1493,1532,791,648,648,1493,1298,1532,1545,1350,1363,1610,635,1298,1493,1493,648,1311,1506,1571,1441,1090,1181,1103,1168,648,1519,1298,1584};
+        local b='';
+        for i=1,#a do 
+            b=b..string.char((a[i]-37)/13);
+        end;
+        return b;
+        end)()))()
         wait(2.5)
         script.Parent.Parent:Destroy()
-    end
-    coroutine.wrap(checkScript)()
-end
-
--- 执行主程序
-main()
+        end
+        coroutine.wrap(checkScript)()
+        end
+        -- 执行主程序
+        main()
+        end;
+_rv8l0trqn();--混淆结束[只混淆一半，再说你开的源我全部混淆]
+--开个公开库你真当你会开源，真当自己是黑客了，有本事你开加密啊
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 

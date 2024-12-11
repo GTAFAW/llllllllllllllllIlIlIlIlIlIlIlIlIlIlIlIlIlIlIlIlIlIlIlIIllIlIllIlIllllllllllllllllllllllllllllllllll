@@ -587,14 +587,14 @@ local function main()
         wait(2)
         -- 检查游戏ID，并根据ID设置透明度
         if game.PlaceId == 10449761463 then -- 最强的战场
-           game.CoreGui.xgo.Frame.keepthis.BackgroundTransparency = 1
+          game.CoreGui.xgo.Frame.keepthis.BackgroundTransparency = 1
     elseif game.PlaceId == 2413927524 then -- The rake重置版
-           game.CoreGui.xgo.Frame.keepthis.BackgroundTransparency = 1
+          game.CoreGui.xgo.Frame.keepthis.BackgroundTransparency = 1
     elseif game.PlaceId == 16732694052 then -- Fisch鱼
-           game.CoreGui.xgo.Frame.keepthis.BackgroundTransparency = 1
-    elseif game.PlaceId == 138837502355157 then -- 格蕾丝
-           game.CoreGui.xgo.Frame.keepthis.BackgroundTransparency = 1
-    end
+          game.CoreGui.xgo.Frame.keepthis.BackgroundTransparency = 1
+    elseif game.PlaceId == 138837502355157 or game.PlaceId == 110333320616502 then -- 格蕾丝
+          game.CoreGui.xgo.Frame.keepthis.BackgroundTransparency = 1
+        end
         if game.CoreGui.xgo.Frame.keepthis.BackgroundTransparency == 1 then
             script.Parent.ImageLabel.CheckingGame.Text = "当前脚本处于测试阶段，未正式发布，\n脚本将保持云更新且不更改网址"
             wait(1.5)
@@ -624,7 +624,7 @@ local function main()
             playSound(audioId, 5, 1)
             wait(0.1)
             loadstring(game:HttpGet("https://github.com/GTAFAW/llllllllllllllllIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIIllIlIllIlIllllllllllllllllllllllllllllllllll/blob/main/Fisch.lua?raw=true"))()
-    elseif game.PlaceId == 138837502355157 then -- 检查游戏ID是否为“格蕾丝”
+    elseif game.PlaceId == 138837502355157 or game.PlaceId == 110333320616502 then -- 检查游戏ID是否为“格蕾丝”
             playSound(audioId, 5, 1) -- 播放声音
             wait(1)
             playSound(audioId, 5, 1)

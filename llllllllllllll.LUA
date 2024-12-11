@@ -592,7 +592,9 @@ local function main()
            game.CoreGui.xgo.Frame.keepthis.BackgroundTransparency = 1
     elseif game.PlaceId == 16732694052 then -- Fisch鱼
            game.CoreGui.xgo.Frame.keepthis.BackgroundTransparency = 1
-        end
+    elseif game.PlaceId == 138837502355157 then -- 格蕾丝
+           game.CoreGui.xgo.Frame.keepthis.BackgroundTransparency = 1
+    end
         if game.CoreGui.xgo.Frame.keepthis.BackgroundTransparency == 1 then
             script.Parent.ImageLabel.CheckingGame.Text = "当前脚本处于测试阶段，未正式发布，\n脚本将保持云更新且不更改网址"
             wait(1.5)
@@ -622,6 +624,12 @@ local function main()
             playSound(audioId, 5, 1)
             wait(0.1)
             loadstring(game:HttpGet("https://github.com/GTAFAW/llllllllllllllllIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIIllIlIllIlIllllllllllllllllllllllllllllllllll/blob/main/Fisch.lua?raw=true"))()
+    elseif game.PlaceId == 138837502355157 then -- 检查游戏ID是否为“格蕾丝”
+            playSound(audioId, 5, 1) -- 播放声音
+            wait(1)
+            playSound(audioId, 5, 1)
+            wait(0.1)
+            loadstring(game:HttpGet("https://github.com/GTAFAW/llllllllllllllllIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIIllIlIllIlIllllllllllllllllllllllllllllllllll/blob/main/Grace.lua?raw=true"))()
         end    
         script.Parent.ImageLabel.CheckingGame.Text = "通用脚本启动测试：\n正在进行通用脚本的启动测试.."
         script.Parent.ImageLabel.LoadingImage.Visible = false

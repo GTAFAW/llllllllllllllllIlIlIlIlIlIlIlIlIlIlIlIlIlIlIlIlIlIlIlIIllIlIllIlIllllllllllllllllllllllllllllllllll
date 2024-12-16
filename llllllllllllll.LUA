@@ -58,17 +58,18 @@ spawn(function()
             local seconds = math.floor(elapsedTime % 60)
             local gameTime = os.date("%H:%M:%S") -- 获取游戏内的时间
             local currentHour = tonumber(os.date("%H")) -- 获取当前小时数
-
             -- 判断当前时间属于哪个时间段
             local timeOfDay
-            if currentHour >= 5 and currentHour < 12 then
-                timeOfDay = "哎呀已经[早上]了"
-            elseif currentHour == 12 then
-                timeOfDay = "[中午]吃饭的时间到喽"
-            elseif currentHour > 12 and currentHour < 18 then
-                timeOfDay = "已经[下午]了呀"
+            if currentHour >= 0 and currentHour < 5 then
+                timeOfDay = "已经<凌晨>了,还不睡"           
+        elseif currentHour >= 5 and currentHour < 12 then
+                timeOfDay = "哎呀已经<早上>了"
+        elseif currentHour == 12 then
+                timeOfDay = "<中午>吃饭的时间到喽"
+        elseif currentHour > 12 and currentHour < 18 then
+                timeOfDay = "<下午>时间没事做˂⁽ˈ₍ ⁾˲₎₌"
             else
-                timeOfDay = "已经[晚上]了呀,早点睡"
+                timeOfDay = "已经<晚上>了呀,早点睡"
             end
 
             -- 更新TextLabel的文本

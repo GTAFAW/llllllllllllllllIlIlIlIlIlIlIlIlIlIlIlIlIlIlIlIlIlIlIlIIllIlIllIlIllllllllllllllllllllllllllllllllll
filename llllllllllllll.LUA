@@ -604,7 +604,7 @@ local function main()
     elseif game.PlaceId == 138837502355157 or game.PlaceId == 110333320616502 then -- 格蕾丝
           game.CoreGui.xgo.Frame.keepthis.BackgroundTransparency = 1
         end
-        if game.CoreGui.xgo.Frame.keepthis.BackgroundTransparency = 1 then
+        if game.CoreGui.xgo.Frame.keepthis.BackgroundTransparency == 1 then
             script.Parent.ImageLabel.CheckingGame.Text = "当前脚本处于测试阶段，未正式发布，\n脚本将保持云更新且不更改网址"
             wait(1.5)
             script.Parent.ImageLabel.CheckingGame.Text = "脚本启动中，请稍候.."

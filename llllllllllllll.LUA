@@ -9,8 +9,72 @@
 这确保了在系统启动时，能够自动执行必要的安全检测，从而保障系统的稳定运行。
 --等待一小段时间以确保游戏环境稳定 --]]
 ---------------------------------------------------------------------------------------
+--这里我可以教你们编写脚本被多次执行的代码
+-- 尝试从ReplicatedStorage中获取或创建DataStore
+local executionCountDataStore = game.ReplicatedStorage:FindFirstChild("ExecutionCount") or Instance.new("IntValue")
+executionCountDataStore.Name = "ExecutionCount"
+executionCountDataStore.Parent = game.ReplicatedStorage
+
+-- 增加执行次数，如果之前没有值则从0开始
+local executionCount = executionCountDataStore.Value or 0
+executionCount = executionCount + 1
+executionCountDataStore.Value = executionCount
+
+-- 发送通知的函数
+local function sendNotification(text)
+    game.StarterGui:SetCore("SendNotification", {
+        Title = "脚本通知",
+        Text = text,
+        Icon = "rbxthumb://type=Asset&id=120611289434746&w=150&h=150",
+        Duration = 1.5
+    })
+end
+
+-- 播放声音的函数
+local function playSound(audioId)
+    local sound = Instance.new("Sound")
+    sound.SoundId = "rbxassetid://" .. audioId
+    sound.Volume = 3
+    sound.Pitch = 3
+    sound.Parent = game.Workspace
+    sound:Play()
+end
+
+-- 检查执行次数并给出反馈
+if executionCount == 1 then--这里讲解一下return是终止脚本,不让脚本再次执行
+    -- 第一次执行，不发送通知，直接执行脚本
+elseif executionCount == 2 then
+    -- 第二次执行，提醒用户脚本已执行无需重复
+    sendNotification("脚本已执行，无需再重复执行.")
+    return  -- 终止脚本执行
+elseif executionCount == 3 then
+    -- 第三次执行，提醒用户再点击两次将重启脚本
+    sendNotification("再点击两次将重启脚本.")
+    return  -- 终止脚本执行
+elseif executionCount == 4 then
+    sendNotification("再点击一次，重新启动脚本.")
+    return  -- 终止脚本执行
+elseif executionCount == 5 then
+    -- 第五次执行，提醒用户脚本将重新启动，并继续执行脚本
+    sendNotification("脚本已重新启动，请稍后.")
+    playSound(3398620867)
+    -- 重置计数器
+    executionCountDataStore.Value = 1  -- 将计数器重置为1，使得下一次执行被视为第二次执行
+    -- 这里可以继续执行脚本的其他部分
+else
+    -- 第六次及以后执行，执行第二次执行时的逻辑
+    sendNotification("脚本已执行，无需再重复执行.")
+    return  -- 终止脚本执行
+end
+--这里是执行后删除重复的显示代码让他重新启动
+local existingGui = game.Players.LocalPlayer:WaitForChild("PlayerGui"):FindFirstChild("xgo Hub Status")
+if existingGui then
+    -- 如果存在，则删除
+    existingGui:Destroy()
+end
+-- 创建新的ScreenGui实例
 local a = Instance.new("ScreenGui")
-a.Name = "xgo Hub Status"
+a.Name = "xgo Hub Status"--这个不要改，如果你不会改代码不要改，而且我也希望留下我的名称
 a.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 a.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 

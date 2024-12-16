@@ -9,6 +9,7 @@
 这确保了在系统启动时，能够自动执行必要的安全检测，从而保障系统的稳定运行。
 --等待一小段时间以确保游戏环境稳定 --]]
 -- 创建主要的屏幕GUI
+---------------------------------------------------------------------------------------
 local a = Instance.new("ScreenGui")
 a.Name = "xgo Hub Status"
 a.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
@@ -97,7 +98,6 @@ spawn(function()
         end)
     end
 end)
----------------------------------------------------------------------------------------
 wait(0.114514)
 -- 获取游戏服务
 local Players = game:GetService("Players")

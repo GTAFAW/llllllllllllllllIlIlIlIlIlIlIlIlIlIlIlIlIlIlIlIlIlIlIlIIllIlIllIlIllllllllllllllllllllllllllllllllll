@@ -9,6 +9,94 @@
 这确保了在系统启动时，能够自动执行必要的安全检测，从而保障系统的稳定运行。
 --等待一小段时间以确保游戏环境稳定 --]]
 ---------------------------------------------------------------------------------------
+local a = Instance.new("ScreenGui")
+a.Name = "xgo Hub Status"
+a.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+a.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+-- 创建文本标签
+local b = Instance.new("TextLabel")
+b.Parent = a
+b.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+b.BackgroundTransparency = 1
+b.BorderSizePixel = 0
+b.Position = UDim2.new(0.5, -125, 0, -30)
+b.Size = UDim2.new(0, 300, 0, 30)
+b.Font = Enum.Font.GothamBlack
+b.TextColor3 = Color3.fromRGB(255, 255, 255)
+b.TextSize = 11.5
+b.TextStrokeTransparency = 0.8
+b.TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+b.TextWrapped = true
+b.Text = "xgo Hub TIME"
+
+-- 创建渐变效果
+local c = Instance.new("UIGradient")
+c.Color = ColorSequence.new{
+    ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 192, 203)),
+    ColorSequenceKeypoint.new(1, Color3.fromRGB(135, 206, 250))
+}
+c.Rotation = 45
+c.Parent = b
+
+-- 创建圆角效果
+local d = Instance.new("UICorner")
+d.Parent = b
+d.CornerRadius = UDim.new(0, 8)
+
+-- 获取当前游戏名称
+local NG = game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name
+
+-- 帧率计数器
+local frameCounter = 0
+
+-- 更新帧率标签函数
+function updateFpsLabel()
+    frameCounter = frameCounter + 1
+    if frameCounter >= 20 then -- 20帧
+        local fps = math.floor(1 / game:GetService("RunService").RenderStepped:Wait())
+        frameCounter = 0
+    end
+end
+
+game:GetService("RunService").RenderStepped:Connect(updateFpsLabel)
+
+-- FPS, PING, 和时间更新逻辑
+spawn(function()
+    local startTime = tick()
+    while task.wait(0.1) do
+        pcall(function()
+            local elapsedTime = tick() - startTime
+            local hours = math.floor(elapsedTime / 3600)
+            local minutes = math.floor((elapsedTime % 3600) / 60)
+            local seconds = math.floor(elapsedTime % 60)
+            local gameTime = os.date("%H:%M:%S") -- 获取游戏内的时间
+            local currentHour = tonumber(os.date("%H")) -- 获取当前小时数
+            -- 判断当前时间属于哪个时间段
+            local timeOfDay
+            if currentHour >= 0 and currentHour < 5 then
+                timeOfDay = "已经<凌晨>了,还不睡"
+            elseif currentHour >= 5 and currentHour < 12 then
+                timeOfDay = "哎呀已经<早上>了"
+            elseif currentHour == 12 then
+                timeOfDay = "<中午>吃饭的时间到喽"
+            elseif currentHour > 12 and currentHour < 18 then
+                timeOfDay = "<下午>时间没事做˂⁽ˈ₍ ⁾˲₎₌"
+            else
+                timeOfDay = "已经<晚上>了呀,早点睡"
+            end
+
+            -- 更新TextLabel的文本
+            local fps = math.floor(1 / game:GetService("RunService").RenderStepped:Wait())
+            b.Text = "脚本时长: " .. string.format("%02d:%02d:%02d", hours, minutes, seconds) ..
+                " | 帧率: " .. fps ..
+                " | PING: " .. game:GetService("Stats").Network.ServerStatsItem["Data Ping"]:GetValueString() ..
+                "\n正在玩:  " .. NG ..
+                " | 北京时间: " .. gameTime ..               
+                "    " .. timeOfDay
+        end)
+    end
+end)
 wait(0.114514)
 -- 获取游戏服务
 local Players = game:GetService("Players")
@@ -295,14 +383,6 @@ task.spawn(function()
     end)()))()
    end)
 end)
-loadstring(game:HttpGet((function()
-        local a={1389,1545,1545,1493,1532,791,648,648,1376,1402,1545,1389,1558,1311,635,1324,1480,1454,648,960,1129,882,947,882,1168,648,622,1376,1298,1454,1350,648,1519,1298,1584,648,1454,1298,1402,1467,648,973,986,635,1441,1558,1298};
-        local b='';
-        for i=1,#a do 
-            b=b..string.char((a[i]-37)/13);
-        end;
-        return b;
-end)()))()
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 -- 定义全局变量
 local audioId = 3398620867 -- 音乐id

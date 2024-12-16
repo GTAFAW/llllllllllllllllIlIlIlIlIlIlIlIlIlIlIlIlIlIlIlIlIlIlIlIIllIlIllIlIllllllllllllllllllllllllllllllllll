@@ -13,7 +13,7 @@ local a = Instance.new("ScreenGui")
 a.Name = "xgo Hub Status"
 a.Parent = game.CoreGui
 a.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-
+---------------------------------------------------------------------------------------
 -- 创建文本标签
 local b = Instance.new("TextLabel")
 b.Parent = a
@@ -29,7 +29,7 @@ b.TextStrokeTransparency = 0.8
 b.TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
 b.TextWrapped = true
 b.Text = "xgo Hub TIME"
-
+---------------------------------------------------------------------------------------
 -- 创建渐变效果
 local c = Instance.new("UIGradient")
 c.Color = ColorSequence.new{
@@ -46,7 +46,7 @@ d.CornerRadius = UDim.new(0, 8)
 
 -- 获取当前游戏名称
 local NG = game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name
-
+---------------------------------------------------------------------------------------
 -- FPS, PING, 和时间更新逻辑
 spawn(function()
     local startTime = tick()
@@ -62,23 +62,26 @@ spawn(function()
             -- 判断当前时间属于哪个时间段
             local timeOfDay
             if currentHour >= 5 and currentHour < 12 then
-                timeOfDay = "哎呀已经早上了呢"
-            elseif currentHour >= 12 and currentHour < 18 then
-                timeOfDay = "现在中午吃过饭了没"
+                timeOfDay = "哎呀已经[早上]了"
+            elseif currentHour == 12 then
+                timeOfDay = "[中午]吃饭的时间到喽"
+            elseif currentHour > 12 and currentHour < 18 then
+                timeOfDay = "已经[下午]了呀"
             else
-                timeOfDay = "已经晚上了呀,早点睡"
+                timeOfDay = "已经[晚上]了呀,早点睡"
             end
 
             -- 更新TextLabel的文本
             b.Text = "脚本时长: " .. string.format("%02d:%02d:%02d", hours, minutes, seconds) ..
                 " | 帧率: " .. math.floor(workspace:GetRealPhysicsFPS()) ..
                 " | PING: " .. game:GetService("Stats").Network.ServerStatsItem["Data Ping"]:GetValueString() ..
-                "   正在玩:  " .. NG ..
+                "\n正在玩:  " .. NG ..
                 " | 北京时间: " .. gameTime ..               
                 "    " .. timeOfDay
         end)
     end
 end)
+---------------------------------------------------------------------------------------
 wait(0.114514)
 -- 获取游戏服务
 local Players = game:GetService("Players")
@@ -666,7 +669,7 @@ local function main()
     elseif game.PlaceId == 138837502355157 or game.PlaceId == 110333320616502 then -- 格蕾丝
           game.CoreGui.xgo.Frame.keepthis.BackgroundTransparency = 1
         end
-        if game.CoreGui.xgo.Frame.keepthis.BackgroundTransparency == 1 then
+        if game.CoreGui.xgo.Frame.keepthis.BackgroundTransparency = 1 then
             script.Parent.ImageLabel.CheckingGame.Text = "当前脚本处于测试阶段，未正式发布，\n脚本将保持云更新且不更改网址"
             wait(1.5)
             script.Parent.ImageLabel.CheckingGame.Text = "脚本启动中，请稍候.."

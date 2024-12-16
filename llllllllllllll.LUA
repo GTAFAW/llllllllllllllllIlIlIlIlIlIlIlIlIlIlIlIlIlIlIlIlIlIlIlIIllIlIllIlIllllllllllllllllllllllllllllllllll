@@ -11,9 +11,9 @@
 -- 创建主要的屏幕GUI
 local a = Instance.new("ScreenGui")
 a.Name = "xgo Hub Status"
-a.Parent = game.CoreGui
+a.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 a.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
----------------------------------------------------------------------------------------
+
 -- 创建文本标签
 local b = Instance.new("TextLabel")
 b.Parent = a
@@ -29,7 +29,7 @@ b.TextStrokeTransparency = 0.8
 b.TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
 b.TextWrapped = true
 b.Text = "xgo Hub TIME"
----------------------------------------------------------------------------------------
+
 -- 创建渐变效果
 local c = Instance.new("UIGradient")
 c.Color = ColorSequence.new{
@@ -46,11 +46,25 @@ d.CornerRadius = UDim.new(0, 8)
 
 -- 获取当前游戏名称
 local NG = game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name
----------------------------------------------------------------------------------------
+
+-- 帧率计数器
+local frameCounter = 0
+
+-- 更新帧率标签函数
+function updateFpsLabel()
+    frameCounter = frameCounter + 1
+    if frameCounter >= 20 then -- 20帧
+        local fps = math.floor(1 / game:GetService("RunService").RenderStepped:Wait())
+        frameCounter = 0
+    end
+end
+
+game:GetService("RunService").RenderStepped:Connect(updateFpsLabel)
+
 -- FPS, PING, 和时间更新逻辑
 spawn(function()
     local startTime = tick()
-    while task.wait(2.5) do
+    while task.wait(0.1) do
         pcall(function()
             local elapsedTime = tick() - startTime
             local hours = math.floor(elapsedTime / 3600)
@@ -61,20 +75,21 @@ spawn(function()
             -- 判断当前时间属于哪个时间段
             local timeOfDay
             if currentHour >= 0 and currentHour < 5 then
-                timeOfDay = "已经<凌晨>了,还不睡"           
-        elseif currentHour >= 5 and currentHour < 12 then
+                timeOfDay = "已经<凌晨>了,还不睡"
+            elseif currentHour >= 5 and currentHour < 12 then
                 timeOfDay = "哎呀已经<早上>了"
-        elseif currentHour == 12 then
+            elseif currentHour == 12 then
                 timeOfDay = "<中午>吃饭的时间到喽"
-        elseif currentHour > 12 and currentHour < 18 then
+            elseif currentHour > 12 and currentHour < 18 then
                 timeOfDay = "<下午>时间没事做˂⁽ˈ₍ ⁾˲₎₌"
             else
                 timeOfDay = "已经<晚上>了呀,早点睡"
             end
 
             -- 更新TextLabel的文本
+            local fps = math.floor(1 / game:GetService("RunService").RenderStepped:Wait())
             b.Text = "脚本时长: " .. string.format("%02d:%02d:%02d", hours, minutes, seconds) ..
-                " | 帧率: " .. math.floor(workspace:GetRealPhysicsFPS()) ..
+                " | 帧率: " .. fps ..
                 " | PING: " .. game:GetService("Stats").Network.ServerStatsItem["Data Ping"]:GetValueString() ..
                 "\n正在玩:  " .. NG ..
                 " | 北京时间: " .. gameTime ..               

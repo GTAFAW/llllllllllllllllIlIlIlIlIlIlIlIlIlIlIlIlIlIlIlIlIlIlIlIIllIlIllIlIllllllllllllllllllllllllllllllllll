@@ -10,6 +10,14 @@
 --等待一小段时间以确保游戏环境稳定 --]]
 -- 创建主要的屏幕GUI
 ---------------------------------------------------------------------------------------
+wait(0.114514)
+-- 获取游戏服务
+local Players = game:GetService("Players")
+local StarterGui = game:GetService("StarterGui")
+local uis = game:GetService("UserInputService") -- 用户输入服务
+local xgots = game:GetService("TweenService") -- 缓动动画服务
+local soundService = game:GetService("SoundService") -- 声音服务
+---------------------------------------------------------------------------------------
 local a = Instance.new("ScreenGui")
 a.Name = "xgo Hub Status"
 a.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
@@ -98,14 +106,6 @@ spawn(function()
         end)
     end
 end)
-wait(0.114514)
--- 获取游戏服务
-local Players = game:GetService("Players")
-local StarterGui = game:GetService("StarterGui")
-local uis = game:GetService("UserInputService") -- 用户输入服务
-local xgots = game:GetService("TweenService") -- 缓动动画服务
-local soundService = game:GetService("SoundService") -- 声音服务
----------------------------------------------------------------------------------------
 -- 创建主界面
 local xgoMain = Instance.new("ScreenGui") -- 创建一个新的屏幕GUI
 xgoMain.Name = "xgoMain"

@@ -33,8 +33,8 @@ b.Text = "xgo Hub TIME"
 -- 创建渐变效果
 local c = Instance.new("UIGradient")
 c.Color = ColorSequence.new{
-    ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 192, 203)),
-    ColorSequenceKeypoint.new(1, Color3.fromRGB(135, 206, 250))
+    ColorSequenceKeypoint.new(0, Color3.fromRGB(math.random(0, 255), math.random(0, 255), math.random(0, 255))),
+    ColorSequenceKeypoint.new(1, Color3.fromRGB(math.random(0, 255), math.random(0, 255), math.random(0, 255)))
 }
 c.Rotation = 45
 c.Parent = b

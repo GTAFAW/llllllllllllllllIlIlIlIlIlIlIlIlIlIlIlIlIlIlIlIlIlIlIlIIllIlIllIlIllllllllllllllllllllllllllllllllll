@@ -9,7 +9,9 @@
 这确保了在系统启动时，能够自动执行必要的安全检测，从而保障系统的稳定运行。
 --等待一小段时间以确保游戏环境稳定 --]]
 ---------------------------------------------------------------------------------------
---这里我可以教你们编写脚本被多次执行的代码
+-- 这里所有代码皆为教程希望你们能学习到那些没有必的，我直接加密了
+-- 也给那些野人长点教训
+-- 这里我可以教你们编写脚本被多次执行的代码
 -- 尝试从ReplicatedStorage中获取或创建DataStore
 local executionCountDataStore = game.ReplicatedStorage:FindFirstChild("ExecutionCount") or Instance.new("IntValue")
 executionCountDataStore.Name = "ExecutionCount"
@@ -166,7 +168,7 @@ spawn(function()
         end)
     end
 end)
----------------------------------------------------------------------------------------
+-------------------------------------通知函数--------------------------------------------------
 --你也可以自己尝试写一个通知 Ui 接下来看我的
 -- 检查名为"ThunderScreen"的屏幕GUI是否存在，如果存在，则销毁它。
 local A = game.CoreGui:FindFirstChild("ThunderScreen");
@@ -364,9 +366,114 @@ G.Padding = UDim.new(0, 5)
 	end
 
 -- 测试通知系统
-D:Notification("XGOHUB", "感谢您的使用.", 21)
+D:Notification("XGOHUB", "感谢您的使用.交流群:259461151", 18)
 D:Notification("XGOHUB", "脚本正在加载中，请稍后...(21)", 21)
 --测试完之后就可以使用,可照着我这个自己改一改
+------------------------------------简单通知函数2---------------------------------------------------
+--如果还是不会的话，我做了一个简化版的，看一下
+--格式的话，我比较喜欢使用abcd因为简单，这个要看个人，怎么改就行
+local a = Color3.fromRGB(180, 90, 230)  -- 鲜艳的紫色用于标题
+local b = Color3.fromRGB(70, 130, 255)  -- 鲜艳的蓝色用于描述
+local c = Color3.fromRGB(60, 60, 150)   -- 深蓝色用于背景开始
+local d = Color3.fromRGB(130, 50, 180)  -- 深紫色用于背景结束
+local e = Color3.fromRGB(0, 255, 0)     -- 绿色进度条
+
+local f = 200  -- 通知宽度
+local g = 60   -- 通知高度
+local h = 8    -- 进度条高度
+
+local i = 1    -- 左对齐
+local j = -120  -- 初始Y位置
+local k = 1.5    -- 进度条完成的持续时间
+
+-- 存储所有通知的表
+local n = {}
+
+-- 创建通知的函数
+function Notification(title, description, duration)
+    local p = Instance.new("Frame")
+    local q = Instance.new("ImageLabel")
+    local r = Instance.new("TextLabel")
+    local s = Instance.new("TextLabel")
+    local t = Instance.new("Frame")
+    local u = Instance.new("Frame")
+    
+    p.Size = UDim2.new(0, f, 0, g)
+    p.BackgroundTransparency = 1
+    p.BorderSizePixel = 0
+    p.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui").NotificationGui
+    q.Size = UDim2.new(1, 0, 1, 0)
+    q.Position = UDim2.new(0, 0, 0, 0)
+    q.BackgroundTransparency = 1
+    q.Image = "rbxassetid://86451637909512"
+    q.ImageColor3 = Color3.fromRGB(255, 255, 255)
+    q.ScaleType = Enum.ScaleType.Crop
+    q.Parent = p
+    r.Size = UDim2.new(1, 0, 0, 18)
+    r.Position = UDim2.new(0, 0, 0, 5)
+    r.BackgroundTransparency = 1
+    r.Text = title
+    r.TextSize = 18
+    r.TextColor3 = a
+    r.TextWrapped = true
+    r.TextStrokeTransparency = 0.6
+    r.Parent = p
+    s.Size = UDim2.new(1, 0, 0, 14)
+    s.Position = UDim2.new(0, 0, 0, 25)
+    s.BackgroundTransparency = 1
+    s.Text = description
+    s.TextSize = 14
+    s.TextColor3 = b
+    s.TextWrapped = true
+    s.TextStrokeTransparency = 0.6
+    s.Parent = p
+    t.Size = UDim2.new(1, 0, 0, h)
+    t.Position = UDim2.new(0, 0, 1, -h - 5)
+    t.BackgroundTransparency = 0.5
+    t.BackgroundColor3 = c
+    t.BorderSizePixel = 0
+    t.Parent = p
+    u.Size = UDim2.new(0, 0, 1, 0)
+    u.BackgroundColor3 = e
+    u.BorderSizePixel = 0
+    u.Parent = t
+
+    -- 平滑填充进度条
+    for v = 0, k, 0.1 do
+        local w = v / k
+        u.Size = UDim2.new(w, 0, 1, 0)
+        wait(0.1)
+    end
+
+    -- 等待进度条完成后，隐藏并销毁通知界面
+    wait(0.5)
+    p.Visible = false
+    table.insert(n, p)
+    local x = {}
+    for y, z in ipairs(n) do
+        if z ~= p then
+            local m = -(g + 10) * (y - 1)
+            x[y] = z
+            z.Position = UDim2.new(i, 10, 1, j + m)  -- 修改为左下角位置
+        end
+    end
+    n = x 
+    p:Destroy()
+end
+
+-- 确保NotificationGui存在
+local gui = Instance.new("ScreenGui")
+gui.Name = "NotificationGui"
+gui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+gui.ResetOnSpawn = false
+
+-- 使用函数创建通知-测试一下能否使用
+-- 如果再不会做，你也不用做脚本了，直接退了吧你
+-- 还有第2个是简单的，所以我就没有添加时间函数只是固定时间函数
+-- 然后就是它必须是显示完之后才能显示第2个
+-- 这些都要看你们自己怎么改了
+Notification("XGOHUB", "简化版通知页面")
+Notification("XGOHUB", "简化版通知2测试")
 ---------------------------------------------------------------------------------------
 wait(0.114514)
 -- 获取游戏服务

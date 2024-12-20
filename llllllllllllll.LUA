@@ -22,7 +22,8 @@ local executionCount = executionCountDataStore.Value or 0
 executionCount = executionCount + 1
 executionCountDataStore.Value = executionCount
 
--- 发送通知的函数 这里我为了方便就用一个函数来调用
+-- 发送通知的函数 这里我为了方便直接用构造函数来调用
+-- 一方面是为了后期修改.也节省了大量内存
 local function sendNotification(text)
     game.StarterGui:SetCore("SendNotification", {
         Title = "脚本通知",
@@ -42,8 +43,8 @@ local function playSound(audioId)
     sound:Play()
 end
 
--- 检查执行次数并给出反馈
-if executionCount == 1 then--这里讲解一下return是终止脚本,不让脚本再次执行
+-- 检查执行次数并给出反馈-这里=如果是没有其他的情况下可以写一个，但有的话
+if executionCount == 1 then--讲解一下return是终止脚本,不让脚本再次执行.也就是所谓的返回值
     -- 第一次执行，不发送通知，直接执行脚本
 elseif executionCount == 2 then
     -- 第二次执行，提醒用户脚本已执行无需重复
@@ -99,7 +100,7 @@ b.TextSize = 11.5
 b.TextStrokeTransparency = 0.8
 b.TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
 b.TextWrapped = true
-b.Text = "xgo Hub TIME"
+b.Text = "xgo Hub TIME\n如果卡在这个页面,请重新启动."
 
 -- 创建渐变效果
 local c = Instance.new("UIGradient")
@@ -169,7 +170,7 @@ spawn(function()
     end
 end)
 -------------------------------------通知函数--------------------------------------------------
---你也可以自己尝试写一个通知 Ui 接下来看我的
+--你也可以自己尝试写一个通知 UI 接下来看我的
 -- 检查名为"ThunderScreen"的屏幕GUI是否存在，如果存在，则销毁它。
 local A = game.CoreGui:FindFirstChild("ThunderScreen");
 if A then A:Destroy(); end
@@ -371,7 +372,7 @@ D:Notification("XGOHUB", "脚本正在加载中，请稍后...(21)", 21)
 --测试完之后就可以使用,可照着我这个自己改一改
 ------------------------------------简单通知函数2---------------------------------------------------
 --如果还是不会的话，我做了一个简化版的，看一下
---格式的话，我比较喜欢使用abcd因为简单，这个要看个人，怎么改就行
+--格式的话，我比较喜欢使用abcd来当前缀因为简单，这个要看个人，怎么改就行
 local a = Color3.fromRGB(180, 90, 230)  -- 鲜艳的紫色用于标题
 local b = Color3.fromRGB(70, 130, 255)  -- 鲜艳的蓝色用于描述
 local c = Color3.fromRGB(60, 60, 150)   -- 深蓝色用于背景开始
@@ -384,7 +385,7 @@ local h = 8    -- 进度条高度
 
 local i = 1    -- 左对齐
 local j = -120  -- 初始Y位置
-local k = 1.5    -- 进度条完成的持续时间
+local k = 0.5  -- 进度条完成的持续时间
 
 -- 存储所有通知的表
 local n = {}
